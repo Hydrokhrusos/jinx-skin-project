@@ -309,8 +309,28 @@ def main():
             raise ValueError(f"{role} texture is unchanged from its source")
         if item["changed_pixels"] < item["total_pixels"] * 0.95:
             raise ValueError(f"{role} texture change is not substantial")
-        if item["decoded_metrics"]["opaque_pixels"] != item["total_pixels"]:
+        decoded = item["decoded_metrics"]
+        if decoded["opaque_pixels"] != item["total_pixels"]:
             raise ValueError(f"{role} texture is not fully opaque after compression")
+        if (
+            decoded["rgb_standard_deviation"] < 18.0
+            or decoded["mean_neighbor_contrast"] < 0.18
+            or decoded["quantized_unique_colors"] < 24
+            or decoded["luminance_span_p05_p95"] < 48.0
+            or decoded["color_families_above_one_percent"] < 3
+        ):
+            raise ValueError(f"{role} decoded texture lost material or value detail")
+        compression = item.get("compression_metrics", {})
+        if (
+            compression.get("alpha_mismatches") != 0
+            or compression.get("mean_absolute_rgb_error", 256.0) > 16.0
+            or compression.get("p95_absolute_rgb_error", 256.0) > 48.0
+        ):
+            raise ValueError(f"{role} TEX round trip corrupted the top mip")
+        if role in {"armor", "recall", "missile"} and decoded.get(
+            "material_separation", {}
+        ).get("minimum_mean_rgb_distance", 0.0) < 48.0:
+            raise ValueError(f"{role} decoded material tiles are not distinct")
         require_hash(
             os.path.join(stage_root, *expected_path.split("/")),
             item["output_sha256"],

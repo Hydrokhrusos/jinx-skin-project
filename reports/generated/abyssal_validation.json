@@ -25,8 +25,8 @@
     "overlay_files_inspected": 396,
     "content_package_overlay_hashes_match": true,
     "tex_layouts_validated": 326,
-    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\dist\\abyssal-siren-jinx_3.0.0.modpkg",
-    "sha256": "ab8420d8b955894e33f3a532e013a79d697583d8a4ea60c4039d5560a6d1886e",
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\dist\\abyssal-siren-jinx_3.0.0.modpkg",
+    "sha256": "8c2460c734e47d858c3470836b0158aacba8c4bf9c763c0dae8d2b662c213a0a",
     "animations_included": 0,
     "sound_assets_included": 2
   },
@@ -60,8 +60,8 @@
     "exported_model_visual_qa": true,
     "manual_visual_review_completed": true,
     "manual_visual_review_report": {
-      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\reports\\generated\\abyssal_manual_visual_review.md",
-      "sha256": "10b85abd7530d3b55617f5e580f0bc14187d13c5362850fe0435be3bc903a094"
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\reports\\generated\\abyssal_manual_visual_review.md",
+      "sha256": "db90bbdf7b1b25cbc76675ad388ee16589e8ace8b3aad6d821d65c452179c781"
     },
     "ltk_package_extract_validation": true,
     "ltk_overlay_validation": true,

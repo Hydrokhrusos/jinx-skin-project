@@ -53,6 +53,19 @@ function Clear-GeneratedPath {
     }
 }
 
+function Get-Sha256 {
+    param([Parameter(Mandatory = $true)][string]$Path)
+    $stream = [IO.File]::OpenRead($Path)
+    $algorithm = [Security.Cryptography.SHA256]::Create()
+    try {
+        return [BitConverter]::ToString($algorithm.ComputeHash($stream)).Replace('-', '').ToLowerInvariant()
+    }
+    finally {
+        $algorithm.Dispose()
+        $stream.Dispose()
+    }
+}
+
 foreach ($required in @(
     $blender,
     $avRoot,
@@ -278,16 +291,16 @@ try {
         target_game_build = $gameVersion
         generated_at_utc = [DateTime]::UtcNow.ToString('o')
         tools = [ordered]@{
-            blender = [ordered]@{ version = '4.5.13 LTS'; sha256 = (Get-FileHash -LiteralPath $blender -Algorithm SHA256).Hash.ToLowerInvariant() }
+            blender = [ordered]@{ version = '4.5.13 LTS'; sha256 = (Get-Sha256 -Path $blender) }
             aventurine = [ordered]@{ version = '3.1.5' }
-            ritobin = [ordered]@{ version = '2025-10-05'; sha256 = (Get-FileHash -LiteralPath $ritobin -Algorithm SHA256).Hash.ToLowerInvariant() }
-            wadtools = [ordered]@{ version = '0.5.7'; sha256 = (Get-FileHash -LiteralPath $wadtools -Algorithm SHA256).Hash.ToLowerInvariant() }
-            texconv = [ordered]@{ version = 'DirectXTex 2026.5.8'; sha256 = (Get-FileHash -LiteralPath $texconv -Algorithm SHA256).Hash.ToLowerInvariant() }
-            vgmstream = [ordered]@{ version = 'r2117'; sha256 = (Get-FileHash -LiteralPath $vgmstream -Algorithm SHA256).Hash.ToLowerInvariant() }
-            league_mod = [ordered]@{ version = '0.2.1 with ltk_modpkg 0.9.1'; sha256 = (Get-FileHash -LiteralPath $leagueMod -Algorithm SHA256).Hash.ToLowerInvariant() }
+            ritobin = [ordered]@{ version = '2025-10-05'; sha256 = (Get-Sha256 -Path $ritobin) }
+            wadtools = [ordered]@{ version = '0.5.7'; sha256 = (Get-Sha256 -Path $wadtools) }
+            texconv = [ordered]@{ version = 'DirectXTex 2026.5.8'; sha256 = (Get-Sha256 -Path $texconv) }
+            vgmstream = [ordered]@{ version = 'r2117'; sha256 = (Get-Sha256 -Path $vgmstream) }
+            league_mod = [ordered]@{ version = '0.2.1 with ltk_modpkg 0.9.1'; sha256 = (Get-Sha256 -Path $leagueMod) }
         }
         packages = @(
-            [ordered]@{ path = $package; sha256 = (Get-FileHash -LiteralPath $package -Algorithm SHA256).Hash.ToLowerInvariant() }
+            [ordered]@{ path = $package; sha256 = (Get-Sha256 -Path $package) }
         )
     }
     $toolchain | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $reportRoot 'abyssal_toolchain.json') -Encoding UTF8

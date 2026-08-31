@@ -6,6 +6,8 @@ Abyssal Siren Jinx is a development baseline for a complete model, texture, VFX,
 
 Version 3.0.0 replaces the 2.x asset direction with a new cute-horror sea-witch design. The champion no longer uses Ocean Song's character geometry: Jinx's anatomy, face, and hair begin with the compatible skin-51 foundation; Pow-Pow and Fishbones begin with skin-62 weapon cores; and extensive authored coral, shell, crown, armor, and relic geometry creates the final silhouette. Bespoke opaque atlases replace the previous translucent and holographic material treatment.
 
+The final material pass preserves the donor atlases' face, cloth, trim, hair, metal, and relic detail through source-aware grading instead of covering them with procedural overlays. Authored geometry uses dedicated coral, aged-bone, abyssal-violet, and seafoam texture regions with separate value ranges and guarded UV gutters. Generated TEX files are round-tripped through the production decoder and rejected if mip ordering, alpha, top-level imagery, color-family coverage, or material separation changes during BC compression.
+
 ## Replaced assets
 
 - The champion model and materials, including explicit WitchBody, CoralArmor, Pow-Pow, Fishbones, Zapper, and recall submeshes.
@@ -19,7 +21,6 @@ Stock Ocean Song animations are retained in 3.0.0. The custom model is bound to 
 
 ## Known issues
 
-- The current mostly single-color texture treatment reads as a flat blob and requires a full material, value, and color-separation pass.
 - The ultimate (R) cast has minor visual bugs that still need correction.
 
 See [references/sources.md](references/sources.md) for component and audio provenance.

@@ -5,10 +5,11 @@ Reviewed on 2026-08-31 from the exact SKN, SKL, and TEX files extracted from the
 ## Accepted checks
 
 - The front, three-quarter, left, right, and back renders show a substantially new silhouette: coral crown, open rib armor, shell mantle, long Jinx hair anchors, and two oversized coral-relic weapons. It does not read as the Ocean Song model with small deformations.
-- The face and crown close-up keeps Jinx recognizable and the face unobstructed. The texture is opaque and spatially stable; no transparent hologram, stretched full-model projection, or untextured square is visible.
-- `WitchBody`, `CoralArmor`, `PowPow`, `Fishbones`, and `Zapper` are visibly distinct. `Recall` is hidden in normal renders and appears in the stock recall pose only.
+- The face and crown close-up keeps Jinx recognizable and the face unobstructed. Source-aware grading preserves facial features, hair strands, cloth panels, pale trim, and small accessories instead of flattening them under a single procedural color.
+- `WitchBody`, `CoralArmor`, `PowPow`, `Fishbones`, and `Zapper` are visibly distinct. The authored armor separates coral pink, aged bone, abyssal violet, and seafoam into intentional UV regions, while the donor weapon atlas retains its engraved metal, coral, and sea-glass detail. `Recall` is hidden in normal renders and appears in the stock recall pose only.
+- The decoded production TEX files match the authored top-level images without mip tiles, stripes, alpha corruption, transparent holograms, stretched full-model projections, or untextured squares. The texture build also checks value range, local detail, color-family coverage, and material-tile separation after BC compression.
 - The stock minigun idle, rocket idle, spell-2 Zapper pose, and recall pose show intact shoulders, elbows, wrists, and hands. No obvious native-arm collapse or detached weapon was observed.
-- The Chompers shell familiar and authored leviathan missile share the champion's black-violet, coral, and seafoam palette. The manual Chompers jaw pose separates cleanly without tearing.
+- The Chompers shell familiar retains the donor shell's panel and trim detail. The authored leviathan missile separates its dark body, aged-bone head, coral horns, and seafoam spines. The manual Chompers jaw pose separates cleanly without tearing.
 - The VFX atlas contact sheet contains shaped grayscale/color masks rather than placeholder solid squares. The build audit confirms all 319 stock particle-card TEX files are preserved byte-for-byte while color behavior is changed in the 117 VFX systems.
 
 ## Reviewed images
