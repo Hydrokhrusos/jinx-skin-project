@@ -1,6 +1,6 @@
 {
   "status": "PASSED",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "render_source": "exported SKN/TEX outputs",
   "resolution": [
     900,
@@ -34,7 +34,7 @@
     "rest_views": {
       "front": {
         "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_rest_front.png",
-        "sha256": "10eb4477e5ea49a312ae35af7ac755ea8a7153fd68bd14b1fb831d4f1ec941f2",
+        "sha256": "a0502870ec3a257cd1252306651325b9346bd10e02427ceefa398d803cb4b105",
         "frame": 0,
         "camera_target": [
           -0.04021713137626648,
@@ -45,7 +45,7 @@
       },
       "front_three_quarter": {
         "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_rest_front_three_quarter.png",
-        "sha256": "a159ba76d01529cc13885f8f855ba2f853345830b6bf8a1b627a9141fa7b3b95",
+        "sha256": "8f5bfc8de9246269292a0cac198b48b32619deec80f5c975c4c6dabcee1f9f89",
         "frame": 0,
         "camera_target": [
           -0.04021713137626648,
@@ -56,7 +56,7 @@
       },
       "left": {
         "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_rest_left.png",
-        "sha256": "3d0bad052781a918f872a882b3ff49d243ee32ba89264c428ea267a47bca9af8",
+        "sha256": "7787b0a1059ca365c155e278b1947b59b96d00a14c1fa78db0a93fd1f3bb457b",
         "frame": 0,
         "camera_target": [
           -0.04021713137626648,
@@ -67,7 +67,7 @@
       },
       "right": {
         "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_rest_right.png",
-        "sha256": "3164466853fe594f3fc45ad02dc12b658c8325729da8b6545af3457c2adee69c",
+        "sha256": "fca95343eb3d65fde969ad375de46b336512acaf037a8cde41a9ec04d0a0d677",
         "frame": 0,
         "camera_target": [
           -0.04021713137626648,
@@ -78,7 +78,7 @@
       },
       "back": {
         "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_rest_back.png",
-        "sha256": "3da3265ecd0e6193b7415d5733203665f484be4c4a459d545ab1652b08afcc0b",
+        "sha256": "993ad470dab24f3811a3e38bd138532c0a253ea8630360f003fc67915cabe773",
         "frame": 0,
         "camera_target": [
           -0.04021713137626648,
@@ -90,7 +90,7 @@
     },
     "face_closeup": {
       "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_face_crown_closeup.png",
-      "sha256": "f8253a796ed3cd3708665a078b7963540c48403d81c6efa8fe5b97220e493735",
+      "sha256": "bfcad0919cfbeb9e8322a5332a880c71158692b78e1555f79cea9f3e5018db2f",
       "frame": 0,
       "camera_target": [
         0.0,
@@ -101,7 +101,7 @@
     },
     "weapon_closeup": {
       "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_coral_relic_weapons_closeup.png",
-      "sha256": "5e165a78283ba02ede8b4c9b6ace14ce17f0f69bd7cf2530762f835421e1df45",
+      "sha256": "a254e1863785a58f8ce35eb07a7359e278fca7ce27eeb60b50568aab6b96bfb7",
       "frame": 0,
       "camera_target": [
         -0.04021713137626648,
@@ -113,7 +113,7 @@
     "stock_animation_poses": {
       "stock_minigun_idle": {
         "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_stock_minigun_idle_f017.png",
-        "sha256": "893b591014430c72f320e8c9bfc33ddf1be463c94451e1b02f7e68defba51cdb",
+        "sha256": "c759c949dcb15b0befa2b3db53fe926a1f35a8184c06cb33ac0effc5e76e3677",
         "frame": 17,
         "camera_target": [
           -0.04021713137626648,
@@ -128,7 +128,7 @@
       },
       "stock_rocket_idle": {
         "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_stock_rocket_idle_f018.png",
-        "sha256": "49db98f29267b8965691c0c191e2fbe95e82355e94cfd8a6b57da0644e880b75",
+        "sha256": "914b61060b44bbcf87baaf2b3b8792b2d7ada48450405fc148415166b4b9d16f",
         "frame": 18,
         "camera_target": [
           -0.04021713137626648,
@@ -143,7 +143,7 @@
       },
       "stock_zapper_spell2": {
         "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_stock_zapper_spell2_f022.png",
-        "sha256": "e68bbb9bc495e5cace2f022874842d81fe3e2c2b7b3fc38be30d89eaf7808637",
+        "sha256": "ac8ec0b26217b4659a0f0325ce5cf6d2a99063cd908e1610dc4295112b54c411",
         "frame": 22,
         "camera_target": [
           -0.04021713137626648,
@@ -158,7 +158,7 @@
       },
       "stock_recall": {
         "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_stock_recall_f162.png",
-        "sha256": "1f194be9b5d17474248739fe7d987efe751eaccb9426dcaa27fe31b1e41e21c4",
+        "sha256": "b1a753036602d471492c89465a4d2d1c62ce2c8bbe428793f8dfee7c2e895e29",
         "frame": 162,
         "camera_target": [
           -0.04021713137626648,
@@ -184,7 +184,7 @@
     "texture_sha256": "00f9cfaf70e00c12dfd4b39333aa2508691d68288431d9ff1d38951f3dd471a3",
     "rest": {
       "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_chompers_three_quarter.png",
-      "sha256": "04bb23ba8a071007593bf40f339dfadb78a9dadabe981415d5ce846394a83945",
+      "sha256": "9ea64ce71c4f1058ab23c0e29be7f23689df8f8e517e83f08b1cf0ccd63059b6",
       "frame": 0,
       "camera_target": [
         -0.037824809551239014,
@@ -195,7 +195,7 @@
     },
     "manual_deformation_test": {
       "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_chompers_manual_jaw_test.png",
-      "sha256": "fc8a8870d6df7ad89abeafee97cf93918f59978ce3cf493ef2e59d2837d87172",
+      "sha256": "c67bb464ad6004026d145479aecd4caaeae44437c80e7d8d335bd88a7d4e84aa",
       "frame": 0,
       "camera_target": [
         -0.037824809551239014,
@@ -217,7 +217,7 @@
     "texture_sha256": "a49a344de5db3364c4ff0193ee91c0f8825e8fcedb253cfed3164941678a6b02",
     "rest": {
       "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_leviathan_missile_three_quarter.png",
-      "sha256": "2739efa8855bf5080ec1fd4f64469768b2ad92f4358c0714c996c95c820550b2",
+      "sha256": "e505115c8ab5aedf5105ca1690648fcd614d72ea5f18c72f0e08d411f5b15e56",
       "frame": 0,
       "camera_target": [
         2.256035804748535e-05,

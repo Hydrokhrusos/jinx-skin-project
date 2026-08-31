@@ -1,6 +1,6 @@
 {
   "status": "PASSED",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "target": "Ocean Song Jinx skin 65",
   "scope": "complete model, texture, VFX, and SFX replacement; stock animations retained",
   "live_game_smoke_test": "REQUIRED",
@@ -25,8 +25,8 @@
     "overlay_files_inspected": 396,
     "content_package_overlay_hashes_match": true,
     "tex_layouts_validated": 326,
-    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\dist\\abyssal-siren-jinx_3.0.0.modpkg",
-    "sha256": "8c2460c734e47d858c3470836b0158aacba8c4bf9c763c0dae8d2b662c213a0a",
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\dist\\abyssal-siren-jinx_3.0.1.modpkg",
+    "sha256": "b82347df21b77c1eaa59724465f8507f5f1e8d4e14d253bc58b1fb1d184efacc",
     "animations_included": 0,
     "sound_assets_included": 2
   },
@@ -61,7 +61,7 @@
     "manual_visual_review_completed": true,
     "manual_visual_review_report": {
       "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\reports\\generated\\abyssal_manual_visual_review.md",
-      "sha256": "db90bbdf7b1b25cbc76675ad388ee16589e8ace8b3aad6d821d65c452179c781"
+      "sha256": "7753888c3fe6fce272e874923963e9f332606af5ca6cc341aa6015d6ad9d296b"
     },
     "ltk_package_extract_validation": true,
     "ltk_overlay_validation": true,

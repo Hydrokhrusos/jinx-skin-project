@@ -1,4 +1,4 @@
-# Abyssal Siren Jinx 3.0.0 manual visual review
+# Abyssal Siren Jinx 3.0.1 manual visual review
 
 Reviewed on 2026-08-31 from the exact SKN, SKL, and TEX files extracted from the reconstructed LTK overlay under `build/abyssal/validation/overlay`.
 

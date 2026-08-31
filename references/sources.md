@@ -1,6 +1,6 @@
 # Sources and provenance
 
-Abyssal Siren Jinx 3.0.0 is a derivative League skin mod assembled from locally installed Riot assets and original authored additions. No generated images are used.
+Abyssal Siren Jinx 3.0.1 is a derivative League skin mod assembled from locally installed Riot assets and original authored additions. No generated images are used.
 
 ## Shipped asset inputs
 

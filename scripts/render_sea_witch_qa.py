@@ -9,6 +9,7 @@ import bpy
 import numpy as np
 from mathutils import Vector
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from project_version import VERSION
 
 

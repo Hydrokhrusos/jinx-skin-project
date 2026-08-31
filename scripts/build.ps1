@@ -12,7 +12,7 @@ $distRoot = Join-Path $projectRoot 'dist'
 $baseRoot = Join-Path $projectRoot 'variants\base'
 $baseContent = Join-Path $baseRoot 'content'
 $baseConfig = Join-Path $baseRoot 'mod.config.json'
-$package = Join-Path $distRoot 'abyssal-siren-jinx_3.0.0.modpkg'
+$projectConfig = Join-Path $projectRoot 'mod.config.json'
 
 $blender = Join-Path $projectRoot '.tools\blender-4.5.13\blender-4.5.13-windows-x64\blender.exe'
 $avRoot = Join-Path $projectRoot '.tools\Aventurine-3.1.5'
@@ -81,19 +81,34 @@ foreach ($required in @(
     $audioClips,
     $gameWad,
     $versionMetadata,
-    $baseConfig
+    $baseConfig,
+    $projectConfig
 )) {
     if (-not (Test-Path -LiteralPath $required)) {
         throw "Required build input is missing: $required"
     }
 }
 
+$projectMetadata = Get-Content -LiteralPath $projectConfig -Raw | ConvertFrom-Json
+$baseMetadata = Get-Content -LiteralPath $baseConfig -Raw | ConvertFrom-Json
+$projectVersion = $projectMetadata.version
+if ($projectVersion -notmatch '^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$') {
+    throw "Project version is not semantic: $projectVersion"
+}
+if ($baseMetadata.version -ne $projectVersion) {
+    throw "Project and base versions differ: $projectVersion / $($baseMetadata.version)"
+}
+if ($baseMetadata.name -ne $projectMetadata.name) {
+    throw "Project and base package names differ: $($projectMetadata.name) / $($baseMetadata.name)"
+}
+$package = Join-Path $distRoot "$($projectMetadata.name)_$projectVersion.modpkg"
+
 Clear-GeneratedPath -Path $buildRoot -Parent (Join-Path $projectRoot 'build')
 Clear-GeneratedPath -Path $baseContent -Parent $baseRoot
 New-Item -ItemType Directory -Force $sourceRoot, $sourceTextRoot, $commonWad, $reportRoot, $distRoot | Out-Null
 
 $superseded = @($package)
-foreach ($version in @('1.0.0', '1.0.1', '1.0.2', '1.0.3', '2.0.0')) {
+foreach ($version in @('1.0.0', '1.0.1', '1.0.2', '1.0.3', '2.0.0', '3.0.0')) {
     $superseded += Join-Path $distRoot "abyssal-siren-jinx_$version.modpkg"
     $superseded += Join-Path $distRoot "abyssal-siren-jinx-encore_$version.modpkg"
 }
@@ -130,7 +145,7 @@ try {
     & $ritobin $sourceMultiBin $sourceMultiText -i bin -o text -d $ritoHashRoot
     if ($LASTEXITCODE -ne 0) { throw "Linked Ocean Song VFX BIN decompilation failed with exit code $LASTEXITCODE" }
 
-    & $blender --background --factory-startup --python scripts\build_sea_witch_models.py -- `
+    & $blender --background --factory-startup --python-exit-code 1 --python scripts\build_sea_witch_models.py -- `
         --target-skn (Join-Path $sourceRoot 'assets\characters\jinx\skins\skin65\jinx_skin65.skn') `
         --target-skl (Join-Path $sourceRoot 'assets\characters\jinx\skins\skin65\jinx_skin65.skl') `
         --body-donor-skn (Join-Path $sourceRoot 'assets\characters\jinx\skins\skin51\jinx_skin51.skn') `
@@ -148,7 +163,7 @@ try {
         --report (Join-Path $reportRoot 'abyssal_models.json')
     if ($LASTEXITCODE -ne 0) { throw "Sea-witch model build failed with exit code $LASTEXITCODE" }
 
-    & $blender --background --factory-startup --python scripts\build_sea_witch_textures.py -- `
+    & $blender --background --factory-startup --python-exit-code 1 --python scripts\build_sea_witch_textures.py -- `
         --source-root $sourceRoot `
         --out-root $commonWad `
         --addon-root $avRoot `
@@ -158,7 +173,7 @@ try {
     if ($LASTEXITCODE -ne 0) { throw "Sea-witch texture build failed with exit code $LASTEXITCODE" }
 
     $vfxMap = Join-Path $buildRoot 'compiled\vfx_asset_map.json'
-    & $blender --background --factory-startup --python scripts\build_abyssal_vfx_assets.py -- `
+    & $blender --background --factory-startup --python-exit-code 1 --python scripts\build_abyssal_vfx_assets.py -- `
         --bin $sourceJinxText `
         --bin $sourceMultiText `
         --source-root $sourceRoot `
@@ -250,7 +265,7 @@ try {
         --report (Join-Path $reportRoot 'abyssal_overlay_hash_paths.json')
     if ($LASTEXITCODE -ne 0) { throw "Unresolved overlay path extraction failed with exit code $LASTEXITCODE" }
 
-    & $blender --background --factory-startup --python scripts\render_sea_witch_qa.py -- `
+    & $blender --background --factory-startup --python-exit-code 1 --python scripts\render_sea_witch_qa.py -- `
         --skn (Join-Path $overlayExtract 'assets\characters\jinx\skins\skin65\jinx_skin65.skn') `
         --skl (Join-Path $overlayExtract 'assets\characters\jinx\skins\skin65\jinx_skin65.skl') `
         --body-texture (Join-Path $overlayExtract 'assets\characters\jinx\skins\skin65\jinx_skin65_seawitch_body_tx_cm.tex') `
@@ -285,7 +300,7 @@ try {
     $gameVersion = (Get-Content -LiteralPath $versionMetadata -Raw | ConvertFrom-Json).version
     $toolchain = [ordered]@{
         status = 'PASSED'
-        project_version = '3.0.0'
+        project_version = $projectVersion
         target = 'Ocean Song Jinx skin 65'
         scope = 'model, opaque textures, VFX, and complete skin SFX replacement; stock animations and voice-over retained'
         target_game_build = $gameVersion

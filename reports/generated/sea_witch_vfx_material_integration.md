@@ -53,7 +53,7 @@ This is the square-artifact safeguard.
 
 ## Build integration
 
-The 3.0.0 `build.ps1` pipeline constructs the model and opaque atlases first,
+The 3.0.1 `build.ps1` pipeline constructs the model and opaque atlases first,
 then calls `build_abyssal_vfx_assets.py` and `patch_abyssal_bins.py`. This order
 keeps the authored missile assets while copying its native skeleton and validates
 the required material contract before packaging.
