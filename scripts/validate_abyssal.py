@@ -2,14 +2,10 @@ import argparse
 import hashlib
 import json
 import os
-import re
 import struct
 
+from project_version import SEMVER, VERSION
 from tex_layout import validate_tex_layout
-
-
-SEMVER = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$")
-VERSION = "3.0.0"
 CHAMPION_SUBMESHES = (
     "WitchBody",
     "CoralArmor",
@@ -309,8 +305,28 @@ def main():
             raise ValueError(f"{role} texture is unchanged from its source")
         if item["changed_pixels"] < item["total_pixels"] * 0.95:
             raise ValueError(f"{role} texture change is not substantial")
-        if item["decoded_metrics"]["opaque_pixels"] != item["total_pixels"]:
+        decoded = item["decoded_metrics"]
+        if decoded["opaque_pixels"] != item["total_pixels"]:
             raise ValueError(f"{role} texture is not fully opaque after compression")
+        if (
+            decoded["rgb_standard_deviation"] < 18.0
+            or decoded["mean_neighbor_contrast"] < 0.18
+            or decoded["quantized_unique_colors"] < 24
+            or decoded["luminance_span_p05_p95"] < 48.0
+            or decoded["color_families_above_one_percent"] < 3
+        ):
+            raise ValueError(f"{role} decoded texture lost material or value detail")
+        compression = item.get("compression_metrics", {})
+        if (
+            compression.get("alpha_mismatches") != 0
+            or compression.get("mean_absolute_rgb_error", 256.0) > 16.0
+            or compression.get("p95_absolute_rgb_error", 256.0) > 48.0
+        ):
+            raise ValueError(f"{role} TEX round trip corrupted the top mip")
+        if role in {"armor", "recall", "missile"} and decoded.get(
+            "material_separation", {}
+        ).get("minimum_mean_rgb_distance", 0.0) < 48.0:
+            raise ValueError(f"{role} decoded material tiles are not distinct")
         require_hash(
             os.path.join(stage_root, *expected_path.split("/")),
             item["output_sha256"],
@@ -559,9 +575,25 @@ def main():
     if not set(AUDIO_FILES.values()).issubset(expected_files):
         raise ValueError("Dark-witch SFX banks are missing from the package allowlist")
 
-    config = load_json(os.path.join(project_root, "variants", "base", "mod.config.json"))
-    if not SEMVER.fullmatch(config.get("version", "")) or config["version"] != VERSION:
-        raise ValueError(f"Base config does not use semantic version {VERSION}")
+    root_config = load_json(os.path.join(project_root, "mod.config.json"))
+    base_config = load_json(
+        os.path.join(project_root, "variants", "base", "mod.config.json")
+    )
+    for label, config in (("Project", root_config), ("Base", base_config)):
+        if not SEMVER.fullmatch(config.get("version", "")):
+            raise ValueError(f"{label} config version is not semantic")
+        if config["version"] != VERSION:
+            raise ValueError(f"{label} config does not use version {VERSION}")
+    if root_config.get("name") != base_config.get("name"):
+        raise ValueError("Project and base package names differ")
+    expected_package_name = f"{root_config['name']}_{VERSION}.modpkg"
+    if os.path.basename(args.package) != expected_package_name:
+        raise ValueError(f"Package is not named {expected_package_name}")
+    manifest = load_json(
+        os.path.join(project_root, "source", "audio", "dark_witch", "manifest.json")
+    )
+    if manifest.get("project_version") != VERSION:
+        raise ValueError(f"Audio manifest does not use version {VERSION}")
     payload_result = validate_payload(
         project_root,
         os.path.abspath(args.package_extract),

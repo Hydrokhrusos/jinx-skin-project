@@ -1,11 +1,11 @@
 {
   "status": "PASSED",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "theme": "recognizable cute-horror dark sea witch with coral relic weapons",
   "champion": {
-    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skn",
-    "sha256": "bb46a95cfa0645c843e167ade121af7fd5a16384e647dfca6d52f53e13f1843a",
-    "skeleton_path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skl",
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skn",
+    "sha256": "c945405bff50c97e67e4f746e7b7ce1b73e6f72fd74be1297469eae9753b0d07",
+    "skeleton_path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skl",
     "skeleton_sha256": "5a370b9f548030d136b44ba79bec145a21aed2afc0c1f13c216f6adc6f6376f2",
     "target_skeleton_sha256": "5a370b9f548030d136b44ba79bec145a21aed2afc0c1f13c216f6adc6f6376f2",
     "vertices": 27552,
@@ -127,7 +127,7 @@
     }
   },
   "chompers": {
-    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinxmine\\skins\\skin65\\jinxmine_skin65.skn",
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinxmine\\skins\\skin65\\jinxmine_skin65.skn",
     "sha256": "c46e0157f4b767417cc0e8e0ec19b3554bc7472db771333f0cb9f7d88cf9e111",
     "skeleton_sha256": "47b0d338999c83d8ad1c6dbd540444f47a863a8070ca2586e97d97173277f4c8",
     "target_skeleton_sha256": "47b0d338999c83d8ad1c6dbd540444f47a863a8070ca2586e97d97173277f4c8",
@@ -149,8 +149,8 @@
     }
   },
   "ultimate_missile": {
-    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\particles\\jinx_skin65_r_mis_globefish_01_1.skn",
-    "sha256": "0e1e878a3fdd18783c21643bfee01c068169f494a932068adbae330675d8733e",
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\particles\\jinx_skin65_r_mis_globefish_01_1.skn",
+    "sha256": "2278c3166cc2515529c14de6eb68880f59acc90bc5474d4a8136a8d4c132f8bd",
     "vertices": 680,
     "triangles": 1292,
     "sources": {

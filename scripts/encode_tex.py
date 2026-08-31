@@ -9,7 +9,7 @@ import tempfile
 
 import numpy as np
 
-from tex_layout import expected_tex_payload_size, validate_tex_layout
+from tex_layout import dds_payload_to_tex_payload, validate_tex_layout
 
 
 def parse_args():
@@ -260,12 +260,11 @@ def encode_tex_with_texconv(rgba, path, header, texconv, dither=True):
             dds = handle.read()
     if len(dds) < 128 or dds[:4] != b"DDS " or dds[84:88] != fourcc:
         raise ValueError(f"Unexpected DirectXTex DDS layout for {path}")
-    payload = dds[128:]
-    expected = expected_tex_payload_size(width, height, header["format"])
-    if len(payload) != expected:
-        raise ValueError(
-            f"DirectXTex mip payload mismatch: expected {expected}, got {len(payload)}"
-        )
+    # DDS stores mips largest-to-smallest; Riot TEX stores the same blocks in
+    # the opposite order. Aventurine reverses them again when rebuilding DDS.
+    payload = dds_payload_to_tex_payload(
+        dds[128:], width, height, header["format"]
+    )
     os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
     with open(path, "wb") as handle:
         handle.write(b"TEX\0")
@@ -318,7 +317,8 @@ def main():
     with open(output_path, "wb") as handle:
         handle.write(b"TEX\0")
         handle.write(struct.pack("<HHBBBB", width, height, 1, 0x0A, 0, 1))
-        for level in levels:
+        # Riot TEX stores mip levels from smallest to largest.
+        for level in reversed(levels):
             handle.write(level["data"])
     validate_tex_layout(output_path)
     report = {

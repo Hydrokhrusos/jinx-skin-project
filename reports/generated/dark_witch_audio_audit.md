@@ -1,4 +1,4 @@
-# Abyssal Siren Jinx 3.0.0 — dark-witch SFX audit
+# Abyssal Siren Jinx 3.0.1 — dark-witch SFX audit
 
 Status: **automated audio validation passed; live League playback is not yet confirmed**.
 
@@ -48,9 +48,9 @@ These measurements reduce the risk of the previous silent/too-quiet result but d
 
 - SFX audio BNK SHA-256: `810bdbd7791f77011ebba80ed1199a1adb74a3336e757c90eab1107d74ae0acf`
 - SFX events BNK SHA-256: `87bbc6d9232db3ab760eff4343785d182104876aeb5d04b5c39fbed1413530b3`
-- Curated manifest SHA-256: `9f4dbb8acd88082b219501134b4b8dce3385c0d88e452443d85d8c6d835f2814`
-- Detailed validation report SHA-256: `1539ee2cf766fa62052b38b2d5fbe7d9adc004bcab0ae219b768eb1e21ba8baa`
+- Curated manifest SHA-256: `3ffaaf9999782ff55f76efb8ce963df66210a859f417b62ac4bb4152ce0db8c8`
+- Detailed validation report SHA-256: `37c4e44192e108a9a5015d86a879553a99923e61fc4676637bd3fcb49319fe13`
 
 ## Remaining acceptance test
 
-After the complete 3.0.0 package is assembled, perform a Practice Tool smoke test with basic attacks in both Q states, W cast/travel/hit, E cast/arm/snare/expire, R cast/travel/hit, passive activation, death, recall, and respawn. Confirm both audibility and subjective fit against the final VFX/model. Package, codec, routing, and decode checks alone cannot prove live playback.
+After the complete 3.0.1 package is assembled, perform a Practice Tool smoke test with basic attacks in both Q states, W cast/travel/hit, E cast/arm/snare/expire, R cast/travel/hit, passive activation, death, recall, and respawn. Confirm both audibility and subjective fit against the final VFX/model. Package, codec, routing, and decode checks alone cannot prove live playback.

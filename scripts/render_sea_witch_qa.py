@@ -9,6 +9,9 @@ import bpy
 import numpy as np
 from mathutils import Vector
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from project_version import VERSION
+
 
 CHAMPION_TEXTURE_ROUTES = {
     "WitchBody": "body",
@@ -522,7 +525,7 @@ def main():
     )
     payload = {
         "status": "PASSED",
-        "version": "3.0.0",
+        "version": VERSION,
         "render_source": "exported SKN/TEX outputs",
         "resolution": [900, 900],
         "champion": champion,
