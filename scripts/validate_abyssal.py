@@ -2,14 +2,10 @@ import argparse
 import hashlib
 import json
 import os
-import re
 import struct
 
+from project_version import SEMVER, VERSION
 from tex_layout import validate_tex_layout
-
-
-SEMVER = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$")
-VERSION = "3.0.0"
 CHAMPION_SUBMESHES = (
     "WitchBody",
     "CoralArmor",
@@ -579,9 +575,25 @@ def main():
     if not set(AUDIO_FILES.values()).issubset(expected_files):
         raise ValueError("Dark-witch SFX banks are missing from the package allowlist")
 
-    config = load_json(os.path.join(project_root, "variants", "base", "mod.config.json"))
-    if not SEMVER.fullmatch(config.get("version", "")) or config["version"] != VERSION:
-        raise ValueError(f"Base config does not use semantic version {VERSION}")
+    root_config = load_json(os.path.join(project_root, "mod.config.json"))
+    base_config = load_json(
+        os.path.join(project_root, "variants", "base", "mod.config.json")
+    )
+    for label, config in (("Project", root_config), ("Base", base_config)):
+        if not SEMVER.fullmatch(config.get("version", "")):
+            raise ValueError(f"{label} config version is not semantic")
+        if config["version"] != VERSION:
+            raise ValueError(f"{label} config does not use version {VERSION}")
+    if root_config.get("name") != base_config.get("name"):
+        raise ValueError("Project and base package names differ")
+    expected_package_name = f"{root_config['name']}_{VERSION}.modpkg"
+    if os.path.basename(args.package) != expected_package_name:
+        raise ValueError(f"Package is not named {expected_package_name}")
+    manifest = load_json(
+        os.path.join(project_root, "source", "audio", "dark_witch", "manifest.json")
+    )
+    if manifest.get("project_version") != VERSION:
+        raise ValueError(f"Audio manifest does not use version {VERSION}")
     payload_result = validate_payload(
         project_root,
         os.path.abspath(args.package_extract),

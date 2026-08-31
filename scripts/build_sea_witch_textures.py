@@ -10,6 +10,7 @@ import bpy
 import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from project_version import VERSION
 from sea_witch_materials import MATERIAL_TILES
 
 
@@ -531,7 +532,7 @@ def main():
 
     payload = {
         "status": "PASSED",
-        "version": "3.0.0",
+        "version": VERSION,
         "theme": "black-violet sea witch, coral pink relics, seafoam bioluminescence, aged bone",
         "opaque_material_atlases": True,
         "textures": rows,

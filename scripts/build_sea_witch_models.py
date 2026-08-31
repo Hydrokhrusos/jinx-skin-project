@@ -10,6 +10,7 @@ import sys
 from mathutils import Matrix, Vector
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from project_version import VERSION
 from sea_witch_materials import remap_material_uvs
 
 
@@ -1213,7 +1214,7 @@ def main():
     missile = build_missile(helper, read_skl, args)
     report = {
         "status": "PASSED",
-        "version": "3.0.0",
+        "version": VERSION,
         "theme": "recognizable cute-horror dark sea witch with coral relic weapons",
         "champion": champion,
         "chompers": mine,
