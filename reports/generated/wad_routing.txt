@@ -1,0 +1,13 @@
+﻿ROUTED_WADS=jinx.wad.client
+WAD=jinx.wad.client OVERRIDES=11
+data/characters/jinx/skins/skin67.bin 128508
+data/characters/jinx/skins/skin68.bin 128508
+data/characters/jinx/skins/skin66.bin 128560
+data/characters/jinx/skins/skin71.bin 128487
+data/characters/jinx/skins/skin73.bin 128433
+assets/characters/jinx/skins/skin65/jinx_skin65.skn 1536192
+data/characters/jinx/animations/skin65.bin 35408
+data/characters/jinx/skins/skin70.bin 128508
+data/characters/jinx/skins/skin72.bin 128487
+data/characters/jinx/skins/skin69.bin 128487
+data/characters/jinx/skins/skin65.bin 128402

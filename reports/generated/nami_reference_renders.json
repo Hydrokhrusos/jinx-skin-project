@@ -1,0 +1,164 @@
+{
+  "status": "PASSED",
+  "candidates": [
+    {
+      "champion": "nami",
+      "skin": "07",
+      "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\nami_references\\assets\\characters\\nami\\skins\\skin07\\nami_skin07.skn",
+      "vertices": 3499,
+      "triangles": 5626,
+      "submeshes": [
+        "Nami_Skin07_Mat"
+      ],
+      "hidden_materials": [],
+      "texture_sources": [
+        "nami_skin07_tx_cm.tex",
+        "nami_skin07_tx_gm.tex"
+      ],
+      "bounds": {
+        "min": [
+          -0.6697865128517151,
+          -0.4346437156200409,
+          -1.4458379745483398
+        ],
+        "max": [
+          1.1834830045700073,
+          0.6066820025444031,
+          2.2382097244262695
+        ]
+      },
+      "renders": [
+        {
+          "view": "front",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\nami_renders\\skin07_front.png",
+          "sha256": "d9167f3e979595863f28aa491aa034d6009debdc532b674f042b6d6c2ca6bc31"
+        },
+        {
+          "view": "side",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\nami_renders\\skin07_side.png",
+          "sha256": "19145578dbcd0eda86b8476d13114dc31afcb3e5fd5e918bb7c7f953996bb20e"
+        },
+        {
+          "view": "back",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\nami_renders\\skin07_back.png",
+          "sha256": "eecf0df2e986b47ccf2c289c59759b90963027e4ced2220e9c5681132742fc82"
+        }
+      ]
+    },
+    {
+      "champion": "nami",
+      "skin": "32",
+      "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\nami_references\\assets\\characters\\nami\\skins\\skin32\\nami_skin32.skn",
+      "vertices": 19218,
+      "triangles": 31830,
+      "submeshes": [
+        "Body",
+        "Weapon",
+        "Recall_Pumpkin",
+        "Recall_Shark",
+        "Recall_Weapon"
+      ],
+      "hidden_materials": [
+        "recall_pumpkin",
+        "recall_shark",
+        "recall_weapon"
+      ],
+      "texture_sources": [
+        "nami_skin32_fish_tx_cm.tex",
+        "nami_skin32_pumpkin_tx_cm.tex",
+        "nami_skin32_tx_cm.tex",
+        "nami_skin32_vfxsharkee_tx_cm.tex"
+      ],
+      "bounds": {
+        "min": [
+          -0.6527090668678284,
+          -0.32752931118011475,
+          -1.498576045036316
+        ],
+        "max": [
+          1.3632389307022095,
+          0.5039169788360596,
+          2.6135358810424805
+        ]
+      },
+      "renders": [
+        {
+          "view": "front",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\nami_renders\\skin32_front.png",
+          "sha256": "dc4cb81253d1dc5d6c7a36a358becc2f7964b8a51a7e818f425ba59944f81045"
+        },
+        {
+          "view": "side",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\nami_renders\\skin32_side.png",
+          "sha256": "eef931ecf7e970e36ac01e280229e632b0aa9c41c2ba5a87458daf4d92c9ea57"
+        },
+        {
+          "view": "back",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\nami_renders\\skin32_back.png",
+          "sha256": "2188bfc976234ff4b5e287f09cd59403b59aef8b9bbad62dc4539b73e843457f"
+        }
+      ]
+    },
+    {
+      "champion": "nami",
+      "skin": "51",
+      "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\nami_references\\assets\\characters\\nami\\skins\\skin51\\nami_skin51.skn",
+      "vertices": 15080,
+      "triangles": 23484,
+      "submeshes": [
+        "Hair",
+        "Armor",
+        "Ult_Armor",
+        "Body",
+        "Weapon",
+        "Staff_Top_Ult",
+        "Top_Staff_Norm",
+        "Tentacle_Prop"
+      ],
+      "hidden_materials": [],
+      "texture_sources": [
+        "nami_skin51_armor_scolling_mat.tex",
+        "nami_skin51_armor_tx_cm.tex",
+        "nami_skin51_armor_ult_tx_cm.tex",
+        "nami_skin51_body_tx_cm.tex",
+        "nami_skin51_body_ult_tx_cm.tex",
+        "nami_skin51_hair_tx_cm.tex",
+        "nami_skin51_hair_ult_tx_cm.tex",
+        "nami_skin51_kellykrab_tx_cm.tex",
+        "nami_skin51_tentacleprop_scroll_mat.tex",
+        "nami_skin51_tentacle_prop_tx_cm.tex",
+        "nami_skin51_weapon_tx_cm.tex",
+        "nami_skin51_weapon_ult_tx_cm.tex"
+      ],
+      "bounds": {
+        "min": [
+          -0.7045896649360657,
+          -0.22177989780902863,
+          -1.7178949117660522
+        ],
+        "max": [
+          1.3236548900604248,
+          0.752482533454895,
+          2.3241989612579346
+        ]
+      },
+      "renders": [
+        {
+          "view": "front",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\nami_renders\\skin51_front.png",
+          "sha256": "87fff3f679c42815e20b8fd86301eaca4e8da536e13e68768e5c0f7b06663ce6"
+        },
+        {
+          "view": "side",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\nami_renders\\skin51_side.png",
+          "sha256": "e25327ef046deb2045194ce3f9e41fb798e1789ba4fc79143a7931b4c3ef5eb1"
+        },
+        {
+          "view": "back",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\nami_renders\\skin51_back.png",
+          "sha256": "230a59500946f7ac7ed9e8f9f8671c6aada9497a92f16173680f93adc95014fa"
+        }
+      ]
+    }
+  ]
+}

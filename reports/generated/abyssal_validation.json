@@ -1,0 +1,70 @@
+{
+  "status": "PASSED",
+  "version": "3.0.0",
+  "target": "Ocean Song Jinx skin 65",
+  "scope": "complete model, texture, VFX, and SFX replacement; stock animations retained",
+  "live_game_smoke_test": "REQUIRED",
+  "wad_mount_safety": {
+    "status": "PASSED",
+    "strategy": "in_place_jinx_and_isolated_shared",
+    "stock_chunks": 3735,
+    "overlay_chunks": 3753,
+    "new_chunks": 18,
+    "stock_chunk_hashes_preserved": true
+  },
+  "overlay_routing": {
+    "status": "PASSED",
+    "routes": [
+      "data/final/champions/jinx.wad.client"
+    ],
+    "unrelated_champion_wads_rebuilt": 0
+  },
+  "package": {
+    "status": "PASSED",
+    "files": 374,
+    "overlay_files_inspected": 396,
+    "content_package_overlay_hashes_match": true,
+    "tex_layouts_validated": 326,
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\dist\\abyssal-siren-jinx_3.0.0.modpkg",
+    "sha256": "ab8420d8b955894e33f3a532e013a79d697583d8a4ea60c4039d5560a6d1886e",
+    "animations_included": 0,
+    "sound_assets_included": 2
+  },
+  "acceptance": {
+    "zero_ocean_song_gameplay_geometry_retained": true,
+    "native_skin65_skeletons_byte_identical": true,
+    "champion_submeshes": [
+      "WitchBody",
+      "CoralArmor",
+      "PowPow",
+      "Fishbones",
+      "Zapper",
+      "Recall"
+    ],
+    "chompers_submeshes": [
+      "ShellFamiliars"
+    ],
+    "missile_submeshes": [
+      "LeviathanBolt"
+    ],
+    "six_opaque_texture_and_material_routes": true,
+    "vfx_systems_rethemed": 117,
+    "vfx_valuecolor_vectors_recolored": 2977,
+    "particle_card_textures_byte_preserved": 319,
+    "sfx_events_replaced": 60,
+    "sfx_media_replaced": 63,
+    "sfx_sound_objects_patched": 103,
+    "wwise_vorbis_plugin": "0x00040001",
+    "voice_over_retained": true,
+    "animations_omitted_by_request": true,
+    "exported_model_visual_qa": true,
+    "manual_visual_review_completed": true,
+    "manual_visual_review_report": {
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\reports\\generated\\abyssal_manual_visual_review.md",
+      "sha256": "10b85abd7530d3b55617f5e580f0bc14187d13c5362850fe0435be3bc903a094"
+    },
+    "ltk_package_extract_validation": true,
+    "ltk_overlay_validation": true,
+    "bc1_bc3_tex_payload_layouts_validated": true
+  }
+}

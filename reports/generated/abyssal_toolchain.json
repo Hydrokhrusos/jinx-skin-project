@@ -1,0 +1,43 @@
+﻿{
+    "status":  "PASSED",
+    "project_version":  "3.0.0",
+    "target":  "Ocean Song Jinx skin 65",
+    "scope":  "model, opaque textures, VFX, and complete skin SFX replacement; stock animations and voice-over retained",
+    "target_game_build":  "16.17.8104348+branch.releases-16-17.code.public.content.release.anticheat.vanguard",
+    "generated_at_utc":  "2026-08-30T23:06:05.3905142Z",
+    "tools":  {
+                  "blender":  {
+                                  "version":  "4.5.13 LTS",
+                                  "sha256":  "339c3879999f619ffeb3ff4b53966853153e2e2547d79048ed2886f1826d1306"
+                              },
+                  "aventurine":  {
+                                     "version":  "3.1.5"
+                                 },
+                  "ritobin":  {
+                                  "version":  "2025-10-05",
+                                  "sha256":  "2bae9097f58b75e905d3fa24615de732037d61016eb19f73faf0093bfad5f3fd"
+                              },
+                  "wadtools":  {
+                                   "version":  "0.5.7",
+                                   "sha256":  "91b44abf44a18fe40c51d308dd8a5ba818bf3c29bad9b71db2c58805b13cd651"
+                               },
+                  "texconv":  {
+                                  "version":  "DirectXTex 2026.5.8",
+                                  "sha256":  "dcfdec10244e02cf5037fba089c55fb7e1326b1c8181742d77d15fa5cb5eef06"
+                              },
+                  "vgmstream":  {
+                                    "version":  "r2117",
+                                    "sha256":  "29df08c557ada8269c92a6abfe3886ad2f65849b0b26ba78a0819b363bbc5b85"
+                                },
+                  "league_mod":  {
+                                     "version":  "0.2.1 with ltk_modpkg 0.9.1",
+                                     "sha256":  "0f2e43b431ff139c50c6ac3715c43912c5804098228d66995651edeb970e1704"
+                                 }
+              },
+    "packages":  [
+                     {
+                         "path":  "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\dist\\abyssal-siren-jinx_3.0.0.modpkg",
+                         "sha256":  "ab8420d8b955894e33f3a532e013a79d697583d8a4ea60c4039d5560a6d1886e"
+                     }
+                 ]
+}

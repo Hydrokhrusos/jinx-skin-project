@@ -1,0 +1,237 @@
+{
+  "status": "PASSED",
+  "version": "3.0.0",
+  "render_source": "exported SKN/TEX outputs",
+  "resolution": [
+    900,
+    900
+  ],
+  "champion": {
+    "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\validation\\overlay\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skn",
+    "model_sha256": "bb46a95cfa0645c843e167ade121af7fd5a16384e647dfca6d52f53e13f1843a",
+    "vertices": 27552,
+    "triangles": 37290,
+    "submeshes": [
+      "WitchBody",
+      "CoralArmor",
+      "PowPow",
+      "Fishbones",
+      "Zapper",
+      "Recall"
+    ],
+    "bounds": {
+      "min": [
+        -0.7656378149986267,
+        -0.87996506690979,
+        -3.639744136307854e-06
+      ],
+      "max": [
+        0.6852035522460938,
+        1.0125621557235718,
+        2.4107515811920166
+      ]
+    },
+    "rest_views": {
+      "front": {
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_rest_front.png",
+        "sha256": "cb4ca6175362b57a47d56deef95100499b7c314385937b829521fbb625ef942f",
+        "frame": 0,
+        "camera_target": [
+          -0.04021713137626648,
+          0.06629854440689087,
+          1.205374002456665
+        ],
+        "ortho_scale": 2.8929061889648438
+      },
+      "front_three_quarter": {
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_rest_front_three_quarter.png",
+        "sha256": "35286ffbc862b8ee6a13a2f8a698846970b55b54a016b4c638dca9c0271d0ee1",
+        "frame": 0,
+        "camera_target": [
+          -0.04021713137626648,
+          0.06629854440689087,
+          1.205374002456665
+        ],
+        "ortho_scale": 2.8929061889648438
+      },
+      "left": {
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_rest_left.png",
+        "sha256": "31b5267d2369ef7d01d972eb59e2a4c77dedc82fced8135a9b034218cda72218",
+        "frame": 0,
+        "camera_target": [
+          -0.04021713137626648,
+          0.06629854440689087,
+          1.205374002456665
+        ],
+        "ortho_scale": 2.8929061889648438
+      },
+      "right": {
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_rest_right.png",
+        "sha256": "6b33505945e39f528d67c18fefb9bf8447dc7191cf831d757fb3390ab4adf5f8",
+        "frame": 0,
+        "camera_target": [
+          -0.04021713137626648,
+          0.06629854440689087,
+          1.205374002456665
+        ],
+        "ortho_scale": 2.8929061889648438
+      },
+      "back": {
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_rest_back.png",
+        "sha256": "1c31197baba6f7fa05512ee4a50a10a787a0c210f7314eba2cf5860a2860a687",
+        "frame": 0,
+        "camera_target": [
+          -0.04021713137626648,
+          0.06629854440689087,
+          1.205374002456665
+        ],
+        "ortho_scale": 2.8929061889648438
+      }
+    },
+    "face_closeup": {
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_face_crown_closeup.png",
+      "sha256": "2502b6051f09f862da2efc8efb0e38046ccd27de4ad038ad93e7dff036ce3115",
+      "frame": 0,
+      "camera_target": [
+        0.0,
+        -0.033180028200149536,
+        1.8803998231887817
+      ],
+      "ortho_scale": 0.92
+    },
+    "weapon_closeup": {
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_coral_relic_weapons_closeup.png",
+      "sha256": "47accb276d84ac45f3a678c81e5e0166ff8ed5f6913ade7bce364704f4e28286",
+      "frame": 0,
+      "camera_target": [
+        -0.04021713137626648,
+        -0.21271374821662903,
+        1.5030359029769897
+      ],
+      "ortho_scale": 2.269289195537567
+    },
+    "stock_animation_poses": {
+      "stock_minigun_idle": {
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_stock_minigun_idle_f017.png",
+        "sha256": "ad4859632614e329d4fcef96e408b1138663f6b1c541fb922367fd01ac17a46f",
+        "frame": 17,
+        "camera_target": [
+          -0.04021713137626648,
+          0.06629854440689087,
+          1.205374002456665
+        ],
+        "ortho_scale": 2.8929061889648438,
+        "animation": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\source\\game\\assets\\characters\\jinx\\skins\\base\\animations\\jinx_minigun_idle1.anm",
+        "animation_sha256": "5dfa4d4f7f4292ccf943bfdda584803cc223f21190b426feafcf2c32bf647764",
+        "show_recall": false,
+        "packaged": false
+      },
+      "stock_rocket_idle": {
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_stock_rocket_idle_f018.png",
+        "sha256": "73777bc43504f254f504c9befbf5393ccd43852209bbfa9cadb192ee3793faa4",
+        "frame": 18,
+        "camera_target": [
+          -0.04021713137626648,
+          0.06629854440689087,
+          1.205374002456665
+        ],
+        "ortho_scale": 2.8929061889648438,
+        "animation": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\source\\game\\assets\\characters\\jinx\\skins\\base\\animations\\jinx_rlauncher_idle1.anm",
+        "animation_sha256": "c7d18f31fb46bc1365ea27364d0425100a8613bbf9d6a4ba5adfd773d41666a3",
+        "show_recall": false,
+        "packaged": false
+      },
+      "stock_zapper_spell2": {
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_stock_zapper_spell2_f022.png",
+        "sha256": "1c62ba13bfa00d267ee9b507c7e4efd520f66057354ed8ca9840317a32300d57",
+        "frame": 22,
+        "camera_target": [
+          -0.04021713137626648,
+          0.06629854440689087,
+          1.205374002456665
+        ],
+        "ortho_scale": 2.8929061889648438,
+        "animation": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\source\\game\\assets\\characters\\jinx\\skins\\skin65\\animations\\spell2.anm",
+        "animation_sha256": "d1c74d05d0cba10e2273a9bfd9c8034276c12a6b3692db4d58d05cc944f6cb9c",
+        "show_recall": false,
+        "packaged": false
+      },
+      "stock_recall": {
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_stock_recall_f162.png",
+        "sha256": "6bac8949f2b17c6642e40b2101bab53cc542650f157a37284c6c9d7935492182",
+        "frame": 162,
+        "camera_target": [
+          -0.04021713137626648,
+          0.06629854440689087,
+          1.205374002456665
+        ],
+        "ortho_scale": 2.8929061889648438,
+        "animation": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\source\\game\\assets\\characters\\jinx\\skins\\skin65\\animations\\recall.anm",
+        "animation_sha256": "b8dfeb8f935a4e42e84ce934d353250e7f0ca503fd1da35b4a1bb80256403036",
+        "show_recall": true,
+        "packaged": false
+      }
+    }
+  },
+  "chompers": {
+    "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\validation\\overlay\\assets\\characters\\jinxmine\\skins\\skin65\\jinxmine_skin65.skn",
+    "model_sha256": "c46e0157f4b767417cc0e8e0ec19b3554bc7472db771333f0cb9f7d88cf9e111",
+    "vertices": 3171,
+    "triangles": 4294,
+    "submeshes": [
+      "ShellFamiliars"
+    ],
+    "texture_sha256": "419d88667adb26ac9b8773fc84c90eb97eda4da8e741db58af1a11323712bcd2",
+    "rest": {
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_chompers_three_quarter.png",
+      "sha256": "de2ed3af522b608efa80db00ccc8a7b1637348f42e6b78f613c28180bac5abe4",
+      "frame": 0,
+      "camera_target": [
+        -0.037824809551239014,
+        -0.08446739614009857,
+        0.23789551854133606
+      ],
+      "ortho_scale": 1.5075767993927
+    },
+    "manual_deformation_test": {
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_chompers_manual_jaw_test.png",
+      "sha256": "5fddf2ec25e9bc2d4df69233724f11b9cc6e03bf871812dc30f32885b67f998f",
+      "frame": 0,
+      "camera_target": [
+        -0.037824809551239014,
+        -0.08446739614009857,
+        0.23789551854133606
+      ],
+      "ortho_scale": 1.5075767993927,
+      "manual_pose_not_packaged": true
+    }
+  },
+  "ultimate_missile": {
+    "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\validation\\overlay\\assets\\characters\\jinx\\skins\\skin65\\particles\\jinx_skin65_r_mis_globefish_01_1.skn",
+    "model_sha256": "0e1e878a3fdd18783c21643bfee01c068169f494a932068adbae330675d8733e",
+    "vertices": 680,
+    "triangles": 1292,
+    "submeshes": [
+      "LeviathanBolt"
+    ],
+    "texture_sha256": "37d6fef8beb00105e4fbcbf8ce3e15ce8df7e94bee23397e09dff73e8213a6b5",
+    "rest": {
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_leviathan_missile_three_quarter.png",
+      "sha256": "dbb1ef7b480e486020a6e1f60c218b789d8262830cf8b5a48d4f736c6ad314cd",
+      "frame": 0,
+      "camera_target": [
+        2.256035804748535e-05,
+        -0.011603564023971558,
+        0.03984874486923218
+      ],
+      "ortho_scale": 1.5079999446868897
+    },
+    "manual_deformation_test": null
+  },
+  "contact_sheet": {
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\sea_witch_model_contact_sheet.png",
+    "sha256": "c6954d88df76e9a114fbe9dcc5a60b62dd4450bdc7ee77f7f0fc42df0154bce9"
+  },
+  "manual_visual_review_required": true,
+  "live_game_test_completed": false
+}

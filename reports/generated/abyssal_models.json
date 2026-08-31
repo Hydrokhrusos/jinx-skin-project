@@ -1,0 +1,186 @@
+{
+  "status": "PASSED",
+  "version": "3.0.0",
+  "theme": "recognizable cute-horror dark sea witch with coral relic weapons",
+  "champion": {
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skn",
+    "sha256": "bb46a95cfa0645c843e167ade121af7fd5a16384e647dfca6d52f53e13f1843a",
+    "skeleton_path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skl",
+    "skeleton_sha256": "5a370b9f548030d136b44ba79bec145a21aed2afc0c1f13c216f6adc6f6376f2",
+    "target_skeleton_sha256": "5a370b9f548030d136b44ba79bec145a21aed2afc0c1f13c216f6adc6f6376f2",
+    "vertices": 27552,
+    "triangles": 37290,
+    "submeshes": [
+      {
+        "name": "WitchBody",
+        "vertex_start": 0,
+        "vertex_count": 12049,
+        "index_start": 0,
+        "index_count": 51924
+      },
+      {
+        "name": "CoralArmor",
+        "vertex_start": 12049,
+        "vertex_count": 2264,
+        "index_start": 51924,
+        "index_count": 12444
+      },
+      {
+        "name": "PowPow",
+        "vertex_start": 14313,
+        "vertex_count": 5445,
+        "index_start": 64368,
+        "index_count": 18153
+      },
+      {
+        "name": "Fishbones",
+        "vertex_start": 19758,
+        "vertex_count": 5655,
+        "index_start": 82521,
+        "index_count": 17745
+      },
+      {
+        "name": "Zapper",
+        "vertex_start": 25413,
+        "vertex_count": 959,
+        "index_start": 100266,
+        "index_count": 4716
+      },
+      {
+        "name": "Recall",
+        "vertex_start": 26372,
+        "vertex_count": 1180,
+        "index_start": 104982,
+        "index_count": 6888
+      }
+    ],
+    "sources": {
+      "WitchBody": {
+        "Jinx skin51 Body component": {
+          "vertices": 12049,
+          "triangles": 17308
+        }
+      },
+      "CoralArmor": {
+        "authored": {
+          "vertices": 2264,
+          "triangles": 4148
+        }
+      },
+      "PowPow": {
+        "Jinx skin62 Pow-Pow component": {
+          "vertices": 4700,
+          "triangles": 4601
+        },
+        "authored": {
+          "vertices": 745,
+          "triangles": 1450
+        }
+      },
+      "Fishbones": {
+        "Jinx skin62 Fishbones component": {
+          "vertices": 5153,
+          "triangles": 4959
+        },
+        "authored": {
+          "vertices": 502,
+          "triangles": 956
+        }
+      },
+      "Zapper": {
+        "Jinx skin62 Zapper component": {
+          "vertices": 688,
+          "triangles": 1042
+        },
+        "authored": {
+          "vertices": 271,
+          "triangles": 530
+        }
+      },
+      "Recall": {
+        "authored": {
+          "vertices": 1180,
+          "triangles": 2296
+        }
+      }
+    },
+    "target_ocean_song_vertices_retained": 0,
+    "weapon_split_ambiguous_triangles_resolved_by_bind_side": 0,
+    "influence_fallbacks": {
+      "Minigun_Handle_Front": "Minigun_Space",
+      "Rocket_Launcher_Handle": "Rocket_Launcher_Front",
+      "Buffbone_L_dress": "L_Hip",
+      "Buffbone_R_dress": "R_Hip",
+      "Minigun_Body": "Minigun_Space"
+    },
+    "bounds": {
+      "min": [
+        -93.27001,
+        -0.00036,
+        -101.25622
+      ],
+      "max": [
+        89.06179,
+        241.07516,
+        101.29502
+      ]
+    }
+  },
+  "chompers": {
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinxmine\\skins\\skin65\\jinxmine_skin65.skn",
+    "sha256": "c46e0157f4b767417cc0e8e0ec19b3554bc7472db771333f0cb9f7d88cf9e111",
+    "skeleton_sha256": "47b0d338999c83d8ad1c6dbd540444f47a863a8070ca2586e97d97173277f4c8",
+    "target_skeleton_sha256": "47b0d338999c83d8ad1c6dbd540444f47a863a8070ca2586e97d97173277f4c8",
+    "vertices": 3171,
+    "triangles": 4294,
+    "sources": {
+      "JinxMine skin62 component": {
+        "vertices": 2483,
+        "triangles": 3006
+      },
+      "authored": {
+        "vertices": 688,
+        "triangles": 1288
+      }
+    },
+    "target_ocean_song_vertices_retained": 0,
+    "influence_fallbacks": {
+      "Root": "Jaw_Top"
+    }
+  },
+  "ultimate_missile": {
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\particles\\jinx_skin65_r_mis_globefish_01_1.skn",
+    "sha256": "0e1e878a3fdd18783c21643bfee01c068169f494a932068adbae330675d8733e",
+    "vertices": 680,
+    "triangles": 1292,
+    "sources": {
+      "authored": {
+        "vertices": 680,
+        "triangles": 1292
+      }
+    },
+    "target_ocean_song_vertices_retained": 0,
+    "source_bounds": {
+      "min": [
+        -15.62398,
+        -14.38001,
+        -20.93078
+      ],
+      "max": [
+        15.62819,
+        17.9399,
+        23.25149
+      ]
+    }
+  },
+  "invariants": {
+    "ocean_song_champion_geometry_retained": false,
+    "ocean_song_chompers_geometry_retained": false,
+    "ocean_song_missile_geometry_retained": false,
+    "native_champion_skeleton_byte_identical": true,
+    "native_chompers_skeleton_byte_identical": true,
+    "joint_order_unchanged": true,
+    "new_skeleton_joints_added": 0,
+    "uint16_indices_valid": true
+  }
+}

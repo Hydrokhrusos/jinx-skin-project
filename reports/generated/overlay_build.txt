@@ -1,0 +1,5 @@
+﻿OVERLAY_ROOT=C:\Users\leope\Code\jinx-skin-project\build\validation\ltk_manager_profile\overlay
+WADS_BUILT=1
+BUILT_WAD=C:\Users\leope\Code\jinx-skin-project\build\validation\ltk_manager_profile\overlay\DATA\FINAL\Champions\Jinx.wad.client
+WADS_REUSED=0
+CHECKSUM_MISMATCHES=0

@@ -1,0 +1,684 @@
+{
+  "status": "PASSED",
+  "version": "1.0.6",
+  "skins": [
+    {
+      "skin": 65,
+      "source_sha256": "4492040614c763e2d3dd9ff5377250a571887aebf554849206f014b165238128",
+      "output_sha256": "36a9f7130b2788b8fd6e2ae57ffaa77dede622aafecac275ad6de59a9eb1f826",
+      "weapon_material": "0x86db6730",
+      "initially_hidden": "Recall Fishbones",
+      "material_submeshes": [
+        "PowPow",
+        "Fishbones"
+      ]
+    },
+    {
+      "skin": 66,
+      "source_sha256": "6b8e58b797b545c5f2e6d2e63aba3eded7b70a68564e117305cbe316c6cbf301",
+      "output_sha256": "4ae6e4cf1e4cb0ad7861df485d379acbbd16f1f951bc38973f5f3aa697c85400",
+      "weapon_material": "0x6c7042af",
+      "initially_hidden": "Recall Fishbones",
+      "material_submeshes": [
+        "PowPow",
+        "Fishbones"
+      ]
+    },
+    {
+      "skin": 67,
+      "source_sha256": "bf756f7efc23270c0fe30eaf3ea149118a2fb48cf7e92d998b0086eb9a26ab49",
+      "output_sha256": "fe43bfdd22f5f4d2b4ab137cdf3bdbe4a7520a02e91ca032340f6b615830ca4b",
+      "weapon_material": "0xc77f7202",
+      "initially_hidden": "Recall Fishbones",
+      "material_submeshes": [
+        "PowPow",
+        "Fishbones"
+      ]
+    },
+    {
+      "skin": 68,
+      "source_sha256": "ea9a517853f7315fa472600fc2bace673b3d57182b53f93ae2ba6289dd2f7a55",
+      "output_sha256": "2d5bbb1808fbe6b233676a10cf955775adedfd93286803d5dca27f967d9bf993",
+      "weapon_material": "0x7bde02e9",
+      "initially_hidden": "Recall Fishbones",
+      "material_submeshes": [
+        "PowPow",
+        "Fishbones"
+      ]
+    },
+    {
+      "skin": 69,
+      "source_sha256": "d2c6073e709eb84dee0b60543c564947a18718d6096ea20c53c967382a766137",
+      "output_sha256": "bc05a95caea68cd40c89638061039fa2734c095b0f628a8ec6bbf42b09618f21",
+      "weapon_material": "0x841b8034",
+      "initially_hidden": "Recall Fishbones",
+      "material_submeshes": [
+        "PowPow",
+        "Fishbones"
+      ]
+    },
+    {
+      "skin": 70,
+      "source_sha256": "c55d73d5d64f9ee1186fecdf28c6dbb9e6d79ec1487111b133b76c102ef7b440",
+      "output_sha256": "156da6e69bbd89545bdc3ede3d3df17f5d66183dc394fb7bb4218c8ea466282a",
+      "weapon_material": "0xca45a092",
+      "initially_hidden": "Recall Fishbones",
+      "material_submeshes": [
+        "PowPow",
+        "Fishbones"
+      ]
+    },
+    {
+      "skin": 71,
+      "source_sha256": "2a7118a2e8fad90b667fce5a8f3431ece86eb407e3092c56e92c70c536c06ff5",
+      "output_sha256": "1fcf5fb805528b13eb3fdf6004eeaad1326405f79040ffc568976eef03bc4163",
+      "weapon_material": "0xc9a5467f",
+      "initially_hidden": "Recall Fishbones",
+      "material_submeshes": [
+        "PowPow",
+        "Fishbones"
+      ]
+    },
+    {
+      "skin": 72,
+      "source_sha256": "32b7b0d0d6fba1bf9cf3effc1a86ddd0b73e82a50d711c5ea35fe6421d5b88e0",
+      "output_sha256": "16bb845ee9983785009eef6eab477c42953e4492718c2c85006b1d1f02b158b0",
+      "weapon_material": "0x8411a5c0",
+      "initially_hidden": "Recall Fishbones",
+      "material_submeshes": [
+        "PowPow",
+        "Fishbones"
+      ]
+    },
+    {
+      "skin": 73,
+      "source_sha256": "9ca8a8e3857fe408a9cbeaa0d4cd4e26aa5c3845ca0bad8b0e65215dc8f2cf68",
+      "output_sha256": "7842364d2aaac97f553c45c65f3eb646f79ef3944b5826b8229d787cf6933359",
+      "weapon_material": "0x07ecd3b5",
+      "initially_hidden": "Recall Fishbones",
+      "material_submeshes": [
+        "PowPow",
+        "Fishbones"
+      ]
+    }
+  ],
+  "graph": {
+    "source_sha256": "3adf112da900baf1d71d3c114dd15b0aa48b340f1f959d82a6f1054b36d17949",
+    "output_sha256": "e88577f81d25a660bf19cf4d3d1d6b0420c727f318677601db2403346d7cddea",
+    "source": "Riot persistent Minigun and Rlauncher animation families",
+    "selection": "the game-selected Riot animation family is the persistent weapon-state signal",
+    "transitions": [
+      {
+        "clip_key": "0xadc1b4e7",
+        "clip": "minigun_spell1_weapon_gunonly.anm",
+        "show": [
+          "Fishbones"
+        ]
+      },
+      {
+        "clip_key": "0x0fd7fa17",
+        "clip": "launcher_spell1_weapon.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      }
+    ],
+    "families": [
+      {
+        "family": "minigun",
+        "clip_key": "0xbd28bd4d",
+        "clip": "jinx_minigun_death.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0x6c2b2ee6",
+        "clip": "jinx_minigun_idle1.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0xdfe2e631",
+        "clip": "jinx_minigun_idle2.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0x76bbc6a0",
+        "clip": "jinx_minigun_idle3.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0xf112f5b2",
+        "clip": "jinx_minigun_run.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x34673efd",
+        "clip": "jinx_rlauncher_run.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0xf760e2a4",
+        "clip": "jinx_minigun_spell3_run.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0xb7f64047",
+        "clip": "jinx_minigun_spell4.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0x56b1e924",
+        "clip": "jinx_minigun_attack1.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0x59b1eddd",
+        "clip": "jinx_minigun_attack5.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0xa6f38079",
+        "clip": "jinx_rlauncher_idle1.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x21237563",
+        "clip": "jinx_rlauncher_idle2.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0xcceaa86e",
+        "clip": "jinx_rlauncher_idle3.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0xa7d08706",
+        "clip": "jinx_rlauncher_run2.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x66a26e91",
+        "clip": "jinx_rlauncher_attack1.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x63a269d8",
+        "clip": "jinx_rlauncher_attack2.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x01e9bb4c",
+        "clip": "jinx_rlauncher_death.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0xbdaf4563",
+        "clip": "jinx_minigun_run_in.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0xea5ada43",
+        "clip": "jinx_minigun_idlein1.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x05808276",
+        "clip": "jinx_rlauncher_idlein1.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0xc6d33584",
+        "clip": "jinx_rlauncher_spell4.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x5cfd20f5",
+        "clip": "jinx_rlauncher_spell3.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0xf8a62a4b",
+        "clip": "jinx_rlauncher_spell3.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0x58b1ec4a",
+        "clip": "jinx_minigun_attack3.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0x53b1e46b",
+        "clip": "jinx_minigun_attack4.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0x52b1e2d8",
+        "clip": "jinx_minigun_attack2.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0x55b1e791",
+        "clip": "jinx_minigun_attack6.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0xd003b624",
+        "clip": "jinx_rlauncher_run_in.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0xb849f242",
+        "clip": "jinx_emote_enter_minigun.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x5dadf217",
+        "clip": "jinx_emote_enter_rocket.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0x390c6e04",
+        "clip": "jinx_emote_exit_minigun.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x0320b469",
+        "clip": "jinx_emote_exit_rocket.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0xeb5adbd6",
+        "clip": "jinx_minigun_idlein2.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0xa6f67bd9",
+        "clip": "jinx_minigun_run2.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0xc5d333f1",
+        "clip": "jinx_rlauncher_spell3.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0xb4f63b8e",
+        "clip": "jinx_minigun_spell3.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "minigun",
+        "clip_key": "0x26aab29a",
+        "clip": "jinx_minigun_runhaste.anm",
+        "show": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ],
+        "hide": [
+          "Fishbones"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x5a527c0b",
+        "clip": "jinx_rlauncher_runhaste.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x7715e3e6",
+        "clip": "jinx_rlauncher_drecall.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0xfb7159de",
+        "clip": "jinx_rlauncher_drecall_in.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x9028089f",
+        "clip": "jinx_rlauncher_drecall_out.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      },
+      {
+        "family": "rlauncher",
+        "clip_key": "0x36bb1bc8",
+        "clip": "jinx_rlauncher_death.anm",
+        "show": [
+          "Fishbones"
+        ],
+        "hide": [
+          "PowPow",
+          "WeaponVFX",
+          "Weapon03"
+        ]
+      }
+    ],
+    "family_counts": {
+      "minigun": 21,
+      "rlauncher": 21
+    },
+    "state_events": 42,
+    "handoff_events": 2,
+    "buffbone_state_events": 0
+  }
+}

@@ -1,0 +1,5 @@
+﻿OVERLAY_ROOT=C:\Users\leope\Code\jinx-skin-project\.worktrees\abyssal-siren-jinx-v1.0.0\build\abyssal\validation\profile\overlay
+WADS_BUILT=1
+BUILT_WAD=C:\Users\leope\Code\jinx-skin-project\.worktrees\abyssal-siren-jinx-v1.0.0\build\abyssal\validation\profile\overlay\DATA\FINAL\Champions\Jinx.wad.client
+WADS_REUSED=0
+CHECKSUM_MISMATCHES=0

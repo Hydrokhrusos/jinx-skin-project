@@ -1,0 +1,7 @@
+OVERLAY_ROOT=C:\Users\leope\Code\jinx-skin-project\.worktrees\abyssal-siren-jinx-v1.0.0\build\abyssal\validation\encore-profile\overlay
+WADS_BUILT=3
+BUILT_WAD=C:\Users\leope\Code\jinx-skin-project\.worktrees\abyssal-siren-jinx-v1.0.0\build\abyssal\validation\encore-profile\overlay\DATA\FINAL\Champions\Jinx.wad.client
+BUILT_WAD=C:\Users\leope\Code\jinx-skin-project\.worktrees\abyssal-siren-jinx-v1.0.0\build\abyssal\validation\encore-profile\overlay\DATA\FINAL\Maps\Shipping\Map11.wad.client
+BUILT_WAD=C:\Users\leope\Code\jinx-skin-project\.worktrees\abyssal-siren-jinx-v1.0.0\build\abyssal\validation\encore-profile\overlay\DATA\FINAL\Maps\Shipping\Map12.wad.client
+WADS_REUSED=0
+CHECKSUM_MISMATCHES=0

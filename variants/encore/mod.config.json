@@ -1,0 +1,16 @@
+{
+  "name": "abyssal-siren-jinx-encore",
+  "display_name": "Abyssal Siren Jinx - Encore Animation Edition",
+  "version": "1.0.3",
+  "description": "Abyssal Siren Jinx with the complete model, SFX, and VFX replacement plus a rewritten full Ocean Song animation library.",
+  "authors": [
+    "leope"
+  ],
+  "layers": [
+    {
+      "name": "base",
+      "priority": 0,
+      "description": "Complete Ocean Song Jinx replacement including all Jinx and Chomper animations"
+    }
+  ]
+}

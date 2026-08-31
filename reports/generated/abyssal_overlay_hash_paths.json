@@ -1,0 +1,33 @@
+{
+  "status": "PASSED",
+  "algorithm": "xxh64 lowercase normalized WAD path",
+  "requested_paths": 364,
+  "already_resolved_paths": 360,
+  "hash_extracted_paths": 4,
+  "files": [
+    {
+      "path": "assets/characters/jinx/skins/skin65/jinx_skin65_seawitch_armor_tx_cm.tex",
+      "wad_hash": "2489c105d2f3a54e",
+      "bytes": 699076,
+      "sha256": "f9bf9666915fe0b48d6c18199a3d35c8e0d9a3caac1de125a5fad1d6ba32263c"
+    },
+    {
+      "path": "assets/characters/jinx/skins/skin65/jinx_skin65_seawitch_body_tx_cm.tex",
+      "wad_hash": "64f95bcb8dd8c990",
+      "bytes": 699076,
+      "sha256": "3ffc090e16f913cef381297ae87961731e58196c26a03d8d2d795bb4d77ef91f"
+    },
+    {
+      "path": "assets/characters/jinx/skins/skin65/jinx_skin65_seawitch_recall_tx_cm.tex",
+      "wad_hash": "1fc0564f1f8fb66f",
+      "bytes": 174788,
+      "sha256": "783dda64fe7e3e2161c89856aa25a1e83e28653c95bb68cb8ebfae4834108ea8"
+    },
+    {
+      "path": "assets/characters/jinx/skins/skin65/jinx_skin65_seawitch_weapon_tx_cm.tex",
+      "wad_hash": "595c3a5442cd34ca",
+      "bytes": 349564,
+      "sha256": "2de1fb34c74be3671e6ce9be8b51a339bd9fe93a42120500e22b2c5b6f8bb2bf"
+    }
+  ]
+}

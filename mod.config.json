@@ -1,0 +1,16 @@
+{
+  "name": "abyssal-siren-jinx",
+  "display_name": "Abyssal Siren Jinx",
+  "version": "3.0.0",
+  "description": "A cute-horror sea-witch model, texture, VFX, and SFX replacement for Ocean Song Jinx.",
+  "authors": [
+    "leope"
+  ],
+  "layers": [
+    {
+      "name": "base",
+      "priority": 0,
+      "description": "Ocean Song skin-65 hybrid model, opaque textures, VFX, Chompers, missile, and SFX replacements; stock animations and voice-over retained"
+    }
+  ]
+}

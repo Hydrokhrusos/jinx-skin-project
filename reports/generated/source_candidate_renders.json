@@ -1,0 +1,432 @@
+{
+  "status": "PASSED",
+  "candidates": [
+    {
+      "skin": "13",
+      "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\jinx_donors\\assets\\characters\\jinx\\skins\\skin13\\jinx_skin13.skn",
+      "vertices": 13031,
+      "triangles": 19352,
+      "submeshes": [
+        "Jinx_Odyssey_MAT",
+        "Recall"
+      ],
+      "hidden_materials": [
+        "recall"
+      ],
+      "texture_sources": [
+        "jinx_skin13_tx_cm.tex"
+      ],
+      "bounds": {
+        "min": [
+          -0.49352478981018066,
+          -0.7636749744415283,
+          -0.001583700068295002
+        ],
+        "max": [
+          0.493709921836853,
+          1.170875906944275,
+          2.3344228267669678
+        ]
+      },
+      "renders": [
+        {
+          "view": "front",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin13_front.png",
+          "sha256": "8782e490129f99147a6f1fd1d9286c784269945ab6562f4664b62b74bee46ba1"
+        },
+        {
+          "view": "side",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin13_side.png",
+          "sha256": "a9af6d0adad0afafddeef5f31d256e75b6cbc80fb78d5b79b4a0f92741807be8"
+        },
+        {
+          "view": "back",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin13_back.png",
+          "sha256": "05946f5213dd621f13b943cdf1910196402106c4e2f3efd87948d21d5031448d"
+        }
+      ]
+    },
+    {
+      "skin": "20",
+      "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\jinx_donors\\assets\\characters\\jinx\\skins\\skin20\\jinx_skin20.skn",
+      "vertices": 11043,
+      "triangles": 17466,
+      "submeshes": [
+        "Skin20_Main",
+        "Hair",
+        "Skin20_Gun",
+        "Drone_MAT"
+      ],
+      "hidden_materials": [],
+      "texture_sources": [
+        "jinx_skin20_hair_tx_cm.tex",
+        "jinx_skin20_recall_tx_cm.tex",
+        "jinx_skin20_trail_mult.tex",
+        "jinx_skin20_tx_cm.tex"
+      ],
+      "bounds": {
+        "min": [
+          -0.49076026678085327,
+          -0.7306568622589111,
+          -0.16490820050239563
+        ],
+        "max": [
+          0.4886797070503235,
+          1.139125943183899,
+          2.258957862854004
+        ]
+      },
+      "renders": [
+        {
+          "view": "front",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin20_front.png",
+          "sha256": "855c749dacb0230696b8a4bc0fb59e97f0eb55e5e1a3b3f7878eb05505825b5b"
+        },
+        {
+          "view": "side",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin20_side.png",
+          "sha256": "53eb792f4a9dbdd31f93c1b913dcd63dbbc1b8ef45af4869580f45d3af3bf1ed"
+        },
+        {
+          "view": "back",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin20_back.png",
+          "sha256": "34c957fab80e47e00923edf5352a82666f456edbf01b20c1aba095c40fee2f61"
+        }
+      ]
+    },
+    {
+      "skin": "37",
+      "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\jinx_donors\\assets\\characters\\jinx\\skins\\skin37\\jinx_skin37.skn",
+      "vertices": 7962,
+      "triangles": 11416,
+      "submeshes": [
+        "Body",
+        "Photo"
+      ],
+      "hidden_materials": [
+        "photo"
+      ],
+      "texture_sources": [
+        "jinx_skin37_e_tar_rootcylinder.tex",
+        "jinx_skin37_recall_tx_cm.tex",
+        "jinx_skin37_tx_cm.tex"
+      ],
+      "bounds": {
+        "min": [
+          -0.5521081686019897,
+          -0.716797947883606,
+          0.007159671280533075
+        ],
+        "max": [
+          0.4942066967487335,
+          1.107100009918213,
+          2.287539005279541
+        ]
+      },
+      "renders": [
+        {
+          "view": "front",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin37_front.png",
+          "sha256": "b84ae2fcf1140edb8d8bdc6d4aa3bff23e72c7d7c5d6a204f939ab07962291b8"
+        },
+        {
+          "view": "side",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin37_side.png",
+          "sha256": "2e3454506f8151d6cd7673ce1f664b7c97260dd94ccf01581b60fa046aed7cab"
+        },
+        {
+          "view": "back",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin37_back.png",
+          "sha256": "9721d478c4122cdbe3e11104624882020160be673c8589607d68ba3f2168301d"
+        }
+      ]
+    },
+    {
+      "skin": "38",
+      "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\jinx_donors\\assets\\characters\\jinx\\skins\\skin38\\jinx_skin38.skn",
+      "vertices": 11638,
+      "triangles": 17216,
+      "submeshes": [
+        "Body_MAT",
+        "Weapon",
+        "JellySpikes",
+        "JellyBase",
+        "JellyHead"
+      ],
+      "hidden_materials": [
+        "jellybase",
+        "jellyhead",
+        "jellyspikes"
+      ],
+      "texture_sources": [
+        "jinx_skin38_main_tx_cm.tex",
+        "jinx_skin38_main_tx_cm_mask.tex",
+        "jinx_skin38_props_tx_cm.tex",
+        "jinx_skin38_recall_tx_cm.tex",
+        "jinx_skin38_tx_iridescent.tex",
+        "jinx_skin38_weapon_tx_cm.tex"
+      ],
+      "bounds": {
+        "min": [
+          -0.5055829882621765,
+          -0.6427156329154968,
+          0.0015315120108425617
+        ],
+        "max": [
+          0.49007418751716614,
+          1.1494579315185547,
+          2.148049831390381
+        ]
+      },
+      "renders": [
+        {
+          "view": "front",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin38_front.png",
+          "sha256": "7cbe6ff66604c3beb0f4ffffeee06fe57b66c096c0c7fbab5cee5c2425db3722"
+        },
+        {
+          "view": "side",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin38_side.png",
+          "sha256": "359f0c9cf7885e7068739eee8fd92d0c23e06707badf0bde6d56c515fcfe845f"
+        },
+        {
+          "view": "back",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin38_back.png",
+          "sha256": "e3aa6e2e27e9998759e8d0bc4369cb16e5968d38cfac360c3bfc36fea0c30485"
+        }
+      ]
+    },
+    {
+      "skin": "40",
+      "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\jinx_donors\\assets\\characters\\jinx\\skins\\skin40\\jinx_skin40.skn",
+      "vertices": 14545,
+      "triangles": 20588,
+      "submeshes": [
+        "Weapon",
+        "Body",
+        "JellySpikes",
+        "JellyBase",
+        "JellyHead"
+      ],
+      "hidden_materials": [
+        "jellybase",
+        "jellyhead",
+        "jellyspikes"
+      ],
+      "texture_sources": [
+        "jinx_skin40_recall_tx.tex",
+        "jinx_skin40_tx_cm.tex",
+        "jinx_skin40_tx_cm_mask.tex",
+        "jinx_skin40_weapon_tx_cm.tex"
+      ],
+      "bounds": {
+        "min": [
+          -0.589186429977417,
+          -0.7608672380447388,
+          0.0015314999036490917
+        ],
+        "max": [
+          0.5445222854614258,
+          1.0516940355300903,
+          2.1968131065368652
+        ]
+      },
+      "renders": [
+        {
+          "view": "front",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin40_front.png",
+          "sha256": "e6cf509481d18caa90f21ea4d1aef9762bb38401e791d4bfecc2a1ffa8dc0509"
+        },
+        {
+          "view": "side",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin40_side.png",
+          "sha256": "6974e1070e20108776870b92685363105039318ee0d66f0cb73143fba815a1c9"
+        },
+        {
+          "view": "back",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin40_back.png",
+          "sha256": "08360958f1bc4572d9a457a98be8ffd4207c7a657afd2120689370986d193ef0"
+        }
+      ]
+    },
+    {
+      "skin": "51",
+      "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\jinx_donors\\assets\\characters\\jinx\\skins\\skin51\\jinx_skin51.skn",
+      "vertices": 19137,
+      "triangles": 28176,
+      "submeshes": [
+        "Body",
+        "Weapon",
+        "Emote",
+        "Recall"
+      ],
+      "hidden_materials": [
+        "emote",
+        "recall"
+      ],
+      "texture_sources": [
+        "jinx_skin51_emote_tx_cm.tex",
+        "jinx_skin51_main_tx_cm.tex",
+        "jinx_skin51_recall_tx_cm.tex",
+        "jinx_skin51_weapon_tx_cm.tex"
+      ],
+      "bounds": {
+        "min": [
+          -0.6203445196151733,
+          -0.7359445095062256,
+          0.0
+        ],
+        "max": [
+          0.5322853326797485,
+          1.0125619173049927,
+          2.276139974594116
+        ]
+      },
+      "renders": [
+        {
+          "view": "front",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin51_front.png",
+          "sha256": "cc36b93544a1726125d07f1e87815ba7f18ce3143b9f59930bfa8855bf621365"
+        },
+        {
+          "view": "side",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin51_side.png",
+          "sha256": "da8e27e9c12c00092a057585f2547b45dda17920967b3e8897d9e842bd88a914"
+        },
+        {
+          "view": "back",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin51_back.png",
+          "sha256": "c3750a0b8a5dd371300e66ef6be5f0d2e085046993f181880c9bf5967d7e4be1"
+        }
+      ]
+    },
+    {
+      "skin": "60",
+      "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\jinx_donors\\assets\\characters\\jinx\\skins\\skin60\\jinx_skin60.skn",
+      "vertices": 40470,
+      "triangles": 60450,
+      "submeshes": [
+        "ShimmerBody",
+        "ShimmerHair",
+        "PowderBody",
+        "Body",
+        "Hair",
+        "Torch",
+        "Helmet",
+        "SlotMachine",
+        "Flag",
+        "Zapper_Mesh",
+        "Weapon",
+        "Hood",
+        "Hood_Hair"
+      ],
+      "hidden_materials": [
+        "flag",
+        "slotmachine",
+        "torch"
+      ],
+      "texture_sources": [
+        "jinx_skin60_body02_tx_cm.tex",
+        "jinx_skin60_color_mask_tx_cm.tex",
+        "jinx_skin60_hoodneon_tx_cm.tex",
+        "jinx_skin60_hood_tx_cm.tex",
+        "jinx_skin60_powderbody_02_tx_cm.tex",
+        "jinx_skin60_powder_weapon_gradient_tx_cm.tex",
+        "jinx_skin60_powder_weapon_mask_tx_cm.tex",
+        "jinx_skin60_props_tx_cm.tex",
+        "jinx_skin60_shimmerbody_tx_cm.tex",
+        "jinx_skin60_weaponhoz_bw_engine_tx_cm.tex",
+        "jinx_skin60_weaponhoz_color_mask_tx_cm.tex",
+        "jinx_skin60_weaponpowder_bw_engine_tx_cm.tex",
+        "jinx_skin60_weaponpowder_color_mask_tx_cm.tex",
+        "jinx_skin60_weaponshimmer_color_mask_tx_cm.tex",
+        "jinx_skin60_weapon_bw_engine_tx_cm.tex"
+      ],
+      "bounds": {
+        "min": [
+          -0.8733837008476257,
+          -0.9881533980369568,
+          -0.1514137089252472
+        ],
+        "max": [
+          0.5055612921714783,
+          1.5176080465316772,
+          2.104804039001465
+        ]
+      },
+      "renders": [
+        {
+          "view": "front",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin60_front.png",
+          "sha256": "ee31eaa2e392c8b10c6fbc678d7db799b1326a2b0e4ab160b688c30f22a2abae"
+        },
+        {
+          "view": "side",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin60_side.png",
+          "sha256": "ef8485a077326dbcccda6289d11ad2bc9b955c01737dcda859ba15a59a82f2ff"
+        },
+        {
+          "view": "back",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin60_back.png",
+          "sha256": "504903d6dce9b45b6870f02b9e58ca19c471543384ce18e5dcbda2b883213554"
+        }
+      ]
+    },
+    {
+      "skin": "62",
+      "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\jinx_donors\\assets\\characters\\jinx\\skins\\skin62\\jinx_skin62.skn",
+      "vertices": 30374,
+      "triangles": 37514,
+      "submeshes": [
+        "Body",
+        "Crown",
+        "MIniGunVFX01",
+        "MIniGunVFX02",
+        "RocketVFX03",
+        "RocketVFX01",
+        "RocketVFX02",
+        "Weapon",
+        "Babywolf"
+      ],
+      "hidden_materials": [
+        "babywolf"
+      ],
+      "texture_sources": [
+        "jinx_skin62_mask_tx_cm.tex",
+        "jinx_skin62_mask_weapon_tx_cm.tex",
+        "jinx_skin62_recall_tx_cm.tex",
+        "jinx_skin62_tx_cm.tex",
+        "jinx_skin62_weapon_tx_cm.tex"
+      ],
+      "bounds": {
+        "min": [
+          -0.5718315243721008,
+          -0.7896077036857605,
+          0.001844787853769958
+        ],
+        "max": [
+          0.5163781046867371,
+          1.0882089138031006,
+          2.339930772781372
+        ]
+      },
+      "renders": [
+        {
+          "view": "front",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin62_front.png",
+          "sha256": "41ecfbf1cfa0c78efae52e10cfb9b5aa9d5c2877cd5f1c15ec0e34cf16c7136d"
+        },
+        {
+          "view": "side",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin62_side.png",
+          "sha256": "61045d7fcc6297304af832e6ed20d7542654a49e25c1a99222c6038a7ef6f171"
+        },
+        {
+          "view": "back",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\candidate_renders\\skin62_back.png",
+          "sha256": "c9de68a32d553ff423a5d65a11302c5ef915e17c325b49c01aa3008966e8a94d"
+        }
+      ]
+    }
+  ]
+}

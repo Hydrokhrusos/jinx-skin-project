@@ -1,0 +1,37 @@
+﻿{
+    "status":  "PASSED",
+    "project_version":  "1.0.6",
+    "target_game_build":  "16.17",
+    "generated_at_utc":  "2026-08-29T21:54:30.3524768Z",
+    "tools":  {
+                  "blender":  {
+                                  "version":  "4.5.13 LTS",
+                                  "sha256":  "339c3879999f619ffeb3ff4b53966853153e2e2547d79048ed2886f1826d1306"
+                              },
+                  "aventurine":  {
+                                     "version":  "3.1.5"
+                                 },
+                  "ritobin":  {
+                                  "version":  "2025-10-05",
+                                  "sha256":  "2bae9097f58b75e905d3fa24615de732037d61016eb19f73faf0093bfad5f3fd"
+                              },
+                  "league_mod":  {
+                                     "version":  "0.2.1 CLI with ltk_modpkg 0.9.1",
+                                     "source_commit":  "e1e37b3531d425e0bbd1e7807c6565899403683f",
+                                     "sha256":  "0f2e43b431ff139c50c6ac3715c43912c5804098228d66995651edeb970e1704"
+                                 },
+                  "ltk_overlay_builder":  {
+                                              "version":  "0.9.1",
+                                              "manager_reference_commit":  "1abdf5c7f4ef96daad5544047bc8f6af5b1417ca",
+                                              "sha256":  "a9b933a17f5b58d07ad4da6e5e741e023d74223212d907bee891adbe84ca98fa"
+                                          }
+              },
+    "source":  {
+                   "ocean_song_skn_sha256":  "4f47a45fd063349d2e9625115615f133647f3265d7eb0823bdd5ecd15fe430ab",
+                   "ocean_song_skl_sha256":  "5a370b9f548030d136b44ba79bec145a21aed2afc0c1f13c216f6adc6f6376f2"
+               },
+    "package":  {
+                    "path":  "C:\\Users\\leope\\Code\\jinx-skin-project\\dist\\ocean-song-jinx-weapon-upscale_1.0.6.modpkg",
+                    "sha256":  "69af845a5db7edfc340b7bbc54689ce982908a8f3db6fd3f9e810ef834c0673e"
+                }
+}

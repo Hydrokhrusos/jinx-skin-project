@@ -1,0 +1,6 @@
+# Authoring artifacts must never enter the package.
+*.blend
+*.blend1
+*.py
+*.json
+*.txt

@@ -1,0 +1,175 @@
+{
+  "status": "PASSED",
+  "target_skin": 65,
+  "theme": "cute sea-horror dark sea witch",
+  "champion_materials": {
+    "strategy": "standard_opaque_skinmesh_texture_routes",
+    "submeshes": [
+      "WitchBody",
+      "CoralArmor",
+      "PowPow",
+      "Fishbones",
+      "Zapper",
+      "Recall"
+    ],
+    "texture_routes": {
+      "WitchBody": "ASSETS/Characters/Jinx/Skins/Skin65/Jinx_Skin65_SeaWitch_Body_TX_CM.tex",
+      "CoralArmor": "ASSETS/Characters/Jinx/Skins/Skin65/Jinx_Skin65_SeaWitch_Armor_TX_CM.tex",
+      "PowPow": "ASSETS/Characters/Jinx/Skins/Skin65/Jinx_Skin65_SeaWitch_Weapon_TX_CM.tex",
+      "Fishbones": "ASSETS/Characters/Jinx/Skins/Skin65/Jinx_Skin65_SeaWitch_Weapon_TX_CM.tex",
+      "Zapper": "ASSETS/Characters/Jinx/Skins/Skin65/Jinx_Skin65_SeaWitch_Weapon_TX_CM.tex",
+      "Recall": "ASSETS/Characters/Jinx/Skins/Skin65/Jinx_Skin65_SeaWitch_Recall_TX_CM.tex"
+    },
+    "material_links": 0,
+    "self_illumination": 0.18,
+    "brush_alpha_override": 1.0,
+    "recall_hidden_by_default": true,
+    "ocean_song_holographic_materials_referenced": false,
+    "ocean_song_scrolling_alpha_materials_referenced": false
+  },
+  "jinxmine_materials": {
+    "strategy": "standard_opaque_skinmesh_texture_route",
+    "submeshes": [
+      "ShellFamiliars"
+    ],
+    "texture": "ASSETS/Characters/JinxMine/Skins/Skin65/JinxMine_Skin65_TX_CM.tex",
+    "material_links": 0,
+    "self_illumination": 0.25,
+    "brush_alpha_override": 1.0,
+    "required_model_contract": {
+      "ocean_song_vertices_retained": 0
+    }
+  },
+  "vfx": {
+    "system_count": 117,
+    "systems_changed": 101,
+    "forwarding_wrapper_count": 16,
+    "all_renderable_systems_changed": true,
+    "corpora": [
+      {
+        "name": "skin65",
+        "system_count": 12,
+        "renderable_systems_changed": 12,
+        "bin_systems_changed": 12,
+        "dependency_only_systems_changed": 0,
+        "forwarding_wrappers_audited": []
+      },
+      {
+        "name": "multi_skin65",
+        "system_count": 105,
+        "renderable_systems_changed": 89,
+        "bin_systems_changed": 68,
+        "dependency_only_systems_changed": 21,
+        "forwarding_wrappers_audited": [
+          "Jinx_Skin65_E_Fire",
+          "Jinx_Skin65_Recall_LaunchStart08",
+          "Jinx_Skin65_Recall_LaunchStart07",
+          "Jinx_Skin65_E_Mine_Idle_Green",
+          "Jinx_Skin65_Recall_LaunchWater02Child01",
+          "Jinx_Skin65_Recall_LaunchFish03",
+          "Jinx_Skin65_Recall_LaunchFish05",
+          "Jinx_Skin65_Dance_BeamLoop",
+          "Jinx_Skin65_E_MineReady",
+          "Jinx_Skin65_W_CasSplash",
+          "Jinx_Skin65_Recall_LaunchWater03",
+          "Jinx_Skin65_Recall_LaunchWater02",
+          "Jinx_Skin65_Dance_BeamStart",
+          "Jinx_Skin65_Recall_Launch",
+          "Jinx_Skin65_E_Mine_Idle_Red",
+          "Jinx_Skin65_E_MineTrigger"
+        ]
+      }
+    ],
+    "jinx_value_color_blocks": 197,
+    "jinx_value_color_blocks_changed": 197,
+    "jinx_color_vectors_changed": 629,
+    "linked_value_color_blocks": 833,
+    "linked_value_color_blocks_changed": 832,
+    "linked_color_vectors_changed": 2348,
+    "chomper_value_color_blocks": 0,
+    "chomper_value_color_blocks_changed": 0,
+    "chomper_color_vectors_changed": 0,
+    "palette": "black-violet, coral, seafoam",
+    "palette_intent": {
+      "black_violet": "shadow mass and witchcraft depth",
+      "coral": "cute sea-creature accent and impact punctuation",
+      "seafoam": "bioluminescent spell energy and readability"
+    },
+    "palette_distribution": {
+      "classified_nonblack_vectors": 2977,
+      "nearest_accent_counts": {
+        "coral": 128,
+        "seafoam": 513,
+        "black_violet": 2336
+      },
+      "nearest_accent_fractions": {
+        "coral": 0.043,
+        "seafoam": 0.1723,
+        "black_violet": 0.7847
+      },
+      "all_three_accents_represented": true
+    },
+    "dependency_transform": {
+      "skin65": {
+        "strategy": "in_place_jinx_and_isolated_shared",
+        "reference_occurrences": 237,
+        "unique_source_dependencies": 104,
+        "unique_output_dependencies": 104,
+        "new_wad_entries": 7
+      },
+      "multi_skin65": {
+        "strategy": "in_place_jinx_and_isolated_shared",
+        "reference_occurrences": 980,
+        "unique_source_dependencies": 307,
+        "unique_output_dependencies": 307,
+        "new_wad_entries": 12
+      },
+      "mapping_entries": 360
+    },
+    "chomper_material_overrides": {
+      "self_illumination": 0.25,
+      "brush_alpha": 1.0,
+      "opaque_default_skinmesh_shader": true,
+      "submesh": "ShellFamiliars",
+      "texture": "ASSETS/Characters/JinxMine/Skins/Skin65/JinxMine_Skin65_TX_CM.tex"
+    },
+    "chomper_resolver": {
+      "owner": "Jinx Skin65 ResourceResolver with definitions in linked multi-skin BIN",
+      "required_route_count": 10,
+      "routes": {
+        "Jinx_E_Fire": "0x16c49de3",
+        "Jinx_E_Fire_Tar": "0xf9c1af4a",
+        "Jinx_E_Mine_Debuff": "0x1d704d4a",
+        "Jinx_E_Mine_Explosion": "0xc4b19dc3",
+        "Jinx_E_Mine_Idle_Green": "0x3d783153",
+        "Jinx_E_Mine_Idle_Red": "0xd73b2e57",
+        "Jinx_E_Mine_Ready": "0xb50a457b",
+        "Jinx_E_Mine_Ready_Green": "0xec17545a",
+        "Jinx_E_Mine_Ready_Red": "0x82b414ea",
+        "Jinx_E_Mine_Set": "0x1db613c4"
+      },
+      "all_routes_resolve_to_vfx_definitions": true,
+      "jinxmine_skin_bin_embedded_vfx_systems": 0
+    }
+  },
+  "sfx": {
+    "status": "OMITTED",
+    "reason": "visual_only_release",
+    "stock_ocean_song_audio_retained": true
+  },
+  "animations": {
+    "status": "OMITTED",
+    "reason": "visual_only_release",
+    "stock_ocean_song_animation_graph_retained": true
+  },
+  "source_hashes": {
+    "jinx": "4492040614c763e2d3dd9ff5377250a571887aebf554849206f014b165238128",
+    "jinxmine": "f86d4b9a8277fa883f15117ce6ba6cf2129ead8b67193eea6ba4896f86112ea5",
+    "multi_skin65": "63d790232800afcd5466490c046240e659fab64b95f64e8be5425a2233f2dc94"
+  },
+  "output_hashes": {
+    "jinx": "ffafeb77efd214c41423afbc5e011877316502161af5f0b20941c70cabc02210",
+    "jinxmine": "7205815f4e14855aef7e6b7ae9836ef670bdb0f832036611862525833b08454e",
+    "multi_skin65": "b15228ee7a2964ee06baad029df3f587f739995321a32f238436379baf552fee"
+  }
+}

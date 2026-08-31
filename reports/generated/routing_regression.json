@@ -1,0 +1,18 @@
+{
+  "status": "FIXED",
+  "root_cause": "The withdrawn 1.0.0 archive was written by a legacy ltk_modpkg implementation that did not populate the current WAD index.",
+  "withdrawn_package": {
+    "version": "1.0.0",
+    "sha256": "65b52b759e62b3cab16b7393d9b2e3171ff176a38ee2f19da882f658176928b6",
+    "current_modpkg_content_result": "ROUTED_WADS=",
+    "usable": false
+  },
+  "replacement_package": {
+    "version": "1.0.1",
+    "sha256": "43013f819d7aa91f42b5a70f8de5d8a3ea1357b6583cde8c12ac0547945e111b",
+    "current_modpkg_content_result": "ROUTED_WADS=jinx.wad.client",
+    "override_count": 11,
+    "full_overlay_wad_build": "PASSED",
+    "usable": true
+  }
+}

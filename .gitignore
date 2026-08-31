@@ -1,0 +1,6 @@
+/dist
+/.tools/
+/build/abyssal/
+/build/validation/
+/variants/*/content/
+**/__pycache__/

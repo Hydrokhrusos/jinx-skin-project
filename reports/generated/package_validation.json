@@ -1,0 +1,73 @@
+{
+  "status": "PASSED",
+  "name": "ocean-song-jinx-weapon-upscale",
+  "version": "1.0.6",
+  "package": {
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\dist\\ocean-song-jinx-weapon-upscale_1.0.6.modpkg",
+    "size": 1049802,
+    "sha256": "69af845a5db7edfc340b7bbc54689ce982908a8f3db6fd3f9e810ef834c0673e"
+  },
+  "layer": "base",
+  "file_count": 11,
+  "auxiliary_files": {
+    "readme.md": {
+      "size": 2169,
+      "sha256": "0b0f387e474a707fb08a8fc67926f991939a769923d5a00cd1275263da41dc30"
+    }
+  },
+  "files": {
+    "base/jinx.wad.client/assets/characters/jinx/skins/skin65/jinx_skin65.skn": {
+      "size": 1536192,
+      "sha256": "8d9469e9901bb712eda90ea51465f14bf3b3d1196735b8a29e2f3851493e276b"
+    },
+    "base/jinx.wad.client/data/characters/jinx/animations/skin65.bin": {
+      "size": 35408,
+      "sha256": "72d0647f2786480982bb1311518628bc825f968cf8e782b11a543eab0d9e9f46"
+    },
+    "base/jinx.wad.client/data/characters/jinx/skins/skin65.bin": {
+      "size": 128402,
+      "sha256": "91de42796587be1421fa9c8b073e5f23c08be5761e08b809c1df47a12d226a4a"
+    },
+    "base/jinx.wad.client/data/characters/jinx/skins/skin66.bin": {
+      "size": 128560,
+      "sha256": "fa783a32f2c96ecd9b1e5b5569e6d1595b6bfd37d8bde41d2d3a02c0b5b86269"
+    },
+    "base/jinx.wad.client/data/characters/jinx/skins/skin67.bin": {
+      "size": 128508,
+      "sha256": "24573e7bdd9706df1037ba4e84bda8eb4f29708eb2c3dffe1c59a69687753108"
+    },
+    "base/jinx.wad.client/data/characters/jinx/skins/skin68.bin": {
+      "size": 128508,
+      "sha256": "988b925bf401fb5d28582926cbf4b74bc3e8377df5d1c37aafe2b1770f0a1214"
+    },
+    "base/jinx.wad.client/data/characters/jinx/skins/skin69.bin": {
+      "size": 128487,
+      "sha256": "bf7c82453d5e2af8d523e76923be0445a306e3da898bd17f7f1fa1cdf969b84a"
+    },
+    "base/jinx.wad.client/data/characters/jinx/skins/skin70.bin": {
+      "size": 128508,
+      "sha256": "8878e9a85b0be2d459fd7b59288cb0037f96b94a6c3b5be697e2511a28f8f9a3"
+    },
+    "base/jinx.wad.client/data/characters/jinx/skins/skin71.bin": {
+      "size": 128487,
+      "sha256": "f790ec661f51417a70d5192f335a8c58f2c619f5a223cf4db98a4c3cc33a2a01"
+    },
+    "base/jinx.wad.client/data/characters/jinx/skins/skin72.bin": {
+      "size": 128487,
+      "sha256": "4a3c693585e9fde7e881a6fd3228237e7285332b1faadf1cac5f66b7bc0f2606"
+    },
+    "base/jinx.wad.client/data/characters/jinx/skins/skin73.bin": {
+      "size": 128433,
+      "sha256": "16626b2e957b703d1a4d4b5c95e71d69f841f14feaca0af0b22cd141fe242eaf"
+    }
+  },
+  "checks": {
+    "league_mod_info": "PASSED",
+    "semantic_version": "PASSED",
+    "layer_metadata": "PASSED",
+    "extracted_file_allowlist": "PASSED",
+    "extracted_payload_checksums": "PASSED",
+    "ltk_modpkg_0_9_1_wad_index": "PASSED",
+    "ltk_modpkg_content_routing": "PASSED"
+  }
+}

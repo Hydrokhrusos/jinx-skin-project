@@ -1,0 +1,254 @@
+{
+  "status": "PASSED",
+  "version": "1.0.6",
+  "scale": 1.6,
+  "source": {
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\references\\game\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skn",
+    "sha256": "4f47a45fd063349d2e9625115615f133647f3265d7eb0823bdd5ecd15fe430ab",
+    "vertices": 25094,
+    "indices": 115290,
+    "submeshes": [
+      "Body",
+      "Hair",
+      "Skirt",
+      "Weapon",
+      "WeaponVFX",
+      "Weapon03",
+      "Recall"
+    ],
+    "submesh_layout": [
+      {
+        "name": "Body",
+        "vertex_start": 0,
+        "vertex_count": 8466,
+        "index_start": 0,
+        "index_count": 42189
+      },
+      {
+        "name": "Hair",
+        "vertex_start": 8466,
+        "vertex_count": 5491,
+        "index_start": 42189,
+        "index_count": 27309
+      },
+      {
+        "name": "Skirt",
+        "vertex_start": 13957,
+        "vertex_count": 2641,
+        "index_start": 69498,
+        "index_count": 13476
+      },
+      {
+        "name": "Weapon",
+        "vertex_start": 16598,
+        "vertex_count": 5294,
+        "index_start": 82974,
+        "index_count": 25566
+      },
+      {
+        "name": "WeaponVFX",
+        "vertex_start": 21892,
+        "vertex_count": 151,
+        "index_start": 108540,
+        "index_count": 660
+      },
+      {
+        "name": "Weapon03",
+        "vertex_start": 22043,
+        "vertex_count": 551,
+        "index_start": 109200,
+        "index_count": 2340
+      },
+      {
+        "name": "Recall",
+        "vertex_start": 22594,
+        "vertex_count": 2500,
+        "index_start": 111540,
+        "index_count": 3750
+      }
+    ]
+  },
+  "output": {
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\content\\base\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skn",
+    "sha256": "8d9469e9901bb712eda90ea51465f14bf3b3d1196735b8a29e2f3851493e276b",
+    "vertices": 25094,
+    "indices": 115290,
+    "submeshes": [
+      {
+        "name": "Body",
+        "vertex_start": 0,
+        "vertex_count": 8466,
+        "index_start": 0,
+        "index_count": 42189
+      },
+      {
+        "name": "Hair",
+        "vertex_start": 8466,
+        "vertex_count": 5491,
+        "index_start": 42189,
+        "index_count": 27309
+      },
+      {
+        "name": "Skirt",
+        "vertex_start": 13957,
+        "vertex_count": 2641,
+        "index_start": 69498,
+        "index_count": 13476
+      },
+      {
+        "name": "PowPow",
+        "vertex_start": 16598,
+        "vertex_count": 2602,
+        "index_start": 82974,
+        "index_count": 12168
+      },
+      {
+        "name": "Fishbones",
+        "vertex_start": 19200,
+        "vertex_count": 2692,
+        "index_start": 95142,
+        "index_count": 13398
+      },
+      {
+        "name": "WeaponVFX",
+        "vertex_start": 21892,
+        "vertex_count": 151,
+        "index_start": 108540,
+        "index_count": 660
+      },
+      {
+        "name": "Weapon03",
+        "vertex_start": 22043,
+        "vertex_count": 551,
+        "index_start": 109200,
+        "index_count": 2340
+      },
+      {
+        "name": "Recall",
+        "vertex_start": 22594,
+        "vertex_count": 2500,
+        "index_start": 111540,
+        "index_count": 3750
+      }
+    ]
+  },
+  "weapon_split": {
+    "triangle_counts": {
+      "PowPow": 4056,
+      "Fishbones": 4466
+    },
+    "mixed_weight_triangles": 0,
+    "ambiguous_triangles": 0
+  },
+  "powpow_linked_components": {
+    "Weapon03": {
+      "role": "chain",
+      "vertex_count": 551,
+      "vertices_weighted_to_minigun": 551,
+      "vertices_weighted_to_rocket_launcher": 0
+    },
+    "WeaponVFX": {
+      "role": "vfx",
+      "vertex_count": 151,
+      "vertices_weighted_to_minigun": 151,
+      "vertices_weighted_to_rocket_launcher": 0
+    }
+  },
+  "grip_anchors": {
+    "rocket_handle": [
+      -15.017001,
+      181.186996,
+      -10.160996
+    ],
+    "minigun_handle_back": [
+      31.460999,
+      120.618996,
+      -9.415991
+    ],
+    "minigun_handle_front": [
+      31.460997,
+      111.861008,
+      35.734989
+    ],
+    "minigun_handle_span": 45.992534,
+    "maximum_anchor_displacement": 0.0
+  },
+  "source_weapon_bounds": {
+    "PowPow": {
+      "min": [
+        18.45138,
+        73.412697,
+        -33.272003
+      ],
+      "max": [
+        44.726974,
+        135.224091,
+        78.158257
+      ],
+      "extent": [
+        26.275595,
+        61.811394,
+        111.43026
+      ]
+    },
+    "Fishbones": {
+      "min": [
+        -32.012798,
+        112.569824,
+        -47.605804
+      ],
+      "max": [
+        1.921191,
+        236.619186,
+        -1.696687
+      ],
+      "extent": [
+        33.93399,
+        124.049362,
+        45.909119
+      ]
+    }
+  },
+  "output_weapon_bounds": {
+    "PowPow": {
+      "min": [
+        10.645609,
+        45.088913,
+        -47.585609
+      ],
+      "max": [
+        52.686562,
+        143.987152,
+        104.619446
+      ],
+      "extent": [
+        42.040955,
+        98.898239,
+        152.205048
+      ]
+    },
+    "Fishbones": {
+      "min": [
+        -42.210274,
+        71.399521,
+        -70.072693
+      ],
+      "max": [
+        12.084107,
+        269.87851,
+        3.381898
+      ],
+      "extent": [
+        54.29438,
+        198.478989,
+        73.45459
+      ]
+    }
+  },
+  "invariants": {
+    "native_skeleton_unchanged": true,
+    "native_weapon_submesh_split_by_rig_family": true,
+    "skin_weights_influences_uvs_preserved": true,
+    "uint16_indices_valid": true
+  }
+}

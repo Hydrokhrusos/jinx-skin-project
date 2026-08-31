@@ -1,0 +1,968 @@
+{
+  "status": "PASSED",
+  "variant": "Encore Animation Edition",
+  "animation_count": 69,
+  "groups": {
+    "assets/characters/jinx/skins/base/animations": 61,
+    "assets/characters/jinx/skins/skin65/animations": 2,
+    "assets/characters/jinxmine/skins/skin65/animations": 6
+  },
+  "source_hashes_all_differ": true,
+  "frame_track_fps_invariants": true,
+  "animations": [
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_buffbone_swap.anm",
+      "style": "abyssal_motion",
+      "frames": 60,
+      "tracks": 116,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "163a2941e898e513d8794e81115a063da25576cd1687f92fc38f5298c3eed719",
+      "output_sha256": "75903d5326d4363bc18e3dd795dbe1c0331e80737ae642f8c40a9bae8d0b079f"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_channel.anm",
+      "style": "sway",
+      "frames": 21,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "203110616f87f30352064f9abd2419e5f225e35091b73b1968ff175789f961a4",
+      "output_sha256": "e1875f535c379ba440d99d1dd2f684f574963597875b56b29e305d669149c755"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_channel_windup.anm",
+      "style": "sway",
+      "frames": 48,
+      "tracks": 147,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "26b0ddc6e668f269f3d30cfe4308474c57104f3fc919d64d7116b1a786d86bf0",
+      "output_sha256": "86676cffacbd1a56e64cc6752aa9382c87152f35f32784a3bd898fa65df32053"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_dance_loop.anm",
+      "style": "performance",
+      "frames": 57,
+      "tracks": 88,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "26a440da48556df875ecf1d6bb41881f29ab27477a48224bc6d3c4412ee36bd2",
+      "output_sha256": "55b5c099b563cce96066a5a91bb4b0150a5a2b4aa4ae9855e2ba2e52dd8f857a"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_dance_windup.anm",
+      "style": "performance",
+      "frames": 66,
+      "tracks": 88,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "38cf7abdf132d8fe3cab5beccc5db3f00268652bcc9fb5ad548e5f0f2139f626",
+      "output_sha256": "2458e8e85b5a160385b2fbb1b1d2b37f51ca91e260b0528db1c62fd80e94a0af"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_emote_enter_minigun.anm",
+      "style": "abyssal_motion",
+      "frames": 24,
+      "tracks": 145,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "5d731d603a60613c5b9cb1189b45e7f07e589d20b087d14e14052f5ddd8edbab",
+      "output_sha256": "2089665ec94feb30297e9a610a8a4977e5f9397b6d8879cfa586635a26e985a5"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_emote_enter_rocket.anm",
+      "style": "abyssal_motion",
+      "frames": 25,
+      "tracks": 145,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "6762e9ada6b86f8fdb2bd50c7f08635d8007f5d4dd9e1e5427e3f4d941753e07",
+      "output_sha256": "cf7c574ff77520c2f66f2ade8dbdad79cd33a0b5e91c466c4b2399047746c795"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_emote_exit_minigun.anm",
+      "style": "abyssal_motion",
+      "frames": 33,
+      "tracks": 145,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "42a7f5c4d0dfdc4cd48b5e291970d85c674168055d0baa98f070d7eca45d9287",
+      "output_sha256": "266bd9a39ea3f8080adca028e9cc6eda5c342addbea7733a3fa9ae7aaee11f64"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_emote_exit_rocket.anm",
+      "style": "abyssal_motion",
+      "frames": 39,
+      "tracks": 145,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "905f1376a19c4af539973b95efcc07206f40f0688e8e8bba351b3d600d4571e8",
+      "output_sha256": "36e8e6e42630968a14c875da08b1cabdc3f396e1eb1ed2efca9a7ee7a90d0c83"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_joke.anm",
+      "style": "performance",
+      "frames": 165,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "a8f3026801c6ab18c271627bf3c575c41c003bc63138eecc43868b8d093147f7",
+      "output_sha256": "af36ef94eb67b23c829fef03c4f43410560fa7cc53c66cf4f8ebb8b577244798"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_joke3.anm",
+      "style": "performance",
+      "frames": 297,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "6b6a89c3a8d2c5be47ef2072ee89cf4dc1f3e97404b2758886a6a6eba6edbeec",
+      "output_sha256": "49ba47c0289f85042aebada1d5b33cbe77c034eced67aa919d8475f498405da6"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_laugh_breath.anm",
+      "style": "performance",
+      "frames": 31,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "f315d651ff5c85c97e86f2c2205988494d669c09ca43cc2fa9461365f0f72964",
+      "output_sha256": "f4611d97425cafc690668080990f256275efa8f66e8721f0902c5182534d2a04"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_laugh_in.anm",
+      "style": "performance",
+      "frames": 56,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "668a3feb88823c8de8ec5e9ba119d588893304adc994cde7c35face7f7aad119",
+      "output_sha256": "0e2345ad88ffb0b49b3e08dd066459f26c4a6ffac54d93e4cc8e2bc507a407c3"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_laugh_loop.anm",
+      "style": "performance",
+      "frames": 101,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "1c56697ca41fc16655c04ddc6c522bc380225193208ebee32f20c5a8a3f34aa7",
+      "output_sha256": "5dc90b2dfd4f965942399384e490887d5296805ad783a2bcfd5aa9cf00508ad6"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_attack1.anm",
+      "style": "recoil",
+      "frames": 48,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "e5dd507d0dd3ee9c6b7ce4834101d5e402a717d3233a0f34541f03fefb94ccf1",
+      "output_sha256": "27da1a86fa01d3f45c2c041d7cbe4d46b856d15ad755c8d0a65e5c34664e95a9"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_attack2.anm",
+      "style": "recoil",
+      "frames": 48,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "4a469ba362d53843b580f592536fc02a0fd5b1908157b8a46059318e3b95feb2",
+      "output_sha256": "510bfeb8034d98230e80335206c965ed39ef66045e8a73c5090658cff8982d74"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_attack3.anm",
+      "style": "recoil",
+      "frames": 48,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "80d7b1e4f7c8673f61a5d62e0e72a41ce80611e5e41cce2c343b9900d07c4550",
+      "output_sha256": "6303e06b16b0308e1f397eb4e96178250a4e2a81409259163e0b1b83267d1bd1"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_attack4.anm",
+      "style": "recoil",
+      "frames": 48,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "111b4259fcb0db68547b78298ad95fe0aae6258cf49627f8103208a09257d236",
+      "output_sha256": "67ceea15a8da02a33e9e55139c29ccf9eb9ae933ef2ed58f778c279dc267cc37"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_attack5.anm",
+      "style": "recoil",
+      "frames": 48,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "66e1b1752d8b12b1193c9f1c7862ecf914a1a161eef655c1ec86870238ec2963",
+      "output_sha256": "0693bb4c1691edc6053f9871a24307eb4961cd67b5ebeb69b52b3fe1d45bdcc3"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_attack6.anm",
+      "style": "recoil",
+      "frames": 48,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "0a0ec9c167889d1bb628a4194b5b2ee72d375984279cc76ef4304200b420cf0c",
+      "output_sha256": "05cdd78c884c6faeeb723ab2f3934c8b37673e2854118ca7cd00e6d5f0e534f3"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_death.anm",
+      "style": "fall",
+      "frames": 91,
+      "tracks": 147,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "3eda28950e91ee8a44d0deb1c7c45a5c6935fbff26e7223aa6c91b9e68e214ec",
+      "output_sha256": "06504745b280570704eafa0d13c4e3c5ecf6e22d723036dc487dda0e5fa86324"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_idle1.anm",
+      "style": "sway",
+      "frames": 33,
+      "tracks": 116,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "5dfa4d4f7f4292ccf943bfdda584803cc223f21190b426feafcf2c32bf647764",
+      "output_sha256": "7772a1d71f2de4324896ff51927ddba196423f551a3c4ad1e23e60ed7b4d92e9"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_idle2.anm",
+      "style": "sway",
+      "frames": 212,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "b5e987a93b6749a119857b265e4f0b087f9997a4d1ae58758c09fde6fe955d2c",
+      "output_sha256": "8059f81b559fa37520d11f6b52a8ec9d6f503049bc8142bb5926bd4de10f9fe7"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_idle3.anm",
+      "style": "sway",
+      "frames": 51,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "a91de330b82b996826373dd6325c881b1772dfd75fe02c32a1f402fabec74667",
+      "output_sha256": "b15f42353d719cb05e0442fbc41bed0d2e6228c38c6152169e6a625ef9baa43d"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_idlein1.anm",
+      "style": "sway",
+      "frames": 64,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "375d25bebfc1333e519116f693c025528ed6cb2438628b74db61abdc597671c9",
+      "output_sha256": "6e5f749db4655aefa017a10da64a9076fcfa7c67f0d8fbfd15db56eb8720371c"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_idlein2.anm",
+      "style": "sway",
+      "frames": 48,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "a7a58946fdee08e2046b7161bb2015e950ec7bef8206af6e47199e1d4492341c",
+      "output_sha256": "37999b5cba08219c500ec2f86a547c19a5f7123b9359ba0f552f29ebdfb6b0bd"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_run.anm",
+      "style": "surge",
+      "frames": 29,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "9d1b3e6f68f71f079ec2eb99d6e5e4589806557fd559e3a5dd07f2c83528501c",
+      "output_sha256": "f3bc4d2be2384856bf981a351c22d6155c3148f7a23bda652a8d82d4dea9fac2"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_run2.anm",
+      "style": "surge",
+      "frames": 29,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "d01dfff2457affcf85cc43e0c9e7a33edf9a025f5bece1c6f6715f23bcda11d7",
+      "output_sha256": "082e0e06d449b0a9f4635bd39c6242a41c448b3d97089f0d2eeea24420dac276"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_run_in.anm",
+      "style": "surge",
+      "frames": 16,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "ae51000dd43e4ae352ed1606562c5f1491c1106b91cd4738eedbfbec3227ed92",
+      "output_sha256": "6f154dcde0b6e7279f1db44497a4a84f321da131401f877eeeca8399da7dde2b"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_runhaste.anm",
+      "style": "surge",
+      "frames": 29,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "ee69a5894a49c3889d07c5beacc072e63a324af496dba854be60b4c584971f8c",
+      "output_sha256": "86d5c30da611ab88c5acc67c6b6602d0290203de31eeefba82c7114add30ac50"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_spell2.anm",
+      "style": "recoil",
+      "frames": 46,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "88f924071c1ea2d432e37e729ae3f1438ed05a62af0bd8bd0b45d5848c1c9e83",
+      "output_sha256": "f4237b55b4f2b5eaa6a82e8fbc515af71f4ec0976671523c4e0fd1a1465dbb3d"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_spell3.anm",
+      "style": "recoil",
+      "frames": 41,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "8585f6c267a3bca4204ef1b4eaad32ce4cf2fa06e28ffc15fb82e9ba5ddd1541",
+      "output_sha256": "ce2628ec7dbb41070cc8fb0c691fa322e085b4c9116b72274b0e3c308c774718"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_spell3_run.anm",
+      "style": "recoil",
+      "frames": 31,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "12c6a096e231d79cb7249727a9af40dd768927b6588f489a2a8985fa664cb143",
+      "output_sha256": "1714dfecbb0bd3638d0a25fcd0431d2a5a2983dc8b51d67940f6701a1d267423"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_minigun_spell4.anm",
+      "style": "recoil",
+      "frames": 55,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "094da4931d4cae826a1ed59455ba2cd7c9493f857c35c6fe6efa31b64a4ac46b",
+      "output_sha256": "67308afcb6462ea9bd840b0d9dec3872d59ee98c63b1d889529f888807f07efc"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_respawn.anm",
+      "style": "surge",
+      "frames": 78,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "f7c4c1459a0fa6eb08aa952710e7f474e1a4d1f450a8c7a19a3382d317de6a18",
+      "output_sha256": "e6d12b2ac66eee689def448fcc990d733aa93931aac654525153017a79f8f0b8"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_attack1.anm",
+      "style": "recoil",
+      "frames": 49,
+      "tracks": 88,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "d582aaee6d3abf6c13c0196108be44161f48eb97412ca8582a3d4cc78bf06caa",
+      "output_sha256": "864ec32479992ed83d3571dc3c2c2969bfe36050f1d8c1fe48e683a86668501e"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_attack2.anm",
+      "style": "recoil",
+      "frames": 51,
+      "tracks": 88,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "2e94956d9380d16a408126f1cb293eeabf4db04480cba2c379c8fe59a966b313",
+      "output_sha256": "bc52e2056bb74dbc1fd82a1293f3b65393261f04b56bc0d02e37b64150bf8af0"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_death.anm",
+      "style": "fall",
+      "frames": 91,
+      "tracks": 121,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "5be4eb662749093bde3137e1d4c5f5e67e7cae3a8426eb00756ad16301c86e86",
+      "output_sha256": "f4adcc26aeb3a264c5cf71a744f6d6c53c757ee2fa717e3833d7e82ca8396582"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_drecall.anm",
+      "style": "performance",
+      "frames": 11,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "420b33f4061a8af8f4480f2089f16bd6bf3fbbfa320c785c108d49fd925555cd",
+      "output_sha256": "df8495cba5d092719bfc1e902eecff221091ba363a4f83db7d31fc972a00e571"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_drecall_in.anm",
+      "style": "performance",
+      "frames": 101,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "7ce09620f661daca65f10d8bb24315f4e9a9f6502bf2083c4acc167ebfd4f4e5",
+      "output_sha256": "967fc66552bdb2e975fbc89db5c35da4b364fcd5861e0a207837996e44bce904"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_drecall_out.anm",
+      "style": "performance",
+      "frames": 59,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "56b6b6b2fd22fa3e22d416160294838704322e492dd37678b3b549340938b789",
+      "output_sha256": "ff9626bbf58c4a8836620ecac34de11fea9674730080160cb06283666620f4b0"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_idle1.anm",
+      "style": "sway",
+      "frames": 33,
+      "tracks": 116,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "c7d18f31fb46bc1365ea27364d0425100a8613bbf9d6a4ba5adfd773d41666a3",
+      "output_sha256": "a1a591d78b4bd5c5fb7a95ac16ed11c9c6c0d01dbf7121a07bb75c39fcd5dc9a"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_idle2.anm",
+      "style": "sway",
+      "frames": 173,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "177e4248bae4c33f0f1c456b1b4e96b7c043788ea54ef3efd0ee76b1ec285ad1",
+      "output_sha256": "17958ba6eadfa455dbba12ac0a4937ed4618cab5acc5e80225a8db9f93c0e5de"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_idle3.anm",
+      "style": "sway",
+      "frames": 200,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "62d23455502a81944632172c71a1cd21e6f10432bdc01ce76505983f2d617353",
+      "output_sha256": "4b505e89bb29ae479a017bb3e2f7b73ef3ac116451d0e79f528662ccbe3887df"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_idlein1.anm",
+      "style": "sway",
+      "frames": 18,
+      "tracks": 121,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "5cb8fd434a4ffc33e866cd9efdfff3919cecc39943f54b034ff41df36b423e22",
+      "output_sha256": "412b45cc93632029f30c448d059ce4c718b74f7717605f11bba2db3aef3f3468"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_recall.anm",
+      "style": "performance",
+      "frames": 101,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "9af0255662c802c22e6841961b89d8b2c180417750070a0d8cfea035a8185b6f",
+      "output_sha256": "ba3a9bd3b7f2bed47ef1e9818b03b08909bca4e3664d7cb0ca35b97187ba50b9"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_recall_in.anm",
+      "style": "performance",
+      "frames": 121,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "1ce88f1fb357de0d329c786b51aff54a6b626054168ea7df14a78f1b8ebb573b",
+      "output_sha256": "c797ce39ee623ce74cd41065b656224ce0a4662f12af184b7f2dd10dcf878c46"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_recall_out.anm",
+      "style": "performance",
+      "frames": 48,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "272fa81042e65b9a22e92b593a0e8225fd9614aa7d983491521ac469979514aa",
+      "output_sha256": "b4709a01f1f1c50a08fe79a8c80cf9b762552823411c1cef966c1e83cdac1583"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_run.anm",
+      "style": "surge",
+      "frames": 29,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "8d99a310f443997f794477a78a84160027046db7930c401083b042ea52114860",
+      "output_sha256": "a9c542a26607909e07fc10997a502ca4e56e0f4cab40ec42006cc2962421dfe0"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_run2.anm",
+      "style": "surge",
+      "frames": 29,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "7816ec41c79b6f43363238891c918c10b59adde994e245a065f029d6f2203267",
+      "output_sha256": "1e6e9082fce247b6ca51673d5faeb6401a339b32469dde82d0461ff05fffc845"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_run_in.anm",
+      "style": "surge",
+      "frames": 16,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "18b203fc7b0d6892ce429a04fa9710b9ed98b391cf49718cc70059f7c55a06ca",
+      "output_sha256": "a4be1d55fa980e8660c0411eab284e6ab2cc04fea978d015dc9f550bcb60e186"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_runhaste.anm",
+      "style": "surge",
+      "frames": 29,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "15d23137e7e786be586302ffe4cb41d52cd47e5b5635df56ed3306d9e0235363",
+      "output_sha256": "007bf4410f0bd8f8e99b8ebea3ae3e541b9ee364fea12c5e6d77ef5fe62cbe2f"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_spell2.anm",
+      "style": "recoil",
+      "frames": 41,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "3dba6579d8bbd4a70030cae0929435fabbe811b1fbf6a0f45ec3bde3df075d74",
+      "output_sha256": "8c1970f369a92697504cb2eb252a34c19ef3f8bef17215f62508faa8afa2d1e6"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_spell3.anm",
+      "style": "recoil",
+      "frames": 42,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "f6765ceb88148993d67f6423634a75fcd77d45057db62f17fe64acda36ece9cc",
+      "output_sha256": "466da8a77f0b2abf9807f3c58e4fc705fe29621a8c5f43e0fea53605c33db0a5"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_rlauncher_spell4.anm",
+      "style": "recoil",
+      "frames": 51,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "57e0e327a298b5891800779b316e693ab77806a83ff36b9633acbc66a9920b9b",
+      "output_sha256": "9e59dfec5b339561959e60ebfc6c926f84e2fb91282a799c1d838d273adc351f"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_stunned.anm",
+      "style": "fall",
+      "frames": 41,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "0aabe9687d7dd7e80d2272ca96b2cd095aa73a9e2d8c74671e1591ca9be370ee",
+      "output_sha256": "7c17caefa5c7e084a9a534ebc910bf6f73c02249e031f9118b3ec779dc6fb51e"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/jinx_taunt2.anm",
+      "style": "performance",
+      "frames": 78,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "0532992503cc5f660f94a203e57db0e6ac7188565c7e1bc7a0b7d1b1107c2f15",
+      "output_sha256": "58514f3a3438c3f82a203b3283e4da660cb9280ee0760beeb119bb66e643ecc4"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/launcher_spell1_weapon.anm",
+      "style": "recoil",
+      "frames": 31,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "6f7b7b49d9be5082eb131480738a70e287da863330654efab0e89bb0776a349a",
+      "output_sha256": "43685bfb143fcffd286eba78c03b604569dd23062df65af5a6de62476baeb6a3"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/launcher_spell1_weapon2.anm",
+      "style": "recoil",
+      "frames": 12,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "664a65c9b9b3c49bca3b02a4a60274865a64c109cf34d05c32a19ff70f5a2fef",
+      "output_sha256": "55c476677c8f47aac62867467e8277eea5d210ba9e141773ae5acfbdec0d99fb"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/minigun_spell1_weapon2.anm",
+      "style": "recoil",
+      "frames": 12,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "833d5cadd6f5867c916c84b741c6b8234fb681b897b6d9eaf26c4e7f7624cac8",
+      "output_sha256": "5452eafe9eca219c8e6fbca86b9c2b1a0a43f011fdce6f11113b44372b036ba7"
+    },
+    {
+      "path": "assets/characters/jinx/skins/base/animations/minigun_spell1_weapon_gunonly.anm",
+      "style": "recoil",
+      "frames": 31,
+      "tracks": 88,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "7025443aed6b2c20541669ada0741dc46e33a0842df8009a52aaed081ac6b586",
+      "output_sha256": "53d9313f5cf025c5584515df0e5afbc1fbb3d31429e7dcb7e9ae94dc2d7b4665"
+    },
+    {
+      "path": "assets/characters/jinx/skins/skin65/animations/recall.anm",
+      "style": "performance",
+      "frames": 261,
+      "tracks": 106,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "b8dfeb8f935a4e42e84ce934d353250e7f0ca503fd1da35b4a1bb80256403036",
+      "output_sha256": "7ea91dd5c8a5e7140a36313faa7148d4454b249666ca56ad20bd31befc06c5bc"
+    },
+    {
+      "path": "assets/characters/jinx/skins/skin65/animations/spell2.anm",
+      "style": "recoil",
+      "frames": 46,
+      "tracks": 104,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x07a70483",
+        "0x07a70482",
+        "0x0006eb74"
+      ],
+      "source_sha256": "d1c74d05d0cba10e2273a9bfd9c8034276c12a6b3692db4d58d05cc944f6cb9c",
+      "output_sha256": "4895586e62f60d8166a2d887098efad022cdf536bff499c4326dbd7bffab2f0b"
+    },
+    {
+      "path": "assets/characters/jinxmine/skins/skin65/animations/jinxmine_attack.anm",
+      "style": "recoil",
+      "frames": 92,
+      "tracks": 3,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x00079664"
+      ],
+      "source_sha256": "a0b9c536cfa621d7f53ea3f78d4a207a5ff97d116237d0ab6a38ed394906e390",
+      "output_sha256": "44123b3135aff5cc16d85cd1fbca4ee50fa1576108f092d60fe79841d10e31ae"
+    },
+    {
+      "path": "assets/characters/jinxmine/skins/skin65/animations/jinxmine_attack2.anm",
+      "style": "recoil",
+      "frames": 101,
+      "tracks": 3,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x00079664"
+      ],
+      "source_sha256": "cdbfe452911d7435c8f5a4b88b3c79e9e5384f01dd73236360db7473f1d52004",
+      "output_sha256": "31745c15875f71f38eb13e4d14ad74449c4d98fe155d14ff4ec7af2d9f2020c8"
+    },
+    {
+      "path": "assets/characters/jinxmine/skins/skin65/animations/jinxmine_attack3.anm",
+      "style": "recoil",
+      "frames": 101,
+      "tracks": 3,
+      "fps": 30.0,
+      "changed_tracks": [
+        "0x00079664"
+      ],
+      "source_sha256": "52dd4098f8acc388b528c0816851ec85364973f16587e078227373815da26a97",
+      "output_sha256": "feab68f67f02c66d5f957bad851b09d3575115db67e760bdc50625da8b211002"
+    },
+    {
+      "path": "assets/characters/jinxmine/skins/skin65/animations/jinxmine_idle1.anm",
+      "style": "sway",
+      "frames": 92,
+      "tracks": 3,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x00079664"
+      ],
+      "source_sha256": "17b3e6ae345d707391d126b01773c690809f7027e802a24531e6f5f9c485d00b",
+      "output_sha256": "ea10f57b40de23850aa5194c4f68f14f9f6ea839364ccb552fd02a97fbe2b539"
+    },
+    {
+      "path": "assets/characters/jinxmine/skins/skin65/animations/jinxmine_idle2.anm",
+      "style": "sway",
+      "frames": 92,
+      "tracks": 3,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x00079664"
+      ],
+      "source_sha256": "6733a90a1edc4156b8f77839a27286531c9da8b0ae5973b61e3b80e369ee0a7e",
+      "output_sha256": "5fe3c5d09d8dd06f2fce443ee6b9822894108f0ea9a0b93d91b1d0ebb74d9286"
+    },
+    {
+      "path": "assets/characters/jinxmine/skins/skin65/animations/jinxmine_idle3.anm",
+      "style": "sway",
+      "frames": 92,
+      "tracks": 3,
+      "fps": 29.999998,
+      "changed_tracks": [
+        "0x00079664"
+      ],
+      "source_sha256": "08ba4dd340fd5e72d41b3997b4683397dea8d5b7b6933088e33fb29a90eef7fb",
+      "output_sha256": "a187f6e4a486cc6e9150968b5f62956693b11cdefbe65ce3ee2cc3d965c77f68"
+    }
+  ]
+}

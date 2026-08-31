@@ -1,0 +1,32 @@
+﻿    📦 Modpkg: ocean-song-jinx-weapon-upscale
+    🏷️ Version: 1.0.6
+    📝 Description: Upscales Ocean Song Jinx's weapons by 60% and shows the active weapon selected by Riot's native Minigun and Rlauncher animation families.
+    
+    🏗️  Layers:
+       • base (priority: 0) - Ocean Song Jinx model and Riot animation-family visibility overrides
+    
+    🧾 Full metadata (JSON):
+    {
+      "schema_version": 3,
+      "name": "ocean-song-jinx-weapon-upscale",
+      "display_name": "Ocean Song Jinx - Bigger Active Weapons",
+      "description": "Upscales Ocean Song Jinx's weapons by 60% and shows the active weapon selected by Riot's native Minigun and Rlauncher animation families.",
+      "version": "1.0.6",
+      "distributor": null,
+      "authors": [
+        {
+          "name": "leope",
+          "role": null
+        }
+      ],
+      "license": {
+        "type": "none"
+      },
+      "layers": [
+        {
+          "name": "base",
+          "priority": 0,
+          "description": "Ocean Song Jinx model and Riot animation-family visibility overrides"
+        }
+      ]
+    }

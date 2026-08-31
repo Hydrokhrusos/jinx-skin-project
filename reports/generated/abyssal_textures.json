@@ -1,0 +1,188 @@
+{
+  "status": "PASSED",
+  "version": "3.0.0",
+  "theme": "black-violet sea witch, coral pink relics, seafoam bioluminescence, aged bone",
+  "opaque_material_atlases": true,
+  "textures": [
+    {
+      "role": "body",
+      "source": "assets/characters/jinx/skins/skin51/jinx_skin51_main_tx_cm.tex",
+      "output": "assets/characters/jinx/skins/skin65/jinx_skin65_seawitch_body_tx_cm.tex",
+      "source_sha256": "eb6609f3e5d23b9ff16ce21e856cd37872316d819d1aea163c4c51143e7750f9",
+      "output_sha256": "3ffc090e16f913cef381297ae87961731e58196c26a03d8d2d795bb4d77ef91f",
+      "changed_pixels": 1048576,
+      "total_pixels": 1048576,
+      "mip_levels": 11,
+      "layout": {
+        "width": 1024,
+        "height": 1024,
+        "format_code": 10,
+        "format": "BC1",
+        "bytes": 699076
+      },
+      "authored_metrics": {
+        "rgb_standard_deviation": 29.6189,
+        "mean_neighbor_contrast": 1.3025,
+        "quantized_unique_colors": 139,
+        "opaque_pixels": 1048576
+      },
+      "decoded_metrics": {
+        "rgb_standard_deviation": 27.0345,
+        "mean_neighbor_contrast": 2.5661,
+        "quantized_unique_colors": 158,
+        "opaque_pixels": 1048576
+      },
+      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\textures\\sea_witch_body_atlas.png"
+    },
+    {
+      "role": "armor",
+      "source": "assets/characters/jinx/skins/skin62/jinx_skin62_tx_cm.tex",
+      "output": "assets/characters/jinx/skins/skin65/jinx_skin65_seawitch_armor_tx_cm.tex",
+      "source_sha256": "e541e6b2597e13d353a937eaa787d8e7509e608c46040db203e3c07a16445e95",
+      "output_sha256": "f9bf9666915fe0b48d6c18199a3d35c8e0d9a3caac1de125a5fad1d6ba32263c",
+      "changed_pixels": 1048574,
+      "total_pixels": 1048576,
+      "mip_levels": 11,
+      "layout": {
+        "width": 1024,
+        "height": 1024,
+        "format_code": 10,
+        "format": "BC1",
+        "bytes": 699076
+      },
+      "authored_metrics": {
+        "rgb_standard_deviation": 28.4283,
+        "mean_neighbor_contrast": 1.3923,
+        "quantized_unique_colors": 253,
+        "opaque_pixels": 1048576
+      },
+      "decoded_metrics": {
+        "rgb_standard_deviation": 28.5115,
+        "mean_neighbor_contrast": 3.0611,
+        "quantized_unique_colors": 252,
+        "opaque_pixels": 1048576
+      },
+      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\textures\\sea_witch_armor_atlas.png"
+    },
+    {
+      "role": "weapon",
+      "source": "assets/characters/jinx/skins/skin62/jinx_skin62_weapon_tx_cm.tex",
+      "output": "assets/characters/jinx/skins/skin65/jinx_skin65_seawitch_weapon_tx_cm.tex",
+      "source_sha256": "b49339423a8a6812b79070a074a2415d6a9c065dc1c8d29c3a4e35ffe6f3f71e",
+      "output_sha256": "2de1fb34c74be3671e6ce9be8b51a339bd9fe93a42120500e22b2c5b6f8bb2bf",
+      "changed_pixels": 262143,
+      "total_pixels": 262144,
+      "mip_levels": 10,
+      "layout": {
+        "width": 512,
+        "height": 512,
+        "format_code": 12,
+        "format": "BC3",
+        "bytes": 349564
+      },
+      "authored_metrics": {
+        "rgb_standard_deviation": 33.6587,
+        "mean_neighbor_contrast": 4.1073,
+        "quantized_unique_colors": 198,
+        "opaque_pixels": 262144
+      },
+      "decoded_metrics": {
+        "rgb_standard_deviation": 31.5559,
+        "mean_neighbor_contrast": 5.751,
+        "quantized_unique_colors": 237,
+        "opaque_pixels": 262144
+      },
+      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\textures\\sea_witch_weapon_atlas.png"
+    },
+    {
+      "role": "recall",
+      "source": "assets/characters/jinx/skins/skin62/jinx_skin62_recall_tx_cm.tex",
+      "output": "assets/characters/jinx/skins/skin65/jinx_skin65_seawitch_recall_tx_cm.tex",
+      "source_sha256": "40eefc23169a3bed34c1ca8714062770f7ccf95e24ded70978381808e399d018",
+      "output_sha256": "783dda64fe7e3e2161c89856aa25a1e83e28653c95bb68cb8ebfae4834108ea8",
+      "changed_pixels": 262144,
+      "total_pixels": 262144,
+      "mip_levels": 10,
+      "layout": {
+        "width": 512,
+        "height": 512,
+        "format_code": 10,
+        "format": "BC1",
+        "bytes": 174788
+      },
+      "authored_metrics": {
+        "rgb_standard_deviation": 40.7892,
+        "mean_neighbor_contrast": 5.1058,
+        "quantized_unique_colors": 241,
+        "opaque_pixels": 262144
+      },
+      "decoded_metrics": {
+        "rgb_standard_deviation": 40.2565,
+        "mean_neighbor_contrast": 8.4835,
+        "quantized_unique_colors": 242,
+        "opaque_pixels": 262144
+      },
+      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\textures\\sea_witch_recall_atlas.png"
+    },
+    {
+      "role": "mine",
+      "source": "assets/characters/jinxmine/skins/skin62/jinxmine_skin62_tx_cm.tex",
+      "output": "assets/characters/jinxmine/skins/skin65/jinxmine_skin65_tx_cm.tex",
+      "source_sha256": "a57252435a8e2c7562f726c443c75c5c981654b97350dc3d89d074f45781e590",
+      "output_sha256": "419d88667adb26ac9b8773fc84c90eb97eda4da8e741db58af1a11323712bcd2",
+      "changed_pixels": 262144,
+      "total_pixels": 262144,
+      "mip_levels": 10,
+      "layout": {
+        "width": 512,
+        "height": 512,
+        "format_code": 10,
+        "format": "BC1",
+        "bytes": 174788
+      },
+      "authored_metrics": {
+        "rgb_standard_deviation": 24.4614,
+        "mean_neighbor_contrast": 2.5521,
+        "quantized_unique_colors": 93,
+        "opaque_pixels": 262144
+      },
+      "decoded_metrics": {
+        "rgb_standard_deviation": 24.9104,
+        "mean_neighbor_contrast": 4.253,
+        "quantized_unique_colors": 118,
+        "opaque_pixels": 262144
+      },
+      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\textures\\sea_witch_mine_atlas.png"
+    },
+    {
+      "role": "missile",
+      "source": "assets/characters/jinx/skins/skin65/particles/jinx_skin65_r_mis_globefish.tex",
+      "output": "assets/characters/jinx/skins/skin65/particles/jinx_skin65_r_mis_globefish.tex",
+      "source_sha256": "8112444cdcee1d2471ea4bcf5647f2047bbdec426967e92a5c66249decf7887f",
+      "output_sha256": "37d6fef8beb00105e4fbcbf8ce3e15ce8df7e94bee23397e09dff73e8213a6b5",
+      "changed_pixels": 262144,
+      "total_pixels": 262144,
+      "mip_levels": 10,
+      "layout": {
+        "width": 512,
+        "height": 512,
+        "format_code": 10,
+        "format": "BC1",
+        "bytes": 174788
+      },
+      "authored_metrics": {
+        "rgb_standard_deviation": 24.6449,
+        "mean_neighbor_contrast": 2.8513,
+        "quantized_unique_colors": 183,
+        "opaque_pixels": 262144
+      },
+      "decoded_metrics": {
+        "rgb_standard_deviation": 24.4082,
+        "mean_neighbor_contrast": 5.0182,
+        "quantized_unique_colors": 199,
+        "opaque_pixels": 262144
+      },
+      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\textures\\sea_witch_missile_atlas.png"
+    }
+  ]
+}

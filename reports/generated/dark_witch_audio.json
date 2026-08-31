@@ -1,0 +1,5174 @@
+{
+  "status": "PASSED",
+  "project_version": "3.0.0",
+  "target": {
+    "champion": "Jinx",
+    "skin_slot": 65,
+    "bank_version": 145,
+    "audio_bank_alignment": 16,
+    "event_count": 60,
+    "play_event_count": 48,
+    "stop_event_count": 12,
+    "media_count": 63,
+    "sound_object_count": 103,
+    "hirc_object_count": 293
+  },
+  "coverage": {
+    "all_sfx_bank_media_replaced": true,
+    "unique_replaced_media": 63,
+    "all_60_sfx_events_route_only_to_replaced_media": true,
+    "patched_sound_objects": 103,
+    "native_wwise_vorbis_plugin_preserved": true,
+    "every_replacement_decodes_with_vgmstream": true,
+    "non_target_sfx_media_remaining": 0,
+    "voice_over_changed": false,
+    "live_league_playback_tested": false
+  },
+  "donor_usage": {
+    "coven_evelynn": 16,
+    "coven_morgana": 13,
+    "sunken_shadows_nami": 34
+  },
+  "event_routes": {
+    "Play_sfx_JinxSkin65_Dance3D_buffactivate": [
+      116511754
+    ],
+    "Play_sfx_JinxSkin65_Dance3D_loop": [
+      836538813
+    ],
+    "Play_sfx_JinxSkin65_Death3D_cast": [
+      629375618
+    ],
+    "Play_sfx_JinxSkin65_JinxBasicAttack2_OnCast": [
+      355138165,
+      582249748,
+      763144563
+    ],
+    "Play_sfx_JinxSkin65_JinxBasicAttack2_OnHit": [
+      171876594,
+      183777873,
+      379674842
+    ],
+    "Play_sfx_JinxSkin65_JinxBasicAttack2_OnMissileCast": [
+      80801783,
+      847264039,
+      951330025
+    ],
+    "Play_sfx_JinxSkin65_JinxBasicAttack2_OnMissileLaunch": [
+      171797817,
+      456337424,
+      779722418
+    ],
+    "Play_sfx_JinxSkin65_JinxBasicAttack_OnCast": [
+      355138165,
+      582249748,
+      763144563
+    ],
+    "Play_sfx_JinxSkin65_JinxBasicAttack_OnHit": [
+      171876594,
+      183777873,
+      379674842
+    ],
+    "Play_sfx_JinxSkin65_JinxBasicAttack_OnMissileCast": [
+      80801783,
+      847264039,
+      951330025
+    ],
+    "Play_sfx_JinxSkin65_JinxBasicAttack_OnMissileLaunch": [
+      171797817,
+      456337424,
+      779722418
+    ],
+    "Play_sfx_JinxSkin65_JinxCritAttack_OnCast": [
+      355138165,
+      582249748,
+      763144563
+    ],
+    "Play_sfx_JinxSkin65_JinxCritAttack_OnHit": [
+      171876594,
+      183777873,
+      379674842
+    ],
+    "Play_sfx_JinxSkin65_JinxCritAttack_OnMissileCast": [
+      80801783,
+      847264039,
+      951330025
+    ],
+    "Play_sfx_JinxSkin65_JinxCritAttack_OnMissileLaunch": [
+      171797817,
+      456337424,
+      779722418
+    ],
+    "Play_sfx_JinxSkin65_JinxEMineSnare_OnBuffActivate": [
+      3706801
+    ],
+    "Play_sfx_JinxSkin65_JinxEMine_OnBuffActivate": [
+      387941349,
+      420124349,
+      677876521
+    ],
+    "Play_sfx_JinxSkin65_JinxEMine_OnBuffDeactivate": [
+      467861485
+    ],
+    "Play_sfx_JinxSkin65_JinxE_OnCast": [
+      27959622,
+      354792468
+    ],
+    "Play_sfx_JinxSkin65_JinxPassiveKill_OnBuffActivate": [
+      1015610267,
+      1053445674
+    ],
+    "Play_sfx_JinxSkin65_JinxQAttack2_OnCast": [
+      72571436,
+      165569743,
+      189342049
+    ],
+    "Play_sfx_JinxSkin65_JinxQAttack2_OnMissileCast": [
+      322718919,
+      695967655,
+      777821126
+    ],
+    "Play_sfx_JinxSkin65_JinxQAttack2_OnMissileLaunch": [
+      474989641,
+      693073778,
+      733129145
+    ],
+    "Play_sfx_JinxSkin65_JinxQAttack_OnCast": [
+      72571436,
+      165569743,
+      189342049
+    ],
+    "Play_sfx_JinxSkin65_JinxQAttack_OnMissileCast": [
+      322718919,
+      695967655,
+      777821126
+    ],
+    "Play_sfx_JinxSkin65_JinxQAttack_OnMissileLaunch": [
+      474989641,
+      693073778,
+      733129145
+    ],
+    "Play_sfx_JinxSkin65_JinxQAttack_hit": [
+      40114514,
+      865333498,
+      1041506921
+    ],
+    "Play_sfx_JinxSkin65_JinxQCritAttack_OnCast": [
+      72571436,
+      165569743,
+      189342049
+    ],
+    "Play_sfx_JinxSkin65_JinxQCritAttack_OnMissileCast": [
+      322718919,
+      695967655,
+      777821126
+    ],
+    "Play_sfx_JinxSkin65_JinxQCritAttack_OnMissileLaunch": [
+      474989641,
+      693073778,
+      733129145
+    ],
+    "Play_sfx_JinxSkin65_JinxQIcon_OnBuffActivate": [
+      731877774
+    ],
+    "Play_sfx_JinxSkin65_JinxQ_OnBuffActivate": [
+      1051417438
+    ],
+    "Play_sfx_JinxSkin65_JinxR_OnCast": [
+      820646602,
+      837730488
+    ],
+    "Play_sfx_JinxSkin65_JinxR_OnMissileCast": [
+      624667951,
+      676525090
+    ],
+    "Play_sfx_JinxSkin65_JinxR_boosteractivate": [
+      664051226,
+      777883954
+    ],
+    "Play_sfx_JinxSkin65_JinxR_boosterlaunch": [
+      487967658
+    ],
+    "Play_sfx_JinxSkin65_JinxR_hit": [
+      527378903,
+      755907931
+    ],
+    "Play_sfx_JinxSkin65_JinxR_missilelaunch": [
+      253519843
+    ],
+    "Play_sfx_JinxSkin65_JinxWMissile_OnMissileCast": [
+      114598926,
+      725391960
+    ],
+    "Play_sfx_JinxSkin65_JinxWMissile_OnMissileLaunch": [
+      914887287,
+      925552648
+    ],
+    "Play_sfx_JinxSkin65_JinxWMissile_hit": [
+      367592209,
+      487761849,
+      608769885
+    ],
+    "Play_sfx_JinxSkin65_JinxW_OnCast": [
+      339664547,
+      722714056
+    ],
+    "Play_sfx_JinxSkin65_Joke3D_buffactivate": [
+      308615368
+    ],
+    "Play_sfx_JinxSkin65_Recall3D_buffactivate": [
+      63672621,
+      1055870700
+    ],
+    "Play_sfx_JinxSkin65_Respawn3D_buffactivate": [
+      455764613
+    ],
+    "Play_sfx_JinxSkin65_Taunt23D_buffactivate": [
+      1017693914
+    ],
+    "Play_sfx_JinxSkin65_Taunt3D_buffactivate": [
+      97222905
+    ],
+    "Play_sfx_JinxSkin65_Winddown3D_buffactivate": [
+      455764613
+    ],
+    "Stop_sfx_JinxSkin65_Dance3D_buffactivate": [
+      116511754
+    ],
+    "Stop_sfx_JinxSkin65_Dance3D_loop": [
+      836538813
+    ],
+    "Stop_sfx_JinxSkin65_JinxBasicAttack_OnMissileLaunch": [
+      171797817,
+      456337424,
+      779722418
+    ],
+    "Stop_sfx_JinxSkin65_JinxCritAttack_OnMissileLaunch": [
+      171797817,
+      456337424,
+      779722418
+    ],
+    "Stop_sfx_JinxSkin65_JinxPassiveKill_OnBuffActivate": [
+      1053445674
+    ],
+    "Stop_sfx_JinxSkin65_JinxQAttack2_OnMissileLaunch": [
+      474989641,
+      693073778,
+      733129145
+    ],
+    "Stop_sfx_JinxSkin65_JinxQAttack_OnMissileLaunch": [
+      474989641,
+      693073778,
+      733129145
+    ],
+    "Stop_sfx_JinxSkin65_JinxQCritAttack_OnMissileLaunch": [
+      474989641,
+      693073778,
+      733129145
+    ],
+    "Stop_sfx_JinxSkin65_JinxR_boosterlaunch": [
+      487967658
+    ],
+    "Stop_sfx_JinxSkin65_JinxR_missilelaunch": [
+      253519843
+    ],
+    "Stop_sfx_JinxSkin65_JinxWMissile_OnMissileLaunch": [
+      914887287,
+      925552648
+    ],
+    "Stop_sfx_JinxSkin65_Respawn3D_buffactivate": [
+      63672621,
+      1055870700
+    ]
+  },
+  "media_reference_counts": {
+    "3706801": 1,
+    "27959622": 1,
+    "40114514": 1,
+    "63672621": 1,
+    "72571436": 2,
+    "80801783": 2,
+    "97222905": 1,
+    "114598926": 1,
+    "116511754": 1,
+    "165569743": 2,
+    "171797817": 2,
+    "171876594": 8,
+    "183777873": 8,
+    "189342049": 2,
+    "253519843": 1,
+    "308615368": 1,
+    "322718919": 2,
+    "339664547": 1,
+    "354792468": 1,
+    "355138165": 2,
+    "367592209": 1,
+    "379674842": 8,
+    "387941349": 1,
+    "420124349": 1,
+    "455764613": 2,
+    "456337424": 2,
+    "467861485": 1,
+    "474989641": 2,
+    "487761849": 1,
+    "487967658": 1,
+    "527378903": 1,
+    "582249748": 2,
+    "608769885": 1,
+    "624667951": 1,
+    "629375618": 1,
+    "664051226": 1,
+    "676525090": 1,
+    "677876521": 1,
+    "693073778": 2,
+    "695967655": 2,
+    "722714056": 1,
+    "725391960": 1,
+    "731877774": 1,
+    "733129145": 2,
+    "755907931": 1,
+    "763144563": 2,
+    "777821126": 2,
+    "777883954": 1,
+    "779722418": 2,
+    "820646602": 1,
+    "836538813": 1,
+    "837730488": 1,
+    "847264039": 2,
+    "865333498": 1,
+    "914887287": 1,
+    "925552648": 1,
+    "951330025": 2,
+    "1015610267": 1,
+    "1017693914": 1,
+    "1041506921": 1,
+    "1051417438": 1,
+    "1053445674": 1,
+    "1055870700": 1
+  },
+  "changed_media": [
+    {
+      "media_id": 3706801,
+      "old_bytes": 15953,
+      "new_bytes": 15044,
+      "old_sha256": "741c0d35b0ca682362898d24151ad1288fe9bffe03adaf1f0b03ffbaa7947c1c",
+      "new_sha256": "446ccd19d731ab16cf3c8a6a0478aa3c194fc6338bedcdee87ef1482959264e2"
+    },
+    {
+      "media_id": 27959622,
+      "old_bytes": 9681,
+      "new_bytes": 9137,
+      "old_sha256": "77fa6c83cf05b8513f70844a0fd2f8513b94ac8d5f5508c06c35b11a33012536",
+      "new_sha256": "35830871bae86eb96cb9beb85ba3ad8dbe1670b4003ae4d43232718da3a13116"
+    },
+    {
+      "media_id": 40114514,
+      "old_bytes": 12744,
+      "new_bytes": 16598,
+      "old_sha256": "39546f151b77e31ac1b0d8c065b65e49d8643f0dde94ae83123bf6f405bbf1b5",
+      "new_sha256": "b856434b70658415e2b206039274f2713c8d6ef5be2ce60b49482cbb590713cd"
+    },
+    {
+      "media_id": 63672621,
+      "old_bytes": 77644,
+      "new_bytes": 81619,
+      "old_sha256": "e2aa65a0ffb666d2426919038f7cdb3d481bb7017f20b78301b1ccfe135b0cf1",
+      "new_sha256": "cd888d675f7b9eadb11b04dec615d8383f69a67ca27af41f7daead0b22e9e42d"
+    },
+    {
+      "media_id": 72571436,
+      "old_bytes": 6429,
+      "new_bytes": 7128,
+      "old_sha256": "eee87f808f2f81fa8dc9e333fa2fff0c6f16c34fa9c0a1afe13b891be8899ec1",
+      "new_sha256": "74b707ea48a55f5d731f9ec16972bf5480c72b9b997bfa0a29798f535d54a981"
+    },
+    {
+      "media_id": 80801783,
+      "old_bytes": 8160,
+      "new_bytes": 13080,
+      "old_sha256": "c0a4110e1b2a3708639f93fa20d771f04d7abdd38fafe58d1041e7ca4adf22a0",
+      "new_sha256": "5b61c75a8ddbf581c6b53c35b92f1e03a7d35d8fbd18bdf0cbfd3dbe8b890f5c"
+    },
+    {
+      "media_id": 97222905,
+      "old_bytes": 52389,
+      "new_bytes": 34276,
+      "old_sha256": "ae75eb00aa4dd2b61f8b957418efeb39fede2ee52fcefdbe4e45785f9f1f8d90",
+      "new_sha256": "6fa43329ae6e456371d492c9e30d74e6e1c80f25f36f070ac675612701685a04"
+    },
+    {
+      "media_id": 114598926,
+      "old_bytes": 10421,
+      "new_bytes": 13986,
+      "old_sha256": "745ab91eff5ef2b7ea09424a3ffabd037bef725fa255e2626988f954c0f112c1",
+      "new_sha256": "eb95f9f83a0ac2613d7bbc1fa47b99a19e776c5327229a071cb279293ca07f35"
+    },
+    {
+      "media_id": 116511754,
+      "old_bytes": 21529,
+      "new_bytes": 22781,
+      "old_sha256": "fb6c6ddc15d5e5ac9ac428cd7afe2c76b940396d50a3fdc0e9f8bfba4cfef831",
+      "new_sha256": "3a6303a5cf45cd5092627fa93ed2aac0a4df47cc539f632b596a9dfa8765f3b7"
+    },
+    {
+      "media_id": 165569743,
+      "old_bytes": 5989,
+      "new_bytes": 5504,
+      "old_sha256": "7b4527fb1bf35abe213da972b30f32760e8fa5989b034dbfcfab0ac7afc16969",
+      "new_sha256": "171cd7bd3c30d94f46db0f766d22380cc1edbbfcb1ac9e989f07c7d456e3144a"
+    },
+    {
+      "media_id": 171797817,
+      "old_bytes": 7900,
+      "new_bytes": 8367,
+      "old_sha256": "c44f0fed39e3fedc79a8346098efee8b748042788d3d8af19f01754029b91bba",
+      "new_sha256": "aa0f6420b437267ec096a458a93e7a9623205e03d15021cce1ee9a00eef8d8ee"
+    },
+    {
+      "media_id": 171876594,
+      "old_bytes": 7888,
+      "new_bytes": 9345,
+      "old_sha256": "e0e15fcfcc8e30e576e55b11159162a886af3841ec22bb7957500a83e31795ca",
+      "new_sha256": "31225bb931c9988eb3bd79cd42dc880ada204501cd1511aa6bee0d049e03a11b"
+    },
+    {
+      "media_id": 183777873,
+      "old_bytes": 7473,
+      "new_bytes": 10494,
+      "old_sha256": "5781f9b80a126c1add602dfa9cc8358be018903d514ade39de110eabe394d8a5",
+      "new_sha256": "a4b6a8c5e58e5db8d63cde59bd942f882c8659ca0cb9c169a897ef8607cde3ca"
+    },
+    {
+      "media_id": 189342049,
+      "old_bytes": 6871,
+      "new_bytes": 5782,
+      "old_sha256": "5de6ebf826a4046edb53fb85b6fa6c2fe9a18ba390b4cf60ae0316436f95506d",
+      "new_sha256": "c4af6059604dab3ca42b0185d62e2d63665d0c067ab05f9d419ef375b67c1c9e"
+    },
+    {
+      "media_id": 253519843,
+      "old_bytes": 58699,
+      "new_bytes": 73960,
+      "old_sha256": "d4d5e3e10530cfe06db89edede58c17288c5ca40225e0d593a0cc49024b162ff",
+      "new_sha256": "9ee049fb0713e5a6910b18ea4f447469039ff4e87a414142d4600d7f3ec7a51c"
+    },
+    {
+      "media_id": 308615368,
+      "old_bytes": 75504,
+      "new_bytes": 61756,
+      "old_sha256": "7a2e81c75f13527921120493f8f4dd74ad1bfd849d74ff4120d3140c84a61338",
+      "new_sha256": "9c119cfbec62c6f8968860b9f8deeb01315fb28f4313a771d4f02de7be471e57"
+    },
+    {
+      "media_id": 322718919,
+      "old_bytes": 8659,
+      "new_bytes": 12992,
+      "old_sha256": "281b6791bcbdf791170ebe15674a5290f08c88bc4cb66cf164575d0105321e0f",
+      "new_sha256": "d6898a932595b68de37d4ef62b5eb9e8a5a4fc15bd826b4d6e4202a9f5bd6089"
+    },
+    {
+      "media_id": 339664547,
+      "old_bytes": 9473,
+      "new_bytes": 13904,
+      "old_sha256": "45c1836eb397405cfe4b52bcff2a81cb2e82487b2ac7c7c3f9a3140a715d84fa",
+      "new_sha256": "4fd5d0f01a91e9f766c92adcd80aea11337a646a616c3bbbc0d3b095b1c91edb"
+    },
+    {
+      "media_id": 354792468,
+      "old_bytes": 8076,
+      "new_bytes": 9210,
+      "old_sha256": "128e308ad8bfcead0fd8cae0ad559a41e56f1f9aa059cbb5e4d67f3ed32e410d",
+      "new_sha256": "c22e28f2294363c2e29a8aae2666b8786c1c618c3f7c1d0fc18bbff0c3352733"
+    },
+    {
+      "media_id": 355138165,
+      "old_bytes": 3412,
+      "new_bytes": 3645,
+      "old_sha256": "1f07c74b72b750f50eb9312f024c173bf28459bba31bb783f15c5c806dc89dfc",
+      "new_sha256": "1da21837043b528dfab1bd9308a5418bda689f733580e297e7e78e27492bc0eb"
+    },
+    {
+      "media_id": 367592209,
+      "old_bytes": 23328,
+      "new_bytes": 23777,
+      "old_sha256": "37d6b5ec007033783e2e33e4b26b2d116d9f08b0794058b878d66b157a0bbf37",
+      "new_sha256": "51089f6f829a4155b7b059ff37a5bd2d847e1d9a1027f473e5dadd5ba08e47fa"
+    },
+    {
+      "media_id": 379674842,
+      "old_bytes": 10285,
+      "new_bytes": 11635,
+      "old_sha256": "20eb17e241212719e72c0cf27fcf839b0b3fdcd28c37cccb26afe888983ffd8d",
+      "new_sha256": "e9f39b2aa96955466b7a1789faf822e4432bbfa5e2cb89097dc22d70c901e8b6"
+    },
+    {
+      "media_id": 387941349,
+      "old_bytes": 57924,
+      "new_bytes": 51524,
+      "old_sha256": "c5f1c353d9b4ea4411e2ea9ecda0f6ad1b98746e8714be9df00a548ab43db23c",
+      "new_sha256": "6c981dfea5bbe89806aa5fcd2f81f216fc42f0b99a23d28f41bb19094697044b"
+    },
+    {
+      "media_id": 420124349,
+      "old_bytes": 16404,
+      "new_bytes": 18679,
+      "old_sha256": "adeee4653a9dc98532abd84771fc6d33cf5c361cc02ee1385b6ec307ce6cfbbc",
+      "new_sha256": "2eba490bc6b769140d07943d89163dbdd4d93537adf30e108b4eb2d299b0a007"
+    },
+    {
+      "media_id": 455764613,
+      "old_bytes": 25996,
+      "new_bytes": 29201,
+      "old_sha256": "21a2efe248a01ed101b97c01bb3e142de4262c39626624f766c5b691c56b9ca5",
+      "new_sha256": "d606515d20198bac0d283b18e4f7b5bcb553efb21eafcd53d6e66c8f9aa06fff"
+    },
+    {
+      "media_id": 456337424,
+      "old_bytes": 6925,
+      "new_bytes": 8026,
+      "old_sha256": "8e1a25542389cd8544a998725c9dc59beb7fed41e5fee120562a0ad36d9b7b63",
+      "new_sha256": "70687500472fc3c52b015865c45975c799c5373738b5cfecdc64e4ff3f062748"
+    },
+    {
+      "media_id": 467861485,
+      "old_bytes": 12225,
+      "new_bytes": 12302,
+      "old_sha256": "c9636115b6d691db0da1dcdbeb0550c5adea318db62546ec322a59aafdd9156c",
+      "new_sha256": "9371b8ea98c19c88537bf972504af1f546dfa284cd9b18e77dad823f90337871"
+    },
+    {
+      "media_id": 474989641,
+      "old_bytes": 6497,
+      "new_bytes": 6846,
+      "old_sha256": "16f519f1272fa43f47bf19beacf9b9f78621b10f801e53d9552256b3db920e56",
+      "new_sha256": "46d258482b0009d863e0b6cceb56835d26febcdee550d67c62e8375bdb8187e2"
+    },
+    {
+      "media_id": 487761849,
+      "old_bytes": 24159,
+      "new_bytes": 25098,
+      "old_sha256": "d40dff1c3d354dfbd5f45257ad78cc0a82cdd6d3edd349042ef1bcb56b33c2c7",
+      "new_sha256": "1b50b86e2b7ea7b6202ac559ad40682dd81cab6b7b6dc71f6bf7056471fec066"
+    },
+    {
+      "media_id": 487967658,
+      "old_bytes": 38543,
+      "new_bytes": 67981,
+      "old_sha256": "cdf6be2cbff3a380d5b5a384d2ca904049ee918f75733f9474eb270f71c804b6",
+      "new_sha256": "1bcf8bf58295403557b929a5800f6848d7d9429f37687949d37668c576f818e3"
+    },
+    {
+      "media_id": 527378903,
+      "old_bytes": 24251,
+      "new_bytes": 27081,
+      "old_sha256": "23f098ecb53450b8cbbaf3c2b436efe8972b18b5f85da50775867f5d45a410bf",
+      "new_sha256": "e3979d1230a04272c22334da5371f9f3d5cec2b95958a1144e3ddd5f13dc55eb"
+    },
+    {
+      "media_id": 582249748,
+      "old_bytes": 3855,
+      "new_bytes": 5820,
+      "old_sha256": "ec44a31514d008e56979fac7fbed1698978f3852ddcbb272943025cc05aca31b",
+      "new_sha256": "899f3c5958c11f3a5ac64fc0f7601ed6a405e920535ef943d5d8caef471ee351"
+    },
+    {
+      "media_id": 608769885,
+      "old_bytes": 18648,
+      "new_bytes": 16994,
+      "old_sha256": "2a2e4965f0a126ea9d38cddcb2e88e1590366dda47c19aa3a2c2e5287ca8ff3c",
+      "new_sha256": "3b965ae1445d01d73f843c955dfad060eba0d49f6aa49b9f1e1fbea098c0441f"
+    },
+    {
+      "media_id": 624667951,
+      "old_bytes": 15837,
+      "new_bytes": 16896,
+      "old_sha256": "f62b2ba36acb49b5c82bc15ef29f80e21ecfbef0742c3a62bfbe43ec75a8f44a",
+      "new_sha256": "a7e65198ca621750832556357046086fe03216c55ae807b8336bd12744ac9a17"
+    },
+    {
+      "media_id": 629375618,
+      "old_bytes": 28693,
+      "new_bytes": 21413,
+      "old_sha256": "a5cc0977992bac8900d5435a07384cb14dc8729512f5b98288e5b66d93c4d386",
+      "new_sha256": "9252ab63f8d7941d2d272bcf3feecd35e4b8f14927d7c75079d2c4c2a1c9c3fd"
+    },
+    {
+      "media_id": 664051226,
+      "old_bytes": 19548,
+      "new_bytes": 22281,
+      "old_sha256": "d861cd9a533cc6d7ab307230c6d0a0b78310a6f5484a63b64b8e27e00440a7d9",
+      "new_sha256": "bf42d8164242916a06dc94464fb93549aa386ed2e03c2e6f97b8939d4428b91c"
+    },
+    {
+      "media_id": 676525090,
+      "old_bytes": 17478,
+      "new_bytes": 16681,
+      "old_sha256": "06ad650394e33fb15dfee3e3cca182432d3c0dfa5e9703122f55fc7736023560",
+      "new_sha256": "2fcf685112598bc78ff74e2d2fae62c453f48b858b13e5514deb70fbfc402e5e"
+    },
+    {
+      "media_id": 677876521,
+      "old_bytes": 14630,
+      "new_bytes": 16853,
+      "old_sha256": "4afb5dee9529b7f83575029f63d2caff5bb5af13d10086f4eea12bc5c6f95640",
+      "new_sha256": "e2546251807077665373ebd1f951a3bf2ddb6448fba47efedad766ef86fe6db8"
+    },
+    {
+      "media_id": 693073778,
+      "old_bytes": 8244,
+      "new_bytes": 8322,
+      "old_sha256": "e9d5ba4be796cc75f806af8261258cdf71d8c00e3ea93c08f852bdaf48802682",
+      "new_sha256": "ba621fd5e2e23ff12e109d762def92ab5c9649d4fd7abd130eaccdf4565418ec"
+    },
+    {
+      "media_id": 695967655,
+      "old_bytes": 8313,
+      "new_bytes": 13116,
+      "old_sha256": "35f6417126c98e55ae2592a504842278d9560549bf6bb145a76420a1577010d1",
+      "new_sha256": "aa5f9f3625aa0b44474f9d7a4be30ee24315e39c5504e06a3a65e568d344119b"
+    },
+    {
+      "media_id": 722714056,
+      "old_bytes": 8645,
+      "new_bytes": 6927,
+      "old_sha256": "da11987651b3764c21c7f26d1b7ff06c533685d95bda84fdee38069e00197870",
+      "new_sha256": "b625b1c01055f9030578f979da05dc7372661d0f09cee71eeaa4d3ed04c74f57"
+    },
+    {
+      "media_id": 725391960,
+      "old_bytes": 10192,
+      "new_bytes": 10886,
+      "old_sha256": "48b76950c420561cd9837c177cab264a071ef23484bb0f1e83a10223e702152f",
+      "new_sha256": "cd5e49ff044d0b4278cb0c86977f0d4105448cf3b4cdddef81367a5e43fa7a66"
+    },
+    {
+      "media_id": 731877774,
+      "old_bytes": 12334,
+      "new_bytes": 20185,
+      "old_sha256": "7938bc5720ce68386350e003decd8209d142d89819a820a1fdebedcf09e59ab8",
+      "new_sha256": "9ff04781e4f060f760f39c35bee9a82a1ade56458cbaa771c15f4139f8102ddb"
+    },
+    {
+      "media_id": 733129145,
+      "old_bytes": 7609,
+      "new_bytes": 9033,
+      "old_sha256": "a8d91e80327ce26145535b65f47d7c9a06b106cfeddc2170bc56fd5ac8189f47",
+      "new_sha256": "d85fdafb2b704fd20bbd47d06d856f3068b64ba78ecf529c259b08651afb1dfa"
+    },
+    {
+      "media_id": 755907931,
+      "old_bytes": 23967,
+      "new_bytes": 43326,
+      "old_sha256": "ac2e66ceaca7b8492be5113e92f27ceb80da8f0430d88bfa1b68c956ebe0e50d",
+      "new_sha256": "71aca5412f4b217ac022bd77d218f3d10e1459b0fcdc4f7227c9030100846d65"
+    },
+    {
+      "media_id": 763144563,
+      "old_bytes": 4094,
+      "new_bytes": 5601,
+      "old_sha256": "ce918d455da73827dcdba14ca5f85439903df1c291d369ae26a62e33bc6e6b84",
+      "new_sha256": "ecc97863ce641ae9e499ff2dbeff144992265f316d808173c982004dd08d6670"
+    },
+    {
+      "media_id": 777821126,
+      "old_bytes": 9352,
+      "new_bytes": 13365,
+      "old_sha256": "9fdc5b53bffcc88c72c0c24e766d9a316027d416bc4ab24d15c6ba4ab45a9712",
+      "new_sha256": "9b25d83facbed5ed9355f90c109b69adc0689826c9fddcef8765b464b6e985bd"
+    },
+    {
+      "media_id": 777883954,
+      "old_bytes": 19609,
+      "new_bytes": 24397,
+      "old_sha256": "db319044a7966f679f360153b05d5f9e6e5700dc3df10ebcac35abe34a565afe",
+      "new_sha256": "eeab3c87e589d08fbde74a554581cae8f6b1acd2b3732a15c8b12ea19d9a0895"
+    },
+    {
+      "media_id": 779722418,
+      "old_bytes": 7571,
+      "new_bytes": 13925,
+      "old_sha256": "792876f78d318b1029697c644bf2e69808ddf8b0cb33aa3944ca993b8f0147e1",
+      "new_sha256": "460d9df9290186a65ac20017498a75daaf21d217098350c04d9bdfee087d4edf"
+    },
+    {
+      "media_id": 820646602,
+      "old_bytes": 10877,
+      "new_bytes": 26716,
+      "old_sha256": "41f54e56300d29559204f9d5b7631f30cae7a14b390c20df317d5880b01c2191",
+      "new_sha256": "fe4f6e9e20335d15db8c3b1413f8228e878a537886248e627ca04b1e9620fdf8"
+    },
+    {
+      "media_id": 836538813,
+      "old_bytes": 22167,
+      "new_bytes": 16815,
+      "old_sha256": "0fa1f04dce2c9eff0c7cf4ff0d14e2b56b7f798c0d6a63373a3dba45423e69ea",
+      "new_sha256": "33907acb3d7a7b586143c74286449b79f1d500e6dc6a96981be5a3610c9d9125"
+    },
+    {
+      "media_id": 837730488,
+      "old_bytes": 10059,
+      "new_bytes": 13765,
+      "old_sha256": "f4afb8f9d8ab552e1481cc747b16d81acc68dca8fce710bb2a17987eb9f92088",
+      "new_sha256": "1c8be0956904549c053a3ac8b4e475b7b53c5bc5b581265d478ace77b8f476a8"
+    },
+    {
+      "media_id": 847264039,
+      "old_bytes": 7106,
+      "new_bytes": 10138,
+      "old_sha256": "8d4e79f160ebb8c475f12f854d8cff2dfa2d7327eac6548c98ed0c620a59a0c6",
+      "new_sha256": "529fc10794ad33e94c43175aec31ba6dfdbc1fe828455920e0bd48c763cce724"
+    },
+    {
+      "media_id": 865333498,
+      "old_bytes": 15006,
+      "new_bytes": 15475,
+      "old_sha256": "83a1751f8405b18c88b3260c65cd8c9a48f69ea2c3fe7208de7c04c87daabd1f",
+      "new_sha256": "01bcd10ca942c618b39a72145970651c4e2da006e694902b993b9d24b09cfcb3"
+    },
+    {
+      "media_id": 914887287,
+      "old_bytes": 18114,
+      "new_bytes": 14868,
+      "old_sha256": "d078317ddf3dcc6a5cffa244dda68ebe98761e52f435582a99b27c3dcbd5b3e9",
+      "new_sha256": "362a40bb76398faae2001f79d9643f2b7f5272742aa41a7a5535b4e61b5a4837"
+    },
+    {
+      "media_id": 925552648,
+      "old_bytes": 18672,
+      "new_bytes": 11907,
+      "old_sha256": "81dc36ded48ab99cf5c5a6d5ef7e5ea873a304e222ceef15d5b2f95ee9d41f5b",
+      "new_sha256": "bc8983a2a60b39280cdea04de76337f7a143064c6e49ac37e5b315940e57ce88"
+    },
+    {
+      "media_id": 951330025,
+      "old_bytes": 7709,
+      "new_bytes": 9747,
+      "old_sha256": "78b7e98d92ea3d2d3c58b9f2b3d2ca6c9af9f29ecdf35f1bf3a9308f0bd540d4",
+      "new_sha256": "8586859af8bfbea88467b2d893c526e5f9a37c623edde7487e607b7b965124fc"
+    },
+    {
+      "media_id": 1015610267,
+      "old_bytes": 16705,
+      "new_bytes": 17777,
+      "old_sha256": "ebb47d7fdac63d8daca7106d37b609216a6fe60ad74038f8eecad119f10db7d9",
+      "new_sha256": "311f37eb577eafdde6a4589fffe002080bfaa066ede9b60d4f964d0d31761dfc"
+    },
+    {
+      "media_id": 1017693914,
+      "old_bytes": 25270,
+      "new_bytes": 21950,
+      "old_sha256": "7707622ee026fe2f5acfde9f11f7b0417d85c862ec70d41ec423480ca3bf27cb",
+      "new_sha256": "7b184ec0b4023d20e2e81e42f0a7fd98f880cee492d52500b533610d98b149d5"
+    },
+    {
+      "media_id": 1041506921,
+      "old_bytes": 11937,
+      "new_bytes": 12147,
+      "old_sha256": "0bbb52ee4103e633f4ce511841f0251f1e36a257a42d0a7a6ea0adfb0772b740",
+      "new_sha256": "c662d8174a3837da7a5d75ead8de4209642fe2b207e8d72355f3ee3c98477d63"
+    },
+    {
+      "media_id": 1051417438,
+      "old_bytes": 12815,
+      "new_bytes": 23424,
+      "old_sha256": "0fd39f2b5b3630618f17d74fcaccc0f8f474994587bc904ba565ff11eac96cd2",
+      "new_sha256": "267ef7aedd94f3379d3513250346dd2cc1c699b1046e6d58ec0794adf67c82be"
+    },
+    {
+      "media_id": 1053445674,
+      "old_bytes": 57929,
+      "new_bytes": 46655,
+      "old_sha256": "439cf3879b516b2b264a16cb685707e71f3764f4eb4643431d73f892cc9e5696",
+      "new_sha256": "1fef73e013d3588e541cb4b60f45a0ccfa58e54d32f12efc5a66d977f744f588"
+    },
+    {
+      "media_id": 1055870700,
+      "old_bytes": 75644,
+      "new_bytes": 79570,
+      "old_sha256": "0f9c2cb221aeffc1228f6e18975cd3b3c0ae91fcb283f51cc048ed9b02527512",
+      "new_sha256": "ed5fd3c8405eabe220924d917ce5b0efa7fecc00f733aaad23681870e10eb4f9"
+    }
+  ],
+  "decoded_replacements": [
+    {
+      "media_id": 3706801,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 70497090,
+      "source_sha256": "446ccd19d731ab16cf3c8a6a0478aa3c194fc6338bedcdee87ef1482959264e2",
+      "wem_format": {
+        "riff_bytes": 15044,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 14832,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 77949,
+        "duration_seconds": 1.767551,
+        "rms_dbfs": -13.581,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.055357,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 27959622,
+      "donor": "coven_evelynn",
+      "donor_media_id": 220274258,
+      "source_sha256": "35830871bae86eb96cb9beb85ba3ad8dbe1670b4003ae4d43232718da3a13116",
+      "wem_format": {
+        "riff_bytes": 9137,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 8931,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 49685,
+        "duration_seconds": 1.126644,
+        "rms_dbfs": -17.034,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.115309,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 40114514,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 568191268,
+      "source_sha256": "b856434b70658415e2b206039274f2713c8d6ef5be2ce60b49482cbb590713cd",
+      "wem_format": {
+        "riff_bytes": 16598,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 16386,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 90233,
+        "duration_seconds": 2.0461,
+        "rms_dbfs": -10.053,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.104409,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 63672621,
+      "donor": "coven_morgana",
+      "donor_media_id": 1012985809,
+      "source_sha256": "cd888d675f7b9eadb11b04dec615d8383f69a67ca27af41f7daead0b22e9e42d",
+      "wem_format": {
+        "riff_bytes": 81619,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 81395,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 435368,
+        "duration_seconds": 9.87229,
+        "rms_dbfs": -11.927,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.058057,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 72571436,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 426949631,
+      "source_sha256": "74b707ea48a55f5d731f9ec16972bf5480c72b9b997bfa0a29798f535d54a981",
+      "wem_format": {
+        "riff_bytes": 7128,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 6928,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 34818,
+        "duration_seconds": 0.789524,
+        "rms_dbfs": -12.16,
+        "peak_dbfs": -0.2,
+        "zero_crossing_rate": 0.079358,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 80801783,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 434924383,
+      "source_sha256": "5b61c75a8ddbf581c6b53c35b92f1e03a7d35d8fbd18bdf0cbfd3dbe8b890f5c",
+      "wem_format": {
+        "riff_bytes": 13080,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 12874,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 62955,
+        "duration_seconds": 1.427551,
+        "rms_dbfs": -12.474,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.096054,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 97222905,
+      "donor": "coven_morgana",
+      "donor_media_id": 119431969,
+      "source_sha256": "6fa43329ae6e456371d492c9e30d74e6e1c80f25f36f070ac675612701685a04",
+      "wem_format": {
+        "riff_bytes": 34276,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 34058,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 195549,
+        "duration_seconds": 4.434218,
+        "rms_dbfs": -22.611,
+        "peak_dbfs": -0.489,
+        "zero_crossing_rate": 0.067421,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 114598926,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 401191143,
+      "source_sha256": "eb95f9f83a0ac2613d7bbc1fa47b99a19e776c5327229a071cb279293ca07f35",
+      "wem_format": {
+        "riff_bytes": 13986,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 13780,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 73763,
+        "duration_seconds": 1.67263,
+        "rms_dbfs": -11.483,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.071216,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 116511754,
+      "donor": "coven_evelynn",
+      "donor_media_id": 1029009206,
+      "source_sha256": "3a6303a5cf45cd5092627fa93ed2aac0a4df47cc539f632b596a9dfa8765f3b7",
+      "wem_format": {
+        "riff_bytes": 22781,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 22569,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 110876,
+        "duration_seconds": 2.514195,
+        "rms_dbfs": -22.35,
+        "peak_dbfs": -6.605,
+        "zero_crossing_rate": 0.114029,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 165569743,
+      "donor": "coven_evelynn",
+      "donor_media_id": 193719423,
+      "source_sha256": "171cd7bd3c30d94f46db0f766d22380cc1edbbfcb1ac9e989f07c7d456e3144a",
+      "wem_format": {
+        "riff_bytes": 5504,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 5298,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 27112,
+        "duration_seconds": 0.614785,
+        "rms_dbfs": -13.595,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.410129,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 171797817,
+      "donor": "coven_morgana",
+      "donor_media_id": 12399101,
+      "source_sha256": "aa0f6420b437267ec096a458a93e7a9623205e03d15021cce1ee9a00eef8d8ee",
+      "wem_format": {
+        "riff_bytes": 8367,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 8161,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 44355,
+        "duration_seconds": 1.005782,
+        "rms_dbfs": -18.148,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.107905,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 171876594,
+      "donor": "coven_evelynn",
+      "donor_media_id": 107521477,
+      "source_sha256": "31225bb931c9988eb3bd79cd42dc880ada204501cd1511aa6bee0d049e03a11b",
+      "wem_format": {
+        "riff_bytes": 9345,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 9139,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 51495,
+        "duration_seconds": 1.167687,
+        "rms_dbfs": -17.053,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.359692,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 183777873,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 95772509,
+      "source_sha256": "a4b6a8c5e58e5db8d63cde59bd942f882c8659ca0cb9c169a897ef8607cde3ca",
+      "wem_format": {
+        "riff_bytes": 10494,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 10288,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 46455,
+        "duration_seconds": 1.053401,
+        "rms_dbfs": -19.215,
+        "peak_dbfs": -0.034,
+        "zero_crossing_rate": 0.126598,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 189342049,
+      "donor": "coven_evelynn",
+      "donor_media_id": 675993977,
+      "source_sha256": "c4af6059604dab3ca42b0185d62e2d63665d0c067ab05f9d419ef375b67c1c9e",
+      "wem_format": {
+        "riff_bytes": 5782,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 5576,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 27112,
+        "duration_seconds": 0.614785,
+        "rms_dbfs": -12.441,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.425289,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 253519843,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 252614563,
+      "source_sha256": "9ee049fb0713e5a6910b18ea4f447469039ff4e87a414142d4600d7f3ec7a51c",
+      "wem_format": {
+        "riff_bytes": 73960,
+        "format_tag": "0xffff",
+        "channels": 2,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 73742,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 276812,
+        "duration_seconds": 6.276916,
+        "rms_dbfs": -12.274,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.052664,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 308615368,
+      "donor": "coven_morgana",
+      "donor_media_id": 882541561,
+      "source_sha256": "9c119cfbec62c6f8968860b9f8deeb01315fb28f4313a771d4f02de7be471e57",
+      "wem_format": {
+        "riff_bytes": 61756,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 61532,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 315845,
+        "duration_seconds": 7.162018,
+        "rms_dbfs": -25.235,
+        "peak_dbfs": -0.013,
+        "zero_crossing_rate": 0.136118,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 322718919,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 641810684,
+      "source_sha256": "d6898a932595b68de37d4ef62b5eb9e8a5a4fc15bd826b4d6e4202a9f5bd6089",
+      "wem_format": {
+        "riff_bytes": 12992,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 12786,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 61011,
+        "duration_seconds": 1.383469,
+        "rms_dbfs": -13.204,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.080118,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 339664547,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 118725415,
+      "source_sha256": "4fd5d0f01a91e9f766c92adcd80aea11337a646a616c3bbbc0d3b095b1c91edb",
+      "wem_format": {
+        "riff_bytes": 13904,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 13698,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 71901,
+        "duration_seconds": 1.630408,
+        "rms_dbfs": -12.605,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.085939,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 354792468,
+      "donor": "coven_evelynn",
+      "donor_media_id": 734542030,
+      "source_sha256": "c22e28f2294363c2e29a8aae2666b8786c1c618c3f7c1d0fc18bbff0c3352733",
+      "wem_format": {
+        "riff_bytes": 9210,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 9004,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 49685,
+        "duration_seconds": 1.126644,
+        "rms_dbfs": -16.895,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.115832,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 355138165,
+      "donor": "coven_evelynn",
+      "donor_media_id": 1002647738,
+      "source_sha256": "1da21837043b528dfab1bd9308a5418bda689f733580e297e7e78e27492bc0eb",
+      "wem_format": {
+        "riff_bytes": 3645,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 3445,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 16170,
+        "duration_seconds": 0.366667,
+        "rms_dbfs": -15.143,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.208052,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 367592209,
+      "donor": "coven_morgana",
+      "donor_media_id": 1033233515,
+      "source_sha256": "51089f6f829a4155b7b059ff37a5bd2d847e1d9a1027f473e5dadd5ba08e47fa",
+      "wem_format": {
+        "riff_bytes": 23777,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 23565,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 133488,
+        "duration_seconds": 3.026939,
+        "rms_dbfs": -14.733,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.034917,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 379674842,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 307239168,
+      "source_sha256": "e9f39b2aa96955466b7a1789faf822e4432bbfa5e2cb89097dc22d70c901e8b6",
+      "wem_format": {
+        "riff_bytes": 11635,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 11429,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 51950,
+        "duration_seconds": 1.178005,
+        "rms_dbfs": -20.003,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.152034,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 387941349,
+      "donor": "coven_evelynn",
+      "donor_media_id": 108555164,
+      "source_sha256": "6c981dfea5bbe89806aa5fcd2f81f216fc42f0b99a23d28f41bb19094697044b",
+      "wem_format": {
+        "riff_bytes": 51524,
+        "format_tag": "0xffff",
+        "channels": 2,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 51406,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 199680,
+        "duration_seconds": 4.527891,
+        "rms_dbfs": -21.711,
+        "peak_dbfs": -0.838,
+        "zero_crossing_rate": 0.03764,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 420124349,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 1053305433,
+      "source_sha256": "2eba490bc6b769140d07943d89163dbdd4d93537adf30e108b4eb2d299b0a007",
+      "wem_format": {
+        "riff_bytes": 18679,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 18467,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 104999,
+        "duration_seconds": 2.38093,
+        "rms_dbfs": -19.414,
+        "peak_dbfs": -3.079,
+        "zero_crossing_rate": 0.052439,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 455764613,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 1058243515,
+      "source_sha256": "d606515d20198bac0d283b18e4f7b5bcb553efb21eafcd53d6e66c8f9aa06fff",
+      "wem_format": {
+        "riff_bytes": 29201,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 28989,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 149408,
+        "duration_seconds": 3.387937,
+        "rms_dbfs": -12.299,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.034396,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 456337424,
+      "donor": "coven_morgana",
+      "donor_media_id": 1028280344,
+      "source_sha256": "70687500472fc3c52b015865c45975c799c5373738b5cfecdc64e4ff3f062748",
+      "wem_format": {
+        "riff_bytes": 8026,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 7820,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 41435,
+        "duration_seconds": 0.939569,
+        "rms_dbfs": -19.173,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.130762,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 467861485,
+      "donor": "coven_evelynn",
+      "donor_media_id": 632347713,
+      "source_sha256": "9371b8ea98c19c88537bf972504af1f546dfa284cd9b18e77dad823f90337871",
+      "wem_format": {
+        "riff_bytes": 12302,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 12096,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 64024,
+        "duration_seconds": 1.451791,
+        "rms_dbfs": -13.724,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.185371,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 474989641,
+      "donor": "coven_morgana",
+      "donor_media_id": 777167827,
+      "source_sha256": "46d258482b0009d863e0b6cceb56835d26febcdee550d67c62e8375bdb8187e2",
+      "wem_format": {
+        "riff_bytes": 6846,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 6640,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 35453,
+        "duration_seconds": 0.803923,
+        "rms_dbfs": -17.896,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.094268,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 487761849,
+      "donor": "coven_morgana",
+      "donor_media_id": 99572348,
+      "source_sha256": "1b50b86e2b7ea7b6202ac559ad40682dd81cab6b7b6dc71f6bf7056471fec066",
+      "wem_format": {
+        "riff_bytes": 25098,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 24886,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 141180,
+        "duration_seconds": 3.201361,
+        "rms_dbfs": -15.048,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.036932,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 487967658,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 1035538399,
+      "source_sha256": "1bcf8bf58295403557b929a5800f6848d7d9429f37687949d37668c576f818e3",
+      "wem_format": {
+        "riff_bytes": 67981,
+        "format_tag": "0xffff",
+        "channels": 2,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 67763,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 247316,
+        "duration_seconds": 5.608073,
+        "rms_dbfs": -11.712,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.058225,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 527378903,
+      "donor": "coven_morgana",
+      "donor_media_id": 792602191,
+      "source_sha256": "e3979d1230a04272c22334da5371f9f3d5cec2b95958a1144e3ddd5f13dc55eb",
+      "wem_format": {
+        "riff_bytes": 27081,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 26863,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 152375,
+        "duration_seconds": 3.455215,
+        "rms_dbfs": -12.99,
+        "peak_dbfs": -0.354,
+        "zero_crossing_rate": 0.051905,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 582249748,
+      "donor": "coven_evelynn",
+      "donor_media_id": 561377250,
+      "source_sha256": "899f3c5958c11f3a5ac64fc0f7601ed6a405e920535ef943d5d8caef471ee351",
+      "wem_format": {
+        "riff_bytes": 5820,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 5614,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 27112,
+        "duration_seconds": 0.614785,
+        "rms_dbfs": -13.395,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.398547,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 608769885,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 425773405,
+      "source_sha256": "3b965ae1445d01d73f843c955dfad060eba0d49f6aa49b9f1e1fbea098c0441f",
+      "wem_format": {
+        "riff_bytes": 16994,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 16782,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 92343,
+        "duration_seconds": 2.093946,
+        "rms_dbfs": -13.935,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.06621,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 624667951,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 1020912503,
+      "source_sha256": "a7e65198ca621750832556357046086fe03216c55ae807b8336bd12744ac9a17",
+      "wem_format": {
+        "riff_bytes": 16896,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 16690,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 89241,
+        "duration_seconds": 2.023605,
+        "rms_dbfs": -11.987,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.068321,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 629375618,
+      "donor": "coven_morgana",
+      "donor_media_id": 124664981,
+      "source_sha256": "9252ab63f8d7941d2d272bcf3feecd35e4b8f14927d7c75079d2c4c2a1c9c3fd",
+      "wem_format": {
+        "riff_bytes": 21413,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 21195,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 118765,
+        "duration_seconds": 2.693084,
+        "rms_dbfs": -18.428,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.049392,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 664051226,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 3889516,
+      "source_sha256": "bf42d8164242916a06dc94464fb93549aa386ed2e03c2e6f97b8939d4428b91c",
+      "wem_format": {
+        "riff_bytes": 22281,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 22069,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 119908,
+        "duration_seconds": 2.719002,
+        "rms_dbfs": -11.211,
+        "peak_dbfs": -0.075,
+        "zero_crossing_rate": 0.073657,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 676525090,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 501446734,
+      "source_sha256": "2fcf685112598bc78ff74e2d2fae62c453f48b858b13e5514deb70fbfc402e5e",
+      "wem_format": {
+        "riff_bytes": 16681,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 16469,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 90641,
+        "duration_seconds": 2.055351,
+        "rms_dbfs": -11.45,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.066516,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 677876521,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 906713271,
+      "source_sha256": "e2546251807077665373ebd1f951a3bf2ddb6448fba47efedad766ef86fe6db8",
+      "wem_format": {
+        "riff_bytes": 16853,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 16641,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 91599,
+        "duration_seconds": 2.077075,
+        "rms_dbfs": -19.646,
+        "peak_dbfs": -3.312,
+        "zero_crossing_rate": 0.055569,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 693073778,
+      "donor": "coven_evelynn",
+      "donor_media_id": 740972494,
+      "source_sha256": "ba621fd5e2e23ff12e109d762def92ab5c9649d4fd7abd130eaccdf4565418ec",
+      "wem_format": {
+        "riff_bytes": 8322,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 8122,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 38740,
+        "duration_seconds": 0.878458,
+        "rms_dbfs": -18.875,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.215364,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 695967655,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 444606846,
+      "source_sha256": "aa5f9f3625aa0b44474f9d7a4be30ee24315e39c5504e06a3a65e568d344119b",
+      "wem_format": {
+        "riff_bytes": 13116,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 12910,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 62464,
+        "duration_seconds": 1.416417,
+        "rms_dbfs": -13.077,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.075325,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 722714056,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 91331997,
+      "source_sha256": "b625b1c01055f9030578f979da05dc7372661d0f09cee71eeaa4d3ed04c74f57",
+      "wem_format": {
+        "riff_bytes": 6927,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 6727,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 34950,
+        "duration_seconds": 0.792517,
+        "rms_dbfs": -14.293,
+        "peak_dbfs": -0.039,
+        "zero_crossing_rate": 0.071247,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 725391960,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 988150754,
+      "source_sha256": "cd5e49ff044d0b4278cb0c86977f0d4105448cf3b4cdddef81367a5e43fa7a66",
+      "wem_format": {
+        "riff_bytes": 10886,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 10680,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 53417,
+        "duration_seconds": 1.21127,
+        "rms_dbfs": -9.486,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.084619,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 731877774,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 413438822,
+      "source_sha256": "9ff04781e4f060f760f39c35bee9a82a1ade56458cbaa771c15f4139f8102ddb",
+      "wem_format": {
+        "riff_bytes": 20185,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 19973,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 101904,
+        "duration_seconds": 2.310748,
+        "rms_dbfs": -10.134,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.057074,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 733129145,
+      "donor": "coven_evelynn",
+      "donor_media_id": 911452300,
+      "source_sha256": "d85fdafb2b704fd20bbd47d06d856f3068b64ba78ecf529c259b08651afb1dfa",
+      "wem_format": {
+        "riff_bytes": 9033,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 8833,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 38740,
+        "duration_seconds": 0.878458,
+        "rms_dbfs": -18.156,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.248561,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 755907931,
+      "donor": "coven_morgana",
+      "donor_media_id": 594445366,
+      "source_sha256": "71aca5412f4b217ac022bd77d218f3d10e1459b0fcdc4f7227c9030100846d65",
+      "wem_format": {
+        "riff_bytes": 43326,
+        "format_tag": "0xffff",
+        "channels": 2,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 43108,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 152375,
+        "duration_seconds": 3.455215,
+        "rms_dbfs": -11.844,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.061874,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 763144563,
+      "donor": "coven_evelynn",
+      "donor_media_id": 727859956,
+      "source_sha256": "ecc97863ce641ae9e499ff2dbeff144992265f316d808173c982004dd08d6670",
+      "wem_format": {
+        "riff_bytes": 5601,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 5395,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 27112,
+        "duration_seconds": 0.614785,
+        "rms_dbfs": -13.912,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.400243,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 777821126,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 449947854,
+      "source_sha256": "9b25d83facbed5ed9355f90c109b69adc0689826c9fddcef8765b464b6e985bd",
+      "wem_format": {
+        "riff_bytes": 13365,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 13159,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 63476,
+        "duration_seconds": 1.439365,
+        "rms_dbfs": -13.39,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.062198,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 777883954,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 892647248,
+      "source_sha256": "eeab3c87e589d08fbde74a554581cae8f6b1acd2b3732a15c8b12ea19d9a0895",
+      "wem_format": {
+        "riff_bytes": 24397,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 24185,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 128022,
+        "duration_seconds": 2.902993,
+        "rms_dbfs": -11.175,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.054038,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 779722418,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 637207176,
+      "source_sha256": "460d9df9290186a65ac20017498a75daaf21d217098350c04d9bdfee087d4edf",
+      "wem_format": {
+        "riff_bytes": 13925,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 13719,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 59300,
+        "duration_seconds": 1.344671,
+        "rms_dbfs": -24.706,
+        "peak_dbfs": -7.718,
+        "zero_crossing_rate": 0.120575,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 820646602,
+      "donor": "coven_evelynn",
+      "donor_media_id": 767276732,
+      "source_sha256": "fe4f6e9e20335d15db8c3b1413f8228e878a537886248e627ca04b1e9620fdf8",
+      "wem_format": {
+        "riff_bytes": 26716,
+        "format_tag": "0xffff",
+        "channels": 2,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 26504,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 96298,
+        "duration_seconds": 2.183628,
+        "rms_dbfs": -13.072,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.170867,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 836538813,
+      "donor": "coven_morgana",
+      "donor_media_id": 396972486,
+      "source_sha256": "33907acb3d7a7b586143c74286449b79f1d500e6dc6a96981be5a3610c9d9125",
+      "wem_format": {
+        "riff_bytes": 16815,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 16603,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 87886,
+        "duration_seconds": 1.99288,
+        "rms_dbfs": -24.215,
+        "peak_dbfs": -0.127,
+        "zero_crossing_rate": 0.149878,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 837730488,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 171850295,
+      "source_sha256": "1c8be0956904549c053a3ac8b4e475b7b53c5bc5b581265d478ace77b8f476a8",
+      "wem_format": {
+        "riff_bytes": 13765,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 13559,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 71901,
+        "duration_seconds": 1.630408,
+        "rms_dbfs": -13.051,
+        "peak_dbfs": -0.548,
+        "zero_crossing_rate": 0.086843,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 847264039,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 748172767,
+      "source_sha256": "529fc10794ad33e94c43175aec31ba6dfdbc1fe828455920e0bd48c763cce724",
+      "wem_format": {
+        "riff_bytes": 10138,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 9932,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 44088,
+        "duration_seconds": 0.999728,
+        "rms_dbfs": -11.206,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.081271,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 865333498,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 649758840,
+      "source_sha256": "01bcd10ca942c618b39a72145970651c4e2da006e694902b993b9d24b09cfcb3",
+      "wem_format": {
+        "riff_bytes": 15475,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 15263,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 82101,
+        "duration_seconds": 1.861701,
+        "rms_dbfs": -13.19,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.074945,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 914887287,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 966578693,
+      "source_sha256": "362a40bb76398faae2001f79d9643f2b7f5272742aa41a7a5535b4e61b5a4837",
+      "wem_format": {
+        "riff_bytes": 14868,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 14656,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 69747,
+        "duration_seconds": 1.581565,
+        "rms_dbfs": -13.243,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.077625,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 925552648,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 256409885,
+      "source_sha256": "bc8983a2a60b39280cdea04de76337f7a143064c6e49ac37e5b315940e57ce88",
+      "wem_format": {
+        "riff_bytes": 11907,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 11701,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 61426,
+        "duration_seconds": 1.39288,
+        "rms_dbfs": -14.507,
+        "peak_dbfs": -0.143,
+        "zero_crossing_rate": 0.070786,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 951330025,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 756152463,
+      "source_sha256": "8586859af8bfbea88467b2d893c526e5f9a37c623edde7487e607b7b965124fc",
+      "wem_format": {
+        "riff_bytes": 9747,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 9547,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 47780,
+        "duration_seconds": 1.083447,
+        "rms_dbfs": -9.15,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.103372,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 1015610267,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 37214966,
+      "source_sha256": "311f37eb577eafdde6a4589fffe002080bfaa066ede9b60d4f964d0d31761dfc",
+      "wem_format": {
+        "riff_bytes": 17777,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 17565,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 97877,
+        "duration_seconds": 2.219433,
+        "rms_dbfs": -20.975,
+        "peak_dbfs": -3.047,
+        "zero_crossing_rate": 0.061547,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 1017693914,
+      "donor": "coven_evelynn",
+      "donor_media_id": 694127773,
+      "source_sha256": "7b184ec0b4023d20e2e81e42f0a7fd98f880cee492d52500b533610d98b149d5",
+      "wem_format": {
+        "riff_bytes": 21950,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 21738,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 127948,
+        "duration_seconds": 2.901315,
+        "rms_dbfs": -27.656,
+        "peak_dbfs": -10.281,
+        "zero_crossing_rate": 0.028996,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 1041506921,
+      "donor": "coven_evelynn",
+      "donor_media_id": 526182837,
+      "source_sha256": "c662d8174a3837da7a5d75ead8de4209642fe2b207e8d72355f3ee3c98477d63",
+      "wem_format": {
+        "riff_bytes": 12147,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 11941,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 64024,
+        "duration_seconds": 1.451791,
+        "rms_dbfs": -13.573,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.197726,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 1051417438,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 307528799,
+      "source_sha256": "267ef7aedd94f3379d3513250346dd2cc1c699b1046e6d58ec0794adf67c82be",
+      "wem_format": {
+        "riff_bytes": 23424,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 23212,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 116870,
+        "duration_seconds": 2.650113,
+        "rms_dbfs": -11.162,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.067203,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 1053445674,
+      "donor": "coven_morgana",
+      "donor_media_id": 1010024025,
+      "source_sha256": "1fef73e013d3588e541cb4b60f45a0ccfa58e54d32f12efc5a66d977f744f588",
+      "wem_format": {
+        "riff_bytes": 46655,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 46437,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 276699,
+        "duration_seconds": 6.274354,
+        "rms_dbfs": -18.953,
+        "peak_dbfs": -3.257,
+        "zero_crossing_rate": 0.040224,
+        "decoder_identified": "Custom Vorbis"
+      }
+    },
+    {
+      "media_id": 1055870700,
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 821737069,
+      "source_sha256": "ed5fd3c8405eabe220924d917ce5b0efa7fecc00f733aaad23681870e10eb4f9",
+      "wem_format": {
+        "riff_bytes": 79570,
+        "format_tag": "0xffff",
+        "channels": 1,
+        "sample_rate": 44100,
+        "fmt_bytes": 66,
+        "data_bytes": 79346,
+        "hash_chunk_present": true
+      },
+      "decoded_validation": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 378681,
+        "duration_seconds": 8.586871,
+        "rms_dbfs": -9.232,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.065792,
+        "decoder_identified": "Custom Vorbis"
+      }
+    }
+  ],
+  "mapping": [
+    {
+      "target_media_id": 3706801,
+      "source_file": "3706801.wem",
+      "source_sha256": "446ccd19d731ab16cf3c8a6a0478aa3c194fc6338bedcdee87ef1482959264e2",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 70497090,
+      "target_roles": [
+        "trap_impact"
+      ],
+      "donor_roles": [
+        "spell_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxEMineSnare_OnBuffActivate"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiRMissile_hit"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 81135,
+        "duration_seconds": 1.839796,
+        "rms_dbfs": -13.013,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.105751,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 77949,
+        "duration_seconds": 1.767551,
+        "rms_dbfs": -13.581,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.055357,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 0.470161
+    },
+    {
+      "target_media_id": 27959622,
+      "source_file": "27959622.wem",
+      "source_sha256": "35830871bae86eb96cb9beb85ba3ad8dbe1670b4003ae4d43232718da3a13116",
+      "donor": "coven_evelynn",
+      "donor_media_id": 220274258,
+      "target_roles": [
+        "trap_cast"
+      ],
+      "donor_roles": [
+        "spell_cast"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxE_OnCast"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnE_OnCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 49833,
+        "duration_seconds": 1.13,
+        "rms_dbfs": -13.134,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.072102,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 49685,
+        "duration_seconds": 1.126644,
+        "rms_dbfs": -17.034,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.115309,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.503544
+    },
+    {
+      "target_media_id": 40114514,
+      "source_file": "40114514.wem",
+      "source_sha256": "b856434b70658415e2b206039274f2713c8d6ef5be2ce60b49482cbb590713cd",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 568191268,
+      "target_roles": [
+        "attack_impact"
+      ],
+      "donor_roles": [
+        "spell_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQAttack_hit"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQDebuff_OnBuffDeactivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 68412,
+        "duration_seconds": 1.551293,
+        "rms_dbfs": -10.569,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.06018,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 90233,
+        "duration_seconds": 2.0461,
+        "rms_dbfs": -10.053,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.104409,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.743827
+    },
+    {
+      "target_media_id": 63672621,
+      "source_file": "63672621.wem",
+      "source_sha256": "cd888d675f7b9eadb11b04dec615d8383f69a67ca27af41f7daead0b22e9e42d",
+      "donor": "coven_morgana",
+      "donor_media_id": 1012985809,
+      "target_roles": [
+        "transition"
+      ],
+      "donor_roles": [
+        "transition"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_Recall3D_buffactivate"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_Recall3D_buffactivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 371139,
+        "duration_seconds": 8.41585,
+        "rms_dbfs": -15.291,
+        "peak_dbfs": -1.111,
+        "zero_crossing_rate": 0.13728,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 435368,
+        "duration_seconds": 9.87229,
+        "rms_dbfs": -11.927,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.058057,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.893914
+    },
+    {
+      "target_media_id": 72571436,
+      "source_file": "72571436.wem",
+      "source_sha256": "74b707ea48a55f5d731f9ec16972bf5480c72b9b997bfa0a29798f535d54a981",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 426949631,
+      "target_roles": [
+        "attack_cast"
+      ],
+      "donor_roles": [
+        "spell_cast"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQAttack2_OnCast",
+        "Play_sfx_JinxSkin65_JinxQAttack_OnCast",
+        "Play_sfx_JinxSkin65_JinxQCritAttack_OnCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQ_OnCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 28387,
+        "duration_seconds": 0.643696,
+        "rms_dbfs": -10.462,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.083774,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 34818,
+        "duration_seconds": 0.789524,
+        "rms_dbfs": -12.16,
+        "peak_dbfs": -0.2,
+        "zero_crossing_rate": 0.079358,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.820159
+    },
+    {
+      "target_media_id": 80801783,
+      "source_file": "80801783.wem",
+      "source_sha256": "5b61c75a8ddbf581c6b53c35b92f1e03a7d35d8fbd18bdf0cbfd3dbe8b890f5c",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 434924383,
+      "target_roles": [
+        "attack_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxBasicAttack2_OnMissileCast",
+        "Play_sfx_JinxSkin65_JinxBasicAttack_OnMissileCast",
+        "Play_sfx_JinxSkin65_JinxCritAttack_OnMissileCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQMissile_OnMissileCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 38022,
+        "duration_seconds": 0.862177,
+        "rms_dbfs": -11.95,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.127693,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 62955,
+        "duration_seconds": 1.427551,
+        "rms_dbfs": -12.474,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.096054,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 3.391082
+    },
+    {
+      "target_media_id": 97222905,
+      "source_file": "97222905.wem",
+      "source_sha256": "6fa43329ae6e456371d492c9e30d74e6e1c80f25f36f070ac675612701685a04",
+      "donor": "coven_morgana",
+      "donor_media_id": 119431969,
+      "target_roles": [
+        "emote"
+      ],
+      "donor_roles": [
+        "emote"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_Taunt3D_buffactivate"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_Idles_buffactivate_Idle_in"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 240520,
+        "duration_seconds": 5.453968,
+        "rms_dbfs": -22.444,
+        "peak_dbfs": -0.441,
+        "zero_crossing_rate": 0.18828,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 195549,
+        "duration_seconds": 4.434218,
+        "rms_dbfs": -22.611,
+        "peak_dbfs": -0.489,
+        "zero_crossing_rate": 0.067421,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.042003
+    },
+    {
+      "target_media_id": 114598926,
+      "source_file": "114598926.wem",
+      "source_sha256": "eb95f9f83a0ac2613d7bbc1fa47b99a19e776c5327229a071cb279293ca07f35",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 401191143,
+      "target_roles": [
+        "spell_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxWMissile_OnMissileCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQMissile_OnMissileLaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 54091,
+        "duration_seconds": 1.226553,
+        "rms_dbfs": -11.891,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.108393,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 73763,
+        "duration_seconds": 1.67263,
+        "rms_dbfs": -11.483,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.071216,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.184899
+    },
+    {
+      "target_media_id": 116511754,
+      "source_file": "116511754.wem",
+      "source_sha256": "3a6303a5cf45cd5092627fa93ed2aac0a4df47cc539f632b596a9dfa8765f3b7",
+      "donor": "coven_evelynn",
+      "donor_media_id": 1029009206,
+      "target_roles": [
+        "emote"
+      ],
+      "donor_roles": [
+        "transition"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_Dance3D_buffactivate"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_Respawn3D_buffactivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 103103,
+        "duration_seconds": 2.337937,
+        "rms_dbfs": -24.109,
+        "peak_dbfs": -1.272,
+        "zero_crossing_rate": 0.11059,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 110876,
+        "duration_seconds": 2.514195,
+        "rms_dbfs": -22.35,
+        "peak_dbfs": -6.605,
+        "zero_crossing_rate": 0.114029,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.344018
+    },
+    {
+      "target_media_id": 165569743,
+      "source_file": "165569743.wem",
+      "source_sha256": "171cd7bd3c30d94f46db0f766d22380cc1edbbfcb1ac9e989f07c7d456e3144a",
+      "donor": "coven_evelynn",
+      "donor_media_id": 193719423,
+      "target_roles": [
+        "attack_cast"
+      ],
+      "donor_roles": [
+        "attack_cast"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQAttack2_OnCast",
+        "Play_sfx_JinxSkin65_JinxQAttack_OnCast",
+        "Play_sfx_JinxSkin65_JinxQCritAttack_OnCast"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack2_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack3_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnCritAttack_OnCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 28200,
+        "duration_seconds": 0.639456,
+        "rms_dbfs": -9.129,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.06479,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 27112,
+        "duration_seconds": 0.614785,
+        "rms_dbfs": -13.595,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.410129,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.717153
+    },
+    {
+      "target_media_id": 171797817,
+      "source_file": "171797817.wem",
+      "source_sha256": "aa0f6420b437267ec096a458a93e7a9623205e03d15021cce1ee9a00eef8d8ee",
+      "donor": "coven_morgana",
+      "donor_media_id": 12399101,
+      "target_roles": [
+        "attack_projectile"
+      ],
+      "donor_roles": [
+        "attack_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxBasicAttack2_OnMissileLaunch",
+        "Play_sfx_JinxSkin65_JinxBasicAttack_OnMissileLaunch",
+        "Play_sfx_JinxSkin65_JinxCritAttack_OnMissileLaunch"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_MorganaBasicAttack2_OnMissileLaunch",
+        "Play_sfx_MorganaSkin26_MorganaBasicAttack_OnMissileLaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 35074,
+        "duration_seconds": 0.795329,
+        "rms_dbfs": -22.036,
+        "peak_dbfs": -4.567,
+        "zero_crossing_rate": 0.116443,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 44355,
+        "duration_seconds": 1.005782,
+        "rms_dbfs": -18.148,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.107905,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.090708
+    },
+    {
+      "target_media_id": 171876594,
+      "source_file": "171876594.wem",
+      "source_sha256": "31225bb931c9988eb3bd79cd42dc880ada204501cd1511aa6bee0d049e03a11b",
+      "donor": "coven_evelynn",
+      "donor_media_id": 107521477,
+      "target_roles": [
+        "attack_impact"
+      ],
+      "donor_roles": [
+        "attack_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxBasicAttack2_OnHit",
+        "Play_sfx_JinxSkin65_JinxBasicAttack_OnHit",
+        "Play_sfx_JinxSkin65_JinxCritAttack_OnHit"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack2_OnHit",
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack3_OnHit",
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack_OnHit",
+        "Play_sfx_EvelynnSkin24_EvelynnCritAttack_OnHit"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 40428,
+        "duration_seconds": 0.916735,
+        "rms_dbfs": -17.382,
+        "peak_dbfs": -0.006,
+        "zero_crossing_rate": 0.164543,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 51495,
+        "duration_seconds": 1.167687,
+        "rms_dbfs": -17.053,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.359692,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.426482
+    },
+    {
+      "target_media_id": 183777873,
+      "source_file": "183777873.wem",
+      "source_sha256": "a4b6a8c5e58e5db8d63cde59bd942f882c8659ca0cb9c169a897ef8607cde3ca",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 95772509,
+      "target_roles": [
+        "attack_impact"
+      ],
+      "donor_roles": [
+        "attack_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxBasicAttack2_OnHit",
+        "Play_sfx_JinxSkin65_JinxBasicAttack_OnHit",
+        "Play_sfx_JinxSkin65_JinxCritAttack_OnHit"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiBasicAttack2_OnHit",
+        "Play_sfx_NamiSkin68_NamiBasicAttack_OnHit",
+        "Play_sfx_NamiSkin68_NamiCritAttack_OnHit"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 37436,
+        "duration_seconds": 0.848889,
+        "rms_dbfs": -17.733,
+        "peak_dbfs": -0.754,
+        "zero_crossing_rate": 0.153359,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 46455,
+        "duration_seconds": 1.053401,
+        "rms_dbfs": -19.215,
+        "peak_dbfs": -0.034,
+        "zero_crossing_rate": 0.126598,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.596535
+    },
+    {
+      "target_media_id": 189342049,
+      "source_file": "189342049.wem",
+      "source_sha256": "c4af6059604dab3ca42b0185d62e2d63665d0c067ab05f9d419ef375b67c1c9e",
+      "donor": "coven_evelynn",
+      "donor_media_id": 675993977,
+      "target_roles": [
+        "attack_cast"
+      ],
+      "donor_roles": [
+        "attack_cast"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQAttack2_OnCast",
+        "Play_sfx_JinxSkin65_JinxQAttack_OnCast",
+        "Play_sfx_JinxSkin65_JinxQCritAttack_OnCast"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack2_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack3_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnCritAttack_OnCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 26784,
+        "duration_seconds": 0.607347,
+        "rms_dbfs": -9.043,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.059553,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 27112,
+        "duration_seconds": 0.614785,
+        "rms_dbfs": -12.441,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.425289,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.323025
+    },
+    {
+      "target_media_id": 253519843,
+      "source_file": "253519843.wem",
+      "source_sha256": "9ee049fb0713e5a6910b18ea4f447469039ff4e87a414142d4600d7f3ec7a51c",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 252614563,
+      "target_roles": [
+        "ultimate_projectile"
+      ],
+      "donor_roles": [
+        "ultimate_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxR_missilelaunch"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiR_missilelaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 267308,
+        "duration_seconds": 6.061406,
+        "rms_dbfs": -18.207,
+        "peak_dbfs": -2.983,
+        "zero_crossing_rate": 0.101703,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 276812,
+        "duration_seconds": 6.276916,
+        "rms_dbfs": -12.274,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.052664,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.528478
+    },
+    {
+      "target_media_id": 308615368,
+      "source_file": "308615368.wem",
+      "source_sha256": "9c119cfbec62c6f8968860b9f8deeb01315fb28f4313a771d4f02de7be471e57",
+      "donor": "coven_morgana",
+      "donor_media_id": 882541561,
+      "target_roles": [
+        "emote"
+      ],
+      "donor_roles": [
+        "emote"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_Joke3D_buffactivate"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_Dance3D_loop_foley"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 430841,
+        "duration_seconds": 9.769637,
+        "rms_dbfs": -26.687,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.106884,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 315845,
+        "duration_seconds": 7.162018,
+        "rms_dbfs": -25.235,
+        "peak_dbfs": -0.013,
+        "zero_crossing_rate": 0.136118,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.527365
+    },
+    {
+      "target_media_id": 322718919,
+      "source_file": "322718919.wem",
+      "source_sha256": "d6898a932595b68de37d4ef62b5eb9e8a5a4fc15bd826b4d6e4202a9f5bd6089",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 641810684,
+      "target_roles": [
+        "attack_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQAttack2_OnMissileCast",
+        "Play_sfx_JinxSkin65_JinxQAttack_OnMissileCast",
+        "Play_sfx_JinxSkin65_JinxQCritAttack_OnMissileCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQMissile_OnMissileCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 38979,
+        "duration_seconds": 0.883878,
+        "rms_dbfs": -12.428,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.101955,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 61011,
+        "duration_seconds": 1.383469,
+        "rms_dbfs": -13.204,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.080118,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 3.281202
+    },
+    {
+      "target_media_id": 339664547,
+      "source_file": "339664547.wem",
+      "source_sha256": "4fd5d0f01a91e9f766c92adcd80aea11337a646a616c3bbbc0d3b095b1c91edb",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 118725415,
+      "target_roles": [
+        "spell_cast"
+      ],
+      "donor_roles": [
+        "spell_cast"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxW_OnCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiW_OnCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 41454,
+        "duration_seconds": 0.94,
+        "rms_dbfs": -9.472,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.128435,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 71901,
+        "duration_seconds": 1.630408,
+        "rms_dbfs": -12.605,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.085939,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.876155
+    },
+    {
+      "target_media_id": 354792468,
+      "source_file": "354792468.wem",
+      "source_sha256": "c22e28f2294363c2e29a8aae2666b8786c1c618c3f7c1d0fc18bbff0c3352733",
+      "donor": "coven_evelynn",
+      "donor_media_id": 734542030,
+      "target_roles": [
+        "trap_cast"
+      ],
+      "donor_roles": [
+        "spell_cast"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxE_OnCast"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnE_OnCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 42184,
+        "duration_seconds": 0.956553,
+        "rms_dbfs": -14.549,
+        "peak_dbfs": -0.66,
+        "zero_crossing_rate": 0.073608,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 49685,
+        "duration_seconds": 1.126644,
+        "rms_dbfs": -16.895,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.115832,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.438759
+    },
+    {
+      "target_media_id": 355138165,
+      "source_file": "355138165.wem",
+      "source_sha256": "1da21837043b528dfab1bd9308a5418bda689f733580e297e7e78e27492bc0eb",
+      "donor": "coven_evelynn",
+      "donor_media_id": 1002647738,
+      "target_roles": [
+        "attack_cast"
+      ],
+      "donor_roles": [
+        "spell_cast"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxBasicAttack2_OnCast",
+        "Play_sfx_JinxSkin65_JinxBasicAttack_OnCast",
+        "Play_sfx_JinxSkin65_JinxCritAttack_OnCast"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnQ_OnCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 14572,
+        "duration_seconds": 0.330431,
+        "rms_dbfs": -13.553,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.218104,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 16170,
+        "duration_seconds": 0.366667,
+        "rms_dbfs": -15.143,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.208052,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.148825
+    },
+    {
+      "target_media_id": 367592209,
+      "source_file": "367592209.wem",
+      "source_sha256": "51089f6f829a4155b7b059ff37a5bd2d847e1d9a1027f473e5dadd5ba08e47fa",
+      "donor": "coven_morgana",
+      "donor_media_id": 1033233515,
+      "target_roles": [
+        "spell_impact"
+      ],
+      "donor_roles": [
+        "spell_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxWMissile_hit"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_MorganaQ_OnHit"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 122536,
+        "duration_seconds": 2.778594,
+        "rms_dbfs": -12.541,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.074615,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 133488,
+        "duration_seconds": 3.026939,
+        "rms_dbfs": -14.733,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.034917,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.143115
+    },
+    {
+      "target_media_id": 379674842,
+      "source_file": "379674842.wem",
+      "source_sha256": "e9f39b2aa96955466b7a1789faf822e4432bbfa5e2cb89097dc22d70c901e8b6",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 307239168,
+      "target_roles": [
+        "attack_impact"
+      ],
+      "donor_roles": [
+        "attack_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxBasicAttack2_OnHit",
+        "Play_sfx_JinxSkin65_JinxBasicAttack_OnHit",
+        "Play_sfx_JinxSkin65_JinxCritAttack_OnHit"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiBasicAttack2_OnHit",
+        "Play_sfx_NamiSkin68_NamiBasicAttack_OnHit",
+        "Play_sfx_NamiSkin68_NamiCritAttack_OnHit"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 50940,
+        "duration_seconds": 1.155102,
+        "rms_dbfs": -19.223,
+        "peak_dbfs": -0.345,
+        "zero_crossing_rate": 0.133297,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 51950,
+        "duration_seconds": 1.178005,
+        "rms_dbfs": -20.003,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.152034,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 0.738112
+    },
+    {
+      "target_media_id": 387941349,
+      "source_file": "387941349.wem",
+      "source_sha256": "6c981dfea5bbe89806aa5fcd2f81f216fc42f0b99a23d28f41bb19094697044b",
+      "donor": "coven_evelynn",
+      "donor_media_id": 108555164,
+      "target_roles": [
+        "trap_buff"
+      ],
+      "donor_roles": [
+        "buff"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxEMine_OnBuffActivate"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnStealthRing_OnBuffActivate",
+        "Play_sfx_EvelynnSkin24_EvelynnStealthRing_OnBuffDeactivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 211447,
+        "duration_seconds": 4.794717,
+        "rms_dbfs": -22.784,
+        "peak_dbfs": -1.939,
+        "zero_crossing_rate": 0.145172,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 199680,
+        "duration_seconds": 4.527891,
+        "rms_dbfs": -21.711,
+        "peak_dbfs": -0.838,
+        "zero_crossing_rate": 0.03764,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.069921
+    },
+    {
+      "target_media_id": 420124349,
+      "source_file": "420124349.wem",
+      "source_sha256": "2eba490bc6b769140d07943d89163dbdd4d93537adf30e108b4eb2d299b0a007",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 1053305433,
+      "target_roles": [
+        "trap_buff"
+      ],
+      "donor_roles": [
+        "buff"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxEMine_OnBuffActivate"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiPassiveDebuff_buffactivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 76752,
+        "duration_seconds": 1.740408,
+        "rms_dbfs": -14.263,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.178161,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 104999,
+        "duration_seconds": 2.38093,
+        "rms_dbfs": -19.414,
+        "peak_dbfs": -3.079,
+        "zero_crossing_rate": 0.052439,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 3.120131
+    },
+    {
+      "target_media_id": 455764613,
+      "source_file": "455764613.wem",
+      "source_sha256": "d606515d20198bac0d283b18e4f7b5bcb553efb21eafcd53d6e66c8f9aa06fff",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 1058243515,
+      "target_roles": [
+        "transition"
+      ],
+      "donor_roles": [
+        "transition"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_Respawn3D_buffactivate",
+        "Play_sfx_JinxSkin65_Winddown3D_buffactivate"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_Recall3D_winddown"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 119574,
+        "duration_seconds": 2.711429,
+        "rms_dbfs": -11.387,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.112166,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 149408,
+        "duration_seconds": 3.387937,
+        "rms_dbfs": -12.299,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.034396,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.220746
+    },
+    {
+      "target_media_id": 456337424,
+      "source_file": "456337424.wem",
+      "source_sha256": "70687500472fc3c52b015865c45975c799c5373738b5cfecdc64e4ff3f062748",
+      "donor": "coven_morgana",
+      "donor_media_id": 1028280344,
+      "target_roles": [
+        "attack_projectile"
+      ],
+      "donor_roles": [
+        "attack_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxBasicAttack2_OnMissileLaunch",
+        "Play_sfx_JinxSkin65_JinxBasicAttack_OnMissileLaunch",
+        "Play_sfx_JinxSkin65_JinxCritAttack_OnMissileLaunch"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_MorganaBasicAttack2_OnMissileLaunch",
+        "Play_sfx_MorganaSkin26_MorganaBasicAttack_OnMissileLaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 33631,
+        "duration_seconds": 0.762608,
+        "rms_dbfs": -23.519,
+        "peak_dbfs": -6.511,
+        "zero_crossing_rate": 0.110556,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 41435,
+        "duration_seconds": 0.939569,
+        "rms_dbfs": -19.173,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.130762,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.207749
+    },
+    {
+      "target_media_id": 467861485,
+      "source_file": "467861485.wem",
+      "source_sha256": "9371b8ea98c19c88537bf972504af1f546dfa284cd9b18e77dad823f90337871",
+      "donor": "coven_evelynn",
+      "donor_media_id": 632347713,
+      "target_roles": [
+        "trap_impact"
+      ],
+      "donor_roles": [
+        "spell_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxEMine_OnBuffDeactivate"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnQ_OnHit"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 62515,
+        "duration_seconds": 1.417574,
+        "rms_dbfs": -13.886,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.145183,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 64024,
+        "duration_seconds": 1.451791,
+        "rms_dbfs": -13.724,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.185371,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 0.248817
+    },
+    {
+      "target_media_id": 474989641,
+      "source_file": "474989641.wem",
+      "source_sha256": "46d258482b0009d863e0b6cceb56835d26febcdee550d67c62e8375bdb8187e2",
+      "donor": "coven_morgana",
+      "donor_media_id": 777167827,
+      "target_roles": [
+        "attack_projectile"
+      ],
+      "donor_roles": [
+        "attack_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQAttack2_OnMissileLaunch",
+        "Play_sfx_JinxSkin65_JinxQAttack_OnMissileLaunch",
+        "Play_sfx_JinxSkin65_JinxQCritAttack_OnMissileLaunch"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_MorganaBasicAttack2_OnMissileLaunch",
+        "Play_sfx_MorganaSkin26_MorganaBasicAttack_OnMissileLaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 29315,
+        "duration_seconds": 0.664739,
+        "rms_dbfs": -18.012,
+        "peak_dbfs": -0.309,
+        "zero_crossing_rate": 0.075356,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 35453,
+        "duration_seconds": 0.803923,
+        "rms_dbfs": -17.896,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.094268,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 0.667663
+    },
+    {
+      "target_media_id": 487761849,
+      "source_file": "487761849.wem",
+      "source_sha256": "1b50b86e2b7ea7b6202ac559ad40682dd81cab6b7b6dc71f6bf7056471fec066",
+      "donor": "coven_morgana",
+      "donor_media_id": 99572348,
+      "target_roles": [
+        "spell_impact"
+      ],
+      "donor_roles": [
+        "spell_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxWMissile_hit"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_MorganaQ_OnHit"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 128904,
+        "duration_seconds": 2.922993,
+        "rms_dbfs": -12.835,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.066484,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 141180,
+        "duration_seconds": 3.201361,
+        "rms_dbfs": -15.048,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.036932,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.13611
+    },
+    {
+      "target_media_id": 487967658,
+      "source_file": "487967658.wem",
+      "source_sha256": "1bcf8bf58295403557b929a5800f6848d7d9429f37687949d37668c576f818e3",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 1035538399,
+      "target_roles": [
+        "ultimate_projectile"
+      ],
+      "donor_roles": [
+        "ultimate_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxR_boosterlaunch"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiR_missilelaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 201797,
+        "duration_seconds": 4.575896,
+        "rms_dbfs": -17.342,
+        "peak_dbfs": -1.957,
+        "zero_crossing_rate": 0.060546,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 247316,
+        "duration_seconds": 5.608073,
+        "rms_dbfs": -11.712,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.058225,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.787677
+    },
+    {
+      "target_media_id": 527378903,
+      "source_file": "527378903.wem",
+      "source_sha256": "e3979d1230a04272c22334da5371f9f3d5cec2b95958a1144e3ddd5f13dc55eb",
+      "donor": "coven_morgana",
+      "donor_media_id": 792602191,
+      "target_roles": [
+        "ultimate_impact"
+      ],
+      "donor_roles": [
+        "ultimate_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxR_hit"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_MorganaR_OnBuffDeactivate",
+        "Play_sfx_MorganaSkin26_MorganaR_hit_others"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 129884,
+        "duration_seconds": 2.945215,
+        "rms_dbfs": -11.326,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.050438,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 152375,
+        "duration_seconds": 3.455215,
+        "rms_dbfs": -12.99,
+        "peak_dbfs": -0.354,
+        "zero_crossing_rate": 0.051905,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.06591
+    },
+    {
+      "target_media_id": 582249748,
+      "source_file": "582249748.wem",
+      "source_sha256": "899f3c5958c11f3a5ac64fc0f7601ed6a405e920535ef943d5d8caef471ee351",
+      "donor": "coven_evelynn",
+      "donor_media_id": 561377250,
+      "target_roles": [
+        "attack_cast"
+      ],
+      "donor_roles": [
+        "attack_cast"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxBasicAttack2_OnCast",
+        "Play_sfx_JinxSkin65_JinxBasicAttack_OnCast",
+        "Play_sfx_JinxSkin65_JinxCritAttack_OnCast"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack2_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack3_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnCritAttack_OnCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 16835,
+        "duration_seconds": 0.381746,
+        "rms_dbfs": -13.46,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.203754,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 27112,
+        "duration_seconds": 0.614785,
+        "rms_dbfs": -13.395,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.398547,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.03668
+    },
+    {
+      "target_media_id": 608769885,
+      "source_file": "608769885.wem",
+      "source_sha256": "3b965ae1445d01d73f843c955dfad060eba0d49f6aa49b9f1e1fbea098c0441f",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 425773405,
+      "target_roles": [
+        "spell_impact"
+      ],
+      "donor_roles": [
+        "spell_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxWMissile_hit"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQ_hit"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 104632,
+        "duration_seconds": 2.372608,
+        "rms_dbfs": -12.314,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.073659,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 92343,
+        "duration_seconds": 2.093946,
+        "rms_dbfs": -13.935,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.06621,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 0.964515
+    },
+    {
+      "target_media_id": 624667951,
+      "source_file": "624667951.wem",
+      "source_sha256": "a7e65198ca621750832556357046086fe03216c55ae807b8336bd12744ac9a17",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 1020912503,
+      "target_roles": [
+        "ultimate_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxR_OnMissileCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQMissile_OnMissileLaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 77991,
+        "duration_seconds": 1.768503,
+        "rms_dbfs": -11.656,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.078292,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 89241,
+        "duration_seconds": 2.023605,
+        "rms_dbfs": -11.987,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.068321,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.800004
+    },
+    {
+      "target_media_id": 629375618,
+      "source_file": "629375618.wem",
+      "source_sha256": "9252ab63f8d7941d2d272bcf3feecd35e4b8f14927d7c75079d2c4c2a1c9c3fd",
+      "donor": "coven_morgana",
+      "donor_media_id": 124664981,
+      "target_roles": [
+        "death"
+      ],
+      "donor_roles": [
+        "transition"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_Death3D_cast"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_Homeguard3D_buffactivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 135869,
+        "duration_seconds": 3.08093,
+        "rms_dbfs": -19.363,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.125033,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 118765,
+        "duration_seconds": 2.693084,
+        "rms_dbfs": -18.428,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.049392,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.207806
+    },
+    {
+      "target_media_id": 664051226,
+      "source_file": "664051226.wem",
+      "source_sha256": "bf42d8164242916a06dc94464fb93549aa386ed2e03c2e6f97b8939d4428b91c",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 3889516,
+      "target_roles": [
+        "ultimate_buff"
+      ],
+      "donor_roles": [
+        "spell_buff"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxR_boosteractivate"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQDebuff_OnBuffActivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 90673,
+        "duration_seconds": 2.056077,
+        "rms_dbfs": -10.623,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.076385,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 119908,
+        "duration_seconds": 2.719002,
+        "rms_dbfs": -11.211,
+        "peak_dbfs": -0.075,
+        "zero_crossing_rate": 0.073657,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.302379
+    },
+    {
+      "target_media_id": 676525090,
+      "source_file": "676525090.wem",
+      "source_sha256": "2fcf685112598bc78ff74e2d2fae62c453f48b858b13e5514deb70fbfc402e5e",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 501446734,
+      "target_roles": [
+        "ultimate_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxR_OnMissileCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQMissile_OnMissileLaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 85084,
+        "duration_seconds": 1.929342,
+        "rms_dbfs": -11.95,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.076584,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 90641,
+        "duration_seconds": 2.055351,
+        "rms_dbfs": -11.45,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.066516,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.645007
+    },
+    {
+      "target_media_id": 677876521,
+      "source_file": "677876521.wem",
+      "source_sha256": "e2546251807077665373ebd1f951a3bf2ddb6448fba47efedad766ef86fe6db8",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 906713271,
+      "target_roles": [
+        "trap_buff"
+      ],
+      "donor_roles": [
+        "buff"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxEMine_OnBuffActivate"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiPassiveDebuff_buffactivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 63104,
+        "duration_seconds": 1.43093,
+        "rms_dbfs": -17.789,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.238895,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 91599,
+        "duration_seconds": 2.077075,
+        "rms_dbfs": -19.646,
+        "peak_dbfs": -3.312,
+        "zero_crossing_rate": 0.055569,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.317836
+    },
+    {
+      "target_media_id": 693073778,
+      "source_file": "693073778.wem",
+      "source_sha256": "ba621fd5e2e23ff12e109d762def92ab5c9649d4fd7abd130eaccdf4565418ec",
+      "donor": "coven_evelynn",
+      "donor_media_id": 740972494,
+      "target_roles": [
+        "attack_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQAttack2_OnMissileLaunch",
+        "Play_sfx_JinxSkin65_JinxQAttack_OnMissileLaunch",
+        "Play_sfx_JinxSkin65_JinxQCritAttack_OnMissileLaunch"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnQ2_missilelaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 37241,
+        "duration_seconds": 0.844467,
+        "rms_dbfs": -18.705,
+        "peak_dbfs": -1.962,
+        "zero_crossing_rate": 0.054055,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 38740,
+        "duration_seconds": 0.878458,
+        "rms_dbfs": -18.875,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.215364,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.911814
+    },
+    {
+      "target_media_id": 695967655,
+      "source_file": "695967655.wem",
+      "source_sha256": "aa5f9f3625aa0b44474f9d7a4be30ee24315e39c5504e06a3a65e568d344119b",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 444606846,
+      "target_roles": [
+        "attack_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQAttack2_OnMissileCast",
+        "Play_sfx_JinxSkin65_JinxQAttack_OnMissileCast",
+        "Play_sfx_JinxSkin65_JinxQCritAttack_OnMissileCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQMissile_OnMissileCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 38979,
+        "duration_seconds": 0.883878,
+        "rms_dbfs": -12.709,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.106906,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 62464,
+        "duration_seconds": 1.416417,
+        "rms_dbfs": -13.077,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.075325,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 3.238243
+    },
+    {
+      "target_media_id": 722714056,
+      "source_file": "722714056.wem",
+      "source_sha256": "b625b1c01055f9030578f979da05dc7372661d0f09cee71eeaa4d3ed04c74f57",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 91331997,
+      "target_roles": [
+        "spell_cast"
+      ],
+      "donor_roles": [
+        "spell_cast"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxW_OnCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQ_OnCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 38331,
+        "duration_seconds": 0.869184,
+        "rms_dbfs": -9.545,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.117193,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 34950,
+        "duration_seconds": 0.792517,
+        "rms_dbfs": -14.293,
+        "peak_dbfs": -0.039,
+        "zero_crossing_rate": 0.071247,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.076661
+    },
+    {
+      "target_media_id": 725391960,
+      "source_file": "725391960.wem",
+      "source_sha256": "cd5e49ff044d0b4278cb0c86977f0d4105448cf3b4cdddef81367a5e43fa7a66",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 988150754,
+      "target_roles": [
+        "spell_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxWMissile_OnMissileCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQMissile_OnMissileLaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 53395,
+        "duration_seconds": 1.210771,
+        "rms_dbfs": -11.956,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.098344,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 53417,
+        "duration_seconds": 1.21127,
+        "rms_dbfs": -9.486,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.084619,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 0.906911
+    },
+    {
+      "target_media_id": 731877774,
+      "source_file": "731877774.wem",
+      "source_sha256": "9ff04781e4f060f760f39c35bee9a82a1ade56458cbaa771c15f4139f8102ddb",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 413438822,
+      "target_roles": [
+        "buff"
+      ],
+      "donor_roles": [
+        "spell_buff"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQIcon_OnBuffActivate"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQDebuff_OnBuffActivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 58886,
+        "duration_seconds": 1.335283,
+        "rms_dbfs": -9.097,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.076165,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 101904,
+        "duration_seconds": 2.310748,
+        "rms_dbfs": -10.134,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.057074,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 3.315507
+    },
+    {
+      "target_media_id": 733129145,
+      "source_file": "733129145.wem",
+      "source_sha256": "d85fdafb2b704fd20bbd47d06d856f3068b64ba78ecf529c259b08651afb1dfa",
+      "donor": "coven_evelynn",
+      "donor_media_id": 911452300,
+      "target_roles": [
+        "attack_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQAttack2_OnMissileLaunch",
+        "Play_sfx_JinxSkin65_JinxQAttack_OnMissileLaunch",
+        "Play_sfx_JinxSkin65_JinxQCritAttack_OnMissileLaunch"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnQ2_missilelaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 35513,
+        "duration_seconds": 0.805283,
+        "rms_dbfs": -16.941,
+        "peak_dbfs": -0.286,
+        "zero_crossing_rate": 0.059952,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 38740,
+        "duration_seconds": 0.878458,
+        "rms_dbfs": -18.156,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.248561,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.502
+    },
+    {
+      "target_media_id": 755907931,
+      "source_file": "755907931.wem",
+      "source_sha256": "71aca5412f4b217ac022bd77d218f3d10e1459b0fcdc4f7227c9030100846d65",
+      "donor": "coven_morgana",
+      "donor_media_id": 594445366,
+      "target_roles": [
+        "ultimate_impact"
+      ],
+      "donor_roles": [
+        "ultimate_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxR_hit"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_MorganaR_OnBuffDeactivate",
+        "Play_sfx_MorganaSkin26_MorganaR_hit_self"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 127808,
+        "duration_seconds": 2.898141,
+        "rms_dbfs": -11.902,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.052517,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 152375,
+        "duration_seconds": 3.455215,
+        "rms_dbfs": -11.844,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.061874,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 0.775817
+    },
+    {
+      "target_media_id": 763144563,
+      "source_file": "763144563.wem",
+      "source_sha256": "ecc97863ce641ae9e499ff2dbeff144992265f316d808173c982004dd08d6670",
+      "donor": "coven_evelynn",
+      "donor_media_id": 727859956,
+      "target_roles": [
+        "attack_cast"
+      ],
+      "donor_roles": [
+        "attack_cast"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxBasicAttack2_OnCast",
+        "Play_sfx_JinxSkin65_JinxBasicAttack_OnCast",
+        "Play_sfx_JinxSkin65_JinxCritAttack_OnCast"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack2_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack3_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnBasicAttack_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnCritAttack_OnCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 18622,
+        "duration_seconds": 0.422268,
+        "rms_dbfs": -14.184,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.196015,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 27112,
+        "duration_seconds": 0.614785,
+        "rms_dbfs": -13.912,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.400243,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.834781
+    },
+    {
+      "target_media_id": 777821126,
+      "source_file": "777821126.wem",
+      "source_sha256": "9b25d83facbed5ed9355f90c109b69adc0689826c9fddcef8765b464b6e985bd",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 449947854,
+      "target_roles": [
+        "attack_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQAttack2_OnMissileCast",
+        "Play_sfx_JinxSkin65_JinxQAttack_OnMissileCast",
+        "Play_sfx_JinxSkin65_JinxQCritAttack_OnMissileCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiW_missilelaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 43931,
+        "duration_seconds": 0.996168,
+        "rms_dbfs": -12.588,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.093968,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 63476,
+        "duration_seconds": 1.439365,
+        "rms_dbfs": -13.39,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.062198,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 3.080134
+    },
+    {
+      "target_media_id": 777883954,
+      "source_file": "777883954.wem",
+      "source_sha256": "eeab3c87e589d08fbde74a554581cae8f6b1acd2b3732a15c8b12ea19d9a0895",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 892647248,
+      "target_roles": [
+        "ultimate_buff"
+      ],
+      "donor_roles": [
+        "spell_buff"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxR_boosteractivate"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQDebuff_OnBuffActivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 91997,
+        "duration_seconds": 2.0861,
+        "rms_dbfs": -10.679,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.073112,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 128022,
+        "duration_seconds": 2.902993,
+        "rms_dbfs": -11.175,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.054038,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.47216
+    },
+    {
+      "target_media_id": 779722418,
+      "source_file": "779722418.wem",
+      "source_sha256": "460d9df9290186a65ac20017498a75daaf21d217098350c04d9bdfee087d4edf",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 637207176,
+      "target_roles": [
+        "attack_projectile"
+      ],
+      "donor_roles": [
+        "attack_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxBasicAttack2_OnMissileLaunch",
+        "Play_sfx_JinxSkin65_JinxBasicAttack_OnMissileLaunch",
+        "Play_sfx_JinxSkin65_JinxCritAttack_OnMissileLaunch"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiBasicAttack2_OnMissileLaunch",
+        "Play_sfx_NamiSkin68_NamiBasicAttack_OnMissileLaunch",
+        "Play_sfx_NamiSkin68_NamiCritAttack_OnMissileLaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 34042,
+        "duration_seconds": 0.771927,
+        "rms_dbfs": -25.509,
+        "peak_dbfs": -6.98,
+        "zero_crossing_rate": 0.116183,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 59300,
+        "duration_seconds": 1.344671,
+        "rms_dbfs": -24.706,
+        "peak_dbfs": -7.718,
+        "zero_crossing_rate": 0.120575,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.30927
+    },
+    {
+      "target_media_id": 820646602,
+      "source_file": "820646602.wem",
+      "source_sha256": "fe4f6e9e20335d15db8c3b1413f8228e878a537886248e627ca04b1e9620fdf8",
+      "donor": "coven_evelynn",
+      "donor_media_id": 767276732,
+      "target_roles": [
+        "ultimate_cast"
+      ],
+      "donor_roles": [
+        "ultimate_cast",
+        "ultimate_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxR_OnCast"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnR_OnCast",
+        "Play_sfx_EvelynnSkin24_EvelynnR_OnCastt",
+        "Play_sfx_EvelynnSkin24_EvelynnR_OnHit_basic",
+        "Play_sfx_EvelynnSkin24_EvelynnR_OnHit_crit"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 49387,
+        "duration_seconds": 1.119887,
+        "rms_dbfs": -9.767,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.082372,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 2,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 96298,
+        "duration_seconds": 2.183628,
+        "rms_dbfs": -13.072,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.170867,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 3.625515
+    },
+    {
+      "target_media_id": 836538813,
+      "source_file": "836538813.wem",
+      "source_sha256": "33907acb3d7a7b586143c74286449b79f1d500e6dc6a96981be5a3610c9d9125",
+      "donor": "coven_morgana",
+      "donor_media_id": 396972486,
+      "target_roles": [
+        "emote"
+      ],
+      "donor_roles": [
+        "emote"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_Dance3D_loop"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_Idles_buffactivate_Idle_in2"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 89873,
+        "duration_seconds": 2.037937,
+        "rms_dbfs": -25.756,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.145485,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 87886,
+        "duration_seconds": 1.99288,
+        "rms_dbfs": -24.215,
+        "peak_dbfs": -0.127,
+        "zero_crossing_rate": 0.149878,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 0.619601
+    },
+    {
+      "target_media_id": 837730488,
+      "source_file": "837730488.wem",
+      "source_sha256": "1c8be0956904549c053a3ac8b4e475b7b53c5bc5b581265d478ace77b8f476a8",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 171850295,
+      "target_roles": [
+        "ultimate_cast"
+      ],
+      "donor_roles": [
+        "spell_cast"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxR_OnCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiW_OnCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 42623,
+        "duration_seconds": 0.966508,
+        "rms_dbfs": -9.186,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.080827,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 71901,
+        "duration_seconds": 1.630408,
+        "rms_dbfs": -13.051,
+        "peak_dbfs": -0.548,
+        "zero_crossing_rate": 0.086843,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 4.189486
+    },
+    {
+      "target_media_id": 847264039,
+      "source_file": "847264039.wem",
+      "source_sha256": "529fc10794ad33e94c43175aec31ba6dfdbc1fe828455920e0bd48c763cce724",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 748172767,
+      "target_roles": [
+        "attack_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxBasicAttack2_OnMissileCast",
+        "Play_sfx_JinxSkin65_JinxBasicAttack_OnMissileCast",
+        "Play_sfx_JinxSkin65_JinxCritAttack_OnMissileCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQMissile_OnMissileCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 32209,
+        "duration_seconds": 0.730363,
+        "rms_dbfs": -10.905,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.110966,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 44088,
+        "duration_seconds": 0.999728,
+        "rms_dbfs": -11.206,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.081271,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.73626
+    },
+    {
+      "target_media_id": 865333498,
+      "source_file": "865333498.wem",
+      "source_sha256": "01bcd10ca942c618b39a72145970651c4e2da006e694902b993b9d24b09cfcb3",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 649758840,
+      "target_roles": [
+        "attack_impact"
+      ],
+      "donor_roles": [
+        "spell_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQAttack_hit"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQ_hit"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 79656,
+        "duration_seconds": 1.806259,
+        "rms_dbfs": -11.688,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.076379,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 82101,
+        "duration_seconds": 1.861701,
+        "rms_dbfs": -13.19,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.074945,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.2207
+    },
+    {
+      "target_media_id": 914887287,
+      "source_file": "914887287.wem",
+      "source_sha256": "362a40bb76398faae2001f79d9643f2b7f5272742aa41a7a5535b4e61b5a4837",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 966578693,
+      "target_roles": [
+        "spell_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxWMissile_OnMissileLaunch"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQMissile_OnMissileCast"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 89833,
+        "duration_seconds": 2.037029,
+        "rms_dbfs": -14.133,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.086985,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 69747,
+        "duration_seconds": 1.581565,
+        "rms_dbfs": -13.243,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.077625,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.098813
+    },
+    {
+      "target_media_id": 925552648,
+      "source_file": "925552648.wem",
+      "source_sha256": "bc8983a2a60b39280cdea04de76337f7a143064c6e49ac37e5b315940e57ce88",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 256409885,
+      "target_roles": [
+        "spell_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxWMissile_OnMissileLaunch"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiW_missilelaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 92583,
+        "duration_seconds": 2.099388,
+        "rms_dbfs": -13.617,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.075447,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 61426,
+        "duration_seconds": 1.39288,
+        "rms_dbfs": -14.507,
+        "peak_dbfs": -0.143,
+        "zero_crossing_rate": 0.070786,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.5563
+    },
+    {
+      "target_media_id": 951330025,
+      "source_file": "951330025.wem",
+      "source_sha256": "8586859af8bfbea88467b2d893c526e5f9a37c623edde7487e607b7b965124fc",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 756152463,
+      "target_roles": [
+        "attack_projectile"
+      ],
+      "donor_roles": [
+        "spell_projectile"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxBasicAttack2_OnMissileCast",
+        "Play_sfx_JinxSkin65_JinxBasicAttack_OnMissileCast",
+        "Play_sfx_JinxSkin65_JinxCritAttack_OnMissileCast"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQMissile_OnMissileLaunch"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 35340,
+        "duration_seconds": 0.801361,
+        "rms_dbfs": -11.602,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.111973,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 47780,
+        "duration_seconds": 1.083447,
+        "rms_dbfs": -9.15,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.103372,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 3.388777
+    },
+    {
+      "target_media_id": 1015610267,
+      "source_file": "1015610267.wem",
+      "source_sha256": "311f37eb577eafdde6a4589fffe002080bfaa066ede9b60d4f964d0d31761dfc",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 37214966,
+      "target_roles": [
+        "buff"
+      ],
+      "donor_roles": [
+        "buff"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxPassiveKill_OnBuffActivate"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiPassiveDebuff_buffactivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 92559,
+        "duration_seconds": 2.098844,
+        "rms_dbfs": -12.547,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.071609,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 97877,
+        "duration_seconds": 2.219433,
+        "rms_dbfs": -20.975,
+        "peak_dbfs": -3.047,
+        "zero_crossing_rate": 0.061547,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 3.147581
+    },
+    {
+      "target_media_id": 1017693914,
+      "source_file": "1017693914.wem",
+      "source_sha256": "7b184ec0b4023d20e2e81e42f0a7fd98f880cee492d52500b533610d98b149d5",
+      "donor": "coven_evelynn",
+      "donor_media_id": 694127773,
+      "target_roles": [
+        "emote"
+      ],
+      "donor_roles": [
+        "emote"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_Taunt23D_buffactivate"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_Taunt3D_loop"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 116549,
+        "duration_seconds": 2.642834,
+        "rms_dbfs": -25.009,
+        "peak_dbfs": -0.171,
+        "zero_crossing_rate": 0.180166,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 127948,
+        "duration_seconds": 2.901315,
+        "rms_dbfs": -27.656,
+        "peak_dbfs": -10.281,
+        "zero_crossing_rate": 0.028996,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.909897
+    },
+    {
+      "target_media_id": 1041506921,
+      "source_file": "1041506921.wem",
+      "source_sha256": "c662d8174a3837da7a5d75ead8de4209642fe2b207e8d72355f3ee3c98477d63",
+      "donor": "coven_evelynn",
+      "donor_media_id": 526182837,
+      "target_roles": [
+        "attack_impact"
+      ],
+      "donor_roles": [
+        "spell_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQAttack_hit"
+      ],
+      "donor_events": [
+        "Play_sfx_EvelynnSkin24_EvelynnQ_OnHit"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 61147,
+        "duration_seconds": 1.386553,
+        "rms_dbfs": -10.311,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.084683,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 64024,
+        "duration_seconds": 1.451791,
+        "rms_dbfs": -13.573,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.197726,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.86876
+    },
+    {
+      "target_media_id": 1051417438,
+      "source_file": "1051417438.wem",
+      "source_sha256": "267ef7aedd94f3379d3513250346dd2cc1c699b1046e6d58ec0794adf67c82be",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 307528799,
+      "target_roles": [
+        "spell_buff"
+      ],
+      "donor_roles": [
+        "spell_buff"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxQ_OnBuffActivate"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_NamiQDebuff_OnBuffActivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 59237,
+        "duration_seconds": 1.343243,
+        "rms_dbfs": -9.994,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.095314,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 116870,
+        "duration_seconds": 2.650113,
+        "rms_dbfs": -11.162,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.067203,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 2.531679
+    },
+    {
+      "target_media_id": 1053445674,
+      "source_file": "1053445674.wem",
+      "source_sha256": "1fef73e013d3588e541cb4b60f45a0ccfa58e54d32f12efc5a66d977f744f588",
+      "donor": "coven_morgana",
+      "donor_media_id": 1010024025,
+      "target_roles": [
+        "buff"
+      ],
+      "donor_roles": [
+        "spell_buff",
+        "spell_impact"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_JinxPassiveKill_OnBuffActivate"
+      ],
+      "donor_events": [
+        "Play_sfx_MorganaSkin26_MorganaE_OnBuffActivate",
+        "Play_sfx_MorganaSkin26_MorganaE_OnBuffDeactivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 309367,
+        "duration_seconds": 7.015125,
+        "rms_dbfs": -18.883,
+        "peak_dbfs": -2.65,
+        "zero_crossing_rate": 0.088381,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 276699,
+        "duration_seconds": 6.274354,
+        "rms_dbfs": -18.953,
+        "peak_dbfs": -3.257,
+        "zero_crossing_rate": 0.040224,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 1.753765
+    },
+    {
+      "target_media_id": 1055870700,
+      "source_file": "1055870700.wem",
+      "source_sha256": "ed5fd3c8405eabe220924d917ce5b0efa7fecc00f733aaad23681870e10eb4f9",
+      "donor": "sunken_shadows_nami",
+      "donor_media_id": 821737069,
+      "target_roles": [
+        "transition"
+      ],
+      "donor_roles": [
+        "transition"
+      ],
+      "target_events": [
+        "Play_sfx_JinxSkin65_Recall3D_buffactivate"
+      ],
+      "donor_events": [
+        "Play_sfx_NamiSkin68_Recall3D_buffactivate"
+      ],
+      "target_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 371139,
+        "duration_seconds": 8.41585,
+        "rms_dbfs": -10.595,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.058156,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "donor_features": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 378681,
+        "duration_seconds": 8.586871,
+        "rms_dbfs": -9.232,
+        "peak_dbfs": 0.0,
+        "zero_crossing_rate": 0.065792,
+        "decoder_identified": "Custom Vorbis"
+      },
+      "mapping_cost": 0.560311
+    }
+  ],
+  "banks": {
+    "audio": {
+      "source_bytes": 1211340,
+      "output_bytes": 1319042,
+      "source_sha256": "dcbc6255609ebcce4afbd07ffbde610623f27f295b4904d341426082f5e8f1cc",
+      "output_sha256": "810bdbd7791f77011ebba80ed1199a1adb74a3336e757c90eab1107d74ae0acf"
+    },
+    "events": {
+      "source_bytes": 15569,
+      "output_bytes": 15569,
+      "source_sha256": "42acc5b84e37a383674f39b1527ff7864d475d7ed34479e607f7c7bcda08c21b",
+      "output_sha256": "87bbc6d9232db3ab760eff4343785d182104876aeb5d04b5c39fbed1413530b3"
+    }
+  },
+  "limitations": [
+    "Automated checks prove bank structure, routing, codec, and decode integrity only.",
+    "Live League playback and subjective mix levels still require an in-game smoke test."
+  ]
+}

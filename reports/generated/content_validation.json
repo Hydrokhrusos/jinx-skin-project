@@ -1,0 +1,355 @@
+{
+  "status": "PASSED",
+  "version": "1.0.6",
+  "target": "Jinx.wad.client",
+  "source_skin": 65,
+  "content_file_count": 11,
+  "content_files": {
+    "assets/characters/jinx/skins/skin65/jinx_skin65.skn": {
+      "size": 1536192,
+      "sha256": "8d9469e9901bb712eda90ea51465f14bf3b3d1196735b8a29e2f3851493e276b"
+    },
+    "data/characters/jinx/animations/skin65.bin": {
+      "size": 35408,
+      "sha256": "72d0647f2786480982bb1311518628bc825f968cf8e782b11a543eab0d9e9f46"
+    },
+    "data/characters/jinx/skins/skin65.bin": {
+      "size": 128402,
+      "sha256": "91de42796587be1421fa9c8b073e5f23c08be5761e08b809c1df47a12d226a4a"
+    },
+    "data/characters/jinx/skins/skin66.bin": {
+      "size": 128560,
+      "sha256": "fa783a32f2c96ecd9b1e5b5569e6d1595b6bfd37d8bde41d2d3a02c0b5b86269"
+    },
+    "data/characters/jinx/skins/skin67.bin": {
+      "size": 128508,
+      "sha256": "24573e7bdd9706df1037ba4e84bda8eb4f29708eb2c3dffe1c59a69687753108"
+    },
+    "data/characters/jinx/skins/skin68.bin": {
+      "size": 128508,
+      "sha256": "988b925bf401fb5d28582926cbf4b74bc3e8377df5d1c37aafe2b1770f0a1214"
+    },
+    "data/characters/jinx/skins/skin69.bin": {
+      "size": 128487,
+      "sha256": "bf7c82453d5e2af8d523e76923be0445a306e3da898bd17f7f1fa1cdf969b84a"
+    },
+    "data/characters/jinx/skins/skin70.bin": {
+      "size": 128508,
+      "sha256": "8878e9a85b0be2d459fd7b59288cb0037f96b94a6c3b5be697e2511a28f8f9a3"
+    },
+    "data/characters/jinx/skins/skin71.bin": {
+      "size": 128487,
+      "sha256": "f790ec661f51417a70d5192f335a8c58f2c619f5a223cf4db98a4c3cc33a2a01"
+    },
+    "data/characters/jinx/skins/skin72.bin": {
+      "size": 128487,
+      "sha256": "4a3c693585e9fde7e881a6fd3228237e7285332b1faadf1cac5f66b7bc0f2606"
+    },
+    "data/characters/jinx/skins/skin73.bin": {
+      "size": 128433,
+      "sha256": "16626b2e957b703d1a4d4b5c95e71d69f841f14feaca0af0b22cd141fe242eaf"
+    }
+  },
+  "mesh": {
+    "version": "4.1",
+    "vertices": 25094,
+    "indices": 115290,
+    "submeshes": [
+      "Body",
+      "Hair",
+      "Skirt",
+      "PowPow",
+      "Fishbones",
+      "WeaponVFX",
+      "Weapon03",
+      "Recall"
+    ],
+    "weapon_scale": 1.6,
+    "maximum_grip_anchor_displacement": 0.0
+  },
+  "bin_roundtrip": {
+    "skins": [
+      {
+        "skin": 65,
+        "sha256": "20d0894b3374f339001c77ce5074b2d3d81fcd1050b0a690ad031b784797e6b6"
+      },
+      {
+        "skin": 66,
+        "sha256": "2691dc2e51b46433aebcb74b6a9f3bfb51554add7e5a828427c1e69011e39737"
+      },
+      {
+        "skin": 67,
+        "sha256": "fe43bfdd22f5f4d2b4ab137cdf3bdbe4a7520a02e91ca032340f6b615830ca4b"
+      },
+      {
+        "skin": 68,
+        "sha256": "2d5bbb1808fbe6b233676a10cf955775adedfd93286803d5dca27f967d9bf993"
+      },
+      {
+        "skin": 69,
+        "sha256": "bc05a95caea68cd40c89638061039fa2734c095b0f628a8ec6bbf42b09618f21"
+      },
+      {
+        "skin": 70,
+        "sha256": "156da6e69bbd89545bdc3ede3d3df17f5d66183dc394fb7bb4218c8ea466282a"
+      },
+      {
+        "skin": 71,
+        "sha256": "1fcf5fb805528b13eb3fdf6004eeaad1326405f79040ffc568976eef03bc4163"
+      },
+      {
+        "skin": 72,
+        "sha256": "16bb845ee9983785009eef6eab477c42953e4492718c2c85006b1d1f02b158b0"
+      },
+      {
+        "skin": 73,
+        "sha256": "7842364d2aaac97f553c45c65f3eb646f79ef3944b5826b8229d787cf6933359"
+      }
+    ],
+    "animation_graph": {
+      "sha256": "60119cfc732ac499dcfe46dedc758df7e10e815a434f4c6a7379923d75a90aba",
+      "source": "Riot persistent Minigun and Rlauncher animation families",
+      "selection": "game-selected Riot family",
+      "to_fishbones_clip_key": "0xadc1b4e7",
+      "to_fishbones_clip": "minigun_spell1_weapon_gunonly.anm",
+      "to_powpow_clip_key": "0x0fd7fa17",
+      "to_powpow_clip": "launcher_spell1_weapon.anm",
+      "q_handoff_visibility_events": 2,
+      "state_visibility_events": 42,
+      "family_counts": {
+        "minigun": 21,
+        "rlauncher": 21
+      },
+      "family_clips": [
+        {
+          "family": "minigun",
+          "clip_key": "0xbd28bd4d",
+          "clip": "jinx_minigun_death.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0x6c2b2ee6",
+          "clip": "jinx_minigun_idle1.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0xdfe2e631",
+          "clip": "jinx_minigun_idle2.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0x76bbc6a0",
+          "clip": "jinx_minigun_idle3.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0xf112f5b2",
+          "clip": "jinx_minigun_run.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x34673efd",
+          "clip": "jinx_rlauncher_run.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0xf760e2a4",
+          "clip": "jinx_minigun_spell3_run.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0xb7f64047",
+          "clip": "jinx_minigun_spell4.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0x56b1e924",
+          "clip": "jinx_minigun_attack1.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0x59b1eddd",
+          "clip": "jinx_minigun_attack5.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0xa6f38079",
+          "clip": "jinx_rlauncher_idle1.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x21237563",
+          "clip": "jinx_rlauncher_idle2.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0xcceaa86e",
+          "clip": "jinx_rlauncher_idle3.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0xa7d08706",
+          "clip": "jinx_rlauncher_run2.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x66a26e91",
+          "clip": "jinx_rlauncher_attack1.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x63a269d8",
+          "clip": "jinx_rlauncher_attack2.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x01e9bb4c",
+          "clip": "jinx_rlauncher_death.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0xbdaf4563",
+          "clip": "jinx_minigun_run_in.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0xea5ada43",
+          "clip": "jinx_minigun_idlein1.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x05808276",
+          "clip": "jinx_rlauncher_idlein1.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0xc6d33584",
+          "clip": "jinx_rlauncher_spell4.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x5cfd20f5",
+          "clip": "jinx_rlauncher_spell3.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0xf8a62a4b",
+          "clip": "jinx_rlauncher_spell3.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0x58b1ec4a",
+          "clip": "jinx_minigun_attack3.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0x53b1e46b",
+          "clip": "jinx_minigun_attack4.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0x52b1e2d8",
+          "clip": "jinx_minigun_attack2.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0x55b1e791",
+          "clip": "jinx_minigun_attack6.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0xd003b624",
+          "clip": "jinx_rlauncher_run_in.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0xb849f242",
+          "clip": "jinx_emote_enter_minigun.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x5dadf217",
+          "clip": "jinx_emote_enter_rocket.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0x390c6e04",
+          "clip": "jinx_emote_exit_minigun.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x0320b469",
+          "clip": "jinx_emote_exit_rocket.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0xeb5adbd6",
+          "clip": "jinx_minigun_idlein2.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0xa6f67bd9",
+          "clip": "jinx_minigun_run2.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0xc5d333f1",
+          "clip": "jinx_rlauncher_spell3.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0xb4f63b8e",
+          "clip": "jinx_minigun_spell3.anm"
+        },
+        {
+          "family": "minigun",
+          "clip_key": "0x26aab29a",
+          "clip": "jinx_minigun_runhaste.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x5a527c0b",
+          "clip": "jinx_rlauncher_runhaste.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x7715e3e6",
+          "clip": "jinx_rlauncher_drecall.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0xfb7159de",
+          "clip": "jinx_rlauncher_drecall_in.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x9028089f",
+          "clip": "jinx_rlauncher_drecall_out.anm"
+        },
+        {
+          "family": "rlauncher",
+          "clip_key": "0x36bb1bc8",
+          "clip": "jinx_rlauncher_death.anm"
+        }
+      ],
+      "buffbone_state_events": 0,
+      "powpow_hidden_with_chain": [
+        "PowPow",
+        "WeaponVFX",
+        "Weapon03"
+      ]
+    }
+  },
+  "checks": {
+    "content_allowlist": "PASSED",
+    "skn_structure": "PASSED",
+    "weapon_submesh_split": "PASSED",
+    "weapon_family_classification": "PASSED",
+    "powpow_chain_rig_linkage": "PASSED",
+    "grip_anchors": "PASSED",
+    "skin_bins_roundtrip": "PASSED",
+    "riot_q_handoff_visibility_roundtrip": "PASSED",
+    "riot_persistent_family_visibility_roundtrip": "PASSED",
+    "no_buffbone_state_visibility_events": "PASSED"
+  }
+}

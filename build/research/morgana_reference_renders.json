@@ -1,0 +1,65 @@
+{
+  "status": "PASSED",
+  "candidates": [
+    {
+      "champion": "morgana",
+      "skin": "26",
+      "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\morgana_references\\assets\\characters\\morgana\\skins\\skin26\\morgana_skin26.skn",
+      "vertices": 17926,
+      "triangles": 21952,
+      "submeshes": [
+        "Body",
+        "wings_mid_open",
+        "wings_closed",
+        "wings_open",
+        "wings_body",
+        "Owl",
+        "Recall"
+      ],
+      "hidden_materials": [
+        "recall"
+      ],
+      "texture_sources": [
+        "morganaloadscreen_26.tex",
+        "morganaloadscreen_26_le.tex",
+        "morgana_skin26_goldfresnelmasks.tex",
+        "morgana_skin26_goldfresnelultmasks.tex",
+        "morgana_skin26_goldfresnelwingsmasks.tex",
+        "morgana_skin26_owl_tx_cm.tex",
+        "morgana_skin26_recall_tx_cm.tex",
+        "morgana_skin26_tx_cm.tex",
+        "morgana_skin26_ult_tx_cm.tex",
+        "morgana_skin26_wings_tx_cm.tex"
+      ],
+      "bounds": {
+        "min": [
+          -1.1107810735702515,
+          -0.24574659764766693,
+          -0.10076089948415756
+        ],
+        "max": [
+          1.1107810735702515,
+          1.1736830472946167,
+          1.9171850681304932
+        ]
+      },
+      "renders": [
+        {
+          "view": "front",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\morgana_renders\\skin26_front.png",
+          "sha256": "4ab92e783f36c96749d01a99d283041548ecb6f6253aa48e5e1474f959e180da"
+        },
+        {
+          "view": "side",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\morgana_renders\\skin26_side.png",
+          "sha256": "40816462062493d21be2a9e20d25831735c1e83f819f92dcfa2dcf8702bea3bf"
+        },
+        {
+          "view": "back",
+          "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\research\\morgana_renders\\skin26_back.png",
+          "sha256": "dbc7156a781fdfae37b3132f1046df22640810752304f26a7118fdae185e7c14"
+        }
+      ]
+    }
+  ]
+}
