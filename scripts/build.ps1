@@ -207,18 +207,18 @@ try {
 
     $validationRoot = Join-Path $buildRoot 'validation'
     $packageExtract = Join-Path $validationRoot 'package'
-    $profile = Join-Path $validationRoot 'profile'
+    $validationProfile = Join-Path $validationRoot 'profile'
     $overlayExtract = Join-Path $validationRoot 'overlay'
-    foreach ($path in @($packageExtract, $profile, $overlayExtract)) {
+    foreach ($path in @($packageExtract, $validationProfile, $overlayExtract)) {
         New-Item -ItemType Directory -Force $path | Out-Null
     }
     & $leagueMod extract $package --output-dir $packageExtract
     if ($LASTEXITCODE -ne 0) { throw "Package extraction failed with exit code $LASTEXITCODE" }
 
-    $overlayLog = & $overlayBuilder $package $gameDir $profile 2>&1
+    $overlayLog = & $overlayBuilder $package $gameDir $validationProfile 2>&1
     if ($LASTEXITCODE -ne 0) { throw "LTK overlay build failed with exit code $LASTEXITCODE" }
     $overlayLog | Set-Content -LiteralPath (Join-Path $reportRoot 'abyssal_base_overlay.txt') -Encoding UTF8
-    $overlayWad = Join-Path $profile 'overlay\DATA\FINAL\Champions\Jinx.wad.client'
+    $overlayWad = Join-Path $validationProfile 'overlay\DATA\FINAL\Champions\Jinx.wad.client'
     $contentPattern = '^(assets/characters/jinx/skins/skin65/.*|assets/characters/jinxmine/skins/skin65/.*|assets/sounds/wwise2016/sfx/characters/jinx/skins/skin65/jinx_skin65_sfx_(audio|events)\.bnk|data/characters/jinx/(skins/skin65|jinx_multi_skins_skin65_skins_skin66_skins_skin67_skins_skin68_skins_skin69_skins_skin70_skins_skin71_skins_skin72_skins_skin73)\.bin|data/characters/jinxmine/skins/skin65\.bin)$'
     & $wadtools --hashtable-dir $wadHashRoot --progress=false -L error extract `
         -i $overlayWad -o $overlayExtract -x $contentPattern --overwrite --stats=false

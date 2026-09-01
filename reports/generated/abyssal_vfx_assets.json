@@ -4,7 +4,7 @@
   "palette": "black-violet, coral, seafoam",
   "source_bins": [
     {
-      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\source\\ritobin\\jinx_skin65.py",
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\source\\ritobin\\jinx_skin65.py",
       "system_count": 12,
       "systems": [
         {
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\source\\ritobin\\jinx_multi_skin65.py",
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\source\\ritobin\\jinx_multi_skin65.py",
       "system_count": 105,
       "systems": [
         {
@@ -6908,7 +6908,7 @@
     }
   ],
   "preview": {
-    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\vfx_contact_sheet.png",
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\vfx_contact_sheet.png",
     "sha256": "d767745609d7b9c11598cf184b59452716df191243962316e4e484699db1a35f",
     "assets": [
       "assets/characters/jinx/skins/skin65/particles/ashe_skin43_q_alphaslice_1.tex",

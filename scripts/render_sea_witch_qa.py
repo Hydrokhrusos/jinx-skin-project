@@ -1,9 +1,11 @@
+# pyright: reportMissingImports=false
 import argparse
 import hashlib
 import json
 import os
 import sys
 import tempfile
+from typing import NotRequired, TypedDict
 
 import bpy
 import numpy as np
@@ -18,6 +20,48 @@ CHAMPION_TEXTURE_ROUTES = {
     "Zapper": "weapon",
     "Recall": "recall",
 }
+
+
+class RenderRecord(TypedDict):
+    path: str
+    sha256: str
+    frame: int
+    camera_target: list[float]
+    ortho_scale: float
+    animation: NotRequired[str]
+    animation_sha256: NotRequired[str]
+    show_recall: NotRequired[bool]
+    packaged: NotRequired[bool]
+    manual_pose_not_packaged: NotRequired[bool]
+
+
+class ChampionReport(TypedDict):
+    model: str
+    model_sha256: str
+    vertices: int
+    triangles: int
+    submeshes: list[str]
+    bounds: dict[str, list[float]]
+    rest_views: dict[str, RenderRecord]
+    face_closeup: RenderRecord
+    weapon_closeup: RenderRecord
+    stock_animation_poses: dict[str, RenderRecord]
+
+
+class PropReport(TypedDict):
+    model: str
+    model_sha256: str
+    vertices: int
+    triangles: int
+    submeshes: list[str]
+    texture_sha256: str
+    rest: RenderRecord
+    manual_deformation_test: RenderRecord | None
+
+
+class ContactSheetReport(TypedDict):
+    path: str
+    sha256: str
 
 
 def parse_args():
@@ -208,7 +252,7 @@ def material_bounds(mesh, material_names):
     return minimum, maximum
 
 
-def render_view(scene, camera, camera_data, output, target, location, ortho_scale):
+def render_view(scene, camera, camera_data, output, target, location, ortho_scale) -> RenderRecord:
     camera.location = location
     camera_data.ortho_scale = ortho_scale
     look_at(camera, target)
@@ -245,7 +289,7 @@ def load_action(import_anm, armature, animation):
         raise RuntimeError(f"ANM import failed: {animation}: {result}")
 
 
-def render_champion(args, import_skl, import_skn, import_anm, tex_to_dds_bytes):
+def render_champion(args, import_skl, import_skn, import_anm, tex_to_dds_bytes) -> ChampionReport:
     reset_scene()
     joints, influences = import_skl.read_skl(os.path.abspath(args.skl))
     armature = import_skl.create_armature(joints, bone_orient="VISUAL")
@@ -276,7 +320,7 @@ def render_champion(args, import_skl, import_skn, import_anm, tex_to_dds_bytes):
     out_dir = os.path.abspath(args.out_dir)
     os.makedirs(out_dir, exist_ok=True)
     full_scale = max(extent.z * 1.20, extent.x * 1.32, extent.y * 1.32)
-    rest_views = {}
+    rest_views: dict[str, RenderRecord] = {}
     views = {
         "front": target + Vector((0.0, -distance, extent.z * 0.10)),
         "front_three_quarter": target + Vector((distance * 0.72, -distance * 0.72, extent.z * 0.12)),
@@ -324,14 +368,14 @@ def render_champion(args, import_skl, import_skn, import_anm, tex_to_dds_bytes):
         ("stock_zapper_spell2", args.zapper_animation, 0.47, False),
         ("stock_recall", args.recall_animation, 0.62, True),
     )
-    poses = {}
+    poses: dict[str, RenderRecord] = {}
     for label, animation, fraction, show_recall in pose_specs:
         configure_material(
             material_by_name["Recall"], images["recall"], visible=show_recall, emissive=0.12
         )
         load_action(import_anm, armature, animation)
-        frame_end = max(1, int(scene.frame_end))
-        frame = max(1, min(frame_end, int(round(frame_end * fraction))))
+        frame_end = max(1, scene.frame_end)
+        frame = max(1, min(frame_end, round(frame_end * fraction)))
         scene.frame_set(frame)
         output = os.path.join(out_dir, f"model_{label}_f{frame:03d}.png")
         row = render_view(
@@ -378,7 +422,7 @@ def render_prop(
     tex_to_dds_bytes,
     out_dir,
     manual_open=False,
-):
+) -> PropReport:
     reset_scene()
     joints, influences = import_skl.read_skl(os.path.abspath(skl_path))
     armature = import_skl.create_armature(joints, bone_orient="VISUAL")
@@ -406,7 +450,7 @@ def render_prop(
         target + Vector((distance * 0.72, -distance * 0.72, max(extent) * 0.35)),
         max(extent) * 1.45,
     )
-    opened = None
+    opened: RenderRecord | None = None
     if manual_open:
         for bone in armature.pose.bones:
             if bone.name == "Jaw_Top":
@@ -439,7 +483,7 @@ def render_prop(
     }
 
 
-def write_contact_sheet(image_paths, output):
+def write_contact_sheet(image_paths, output) -> ContactSheetReport:
     loaded = []
     for path in image_paths:
         image = bpy.data.images.load(os.path.abspath(path), check_existing=False)
@@ -503,6 +547,10 @@ def main():
         args.out_dir,
         manual_open=False,
     )
+    manual_deformation_test = chompers["manual_deformation_test"]
+    if manual_deformation_test is None:
+        raise RuntimeError("Chompers manual deformation render was not generated")
+
     selected = [
         champion["rest_views"]["front"]["path"],
         champion["rest_views"]["front_three_quarter"]["path"],
@@ -514,7 +562,7 @@ def main():
         champion["stock_animation_poses"]["stock_zapper_spell2"]["path"],
         champion["stock_animation_poses"]["stock_recall"]["path"],
         chompers["rest"]["path"],
-        chompers["manual_deformation_test"]["path"],
+        manual_deformation_test["path"],
         missile["rest"]["path"],
     ]
     contact_sheet = write_contact_sheet(
@@ -538,14 +586,14 @@ def main():
         handle.write("\n")
     print(
         "SEA_WITCH_VISUAL_QA=PASSED REST_VIEWS=5 STOCK_POSES=4 "
-        "PROP_RENDERS=3 CONTACT_SHEET=1"
+        + "PROP_RENDERS=3 CONTACT_SHEET=1"
     )
 
 
 if __name__ == "__main__":
     try:
         main()
-    except Exception:
+    except Exception:  # noqa: BLE001
         import traceback
 
         traceback.print_exc()

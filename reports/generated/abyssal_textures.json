@@ -32,7 +32,7 @@
         "quantized_unique_colors": 158,
         "opaque_pixels": 1048576
       },
-      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\textures\\sea_witch_body_atlas.png"
+      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\textures\\sea_witch_body_atlas.png"
     },
     {
       "role": "armor",
@@ -62,7 +62,7 @@
         "quantized_unique_colors": 252,
         "opaque_pixels": 1048576
       },
-      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\textures\\sea_witch_armor_atlas.png"
+      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\textures\\sea_witch_armor_atlas.png"
     },
     {
       "role": "weapon",
@@ -92,7 +92,7 @@
         "quantized_unique_colors": 237,
         "opaque_pixels": 262144
       },
-      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\textures\\sea_witch_weapon_atlas.png"
+      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\textures\\sea_witch_weapon_atlas.png"
     },
     {
       "role": "recall",
@@ -122,7 +122,7 @@
         "quantized_unique_colors": 242,
         "opaque_pixels": 262144
       },
-      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\textures\\sea_witch_recall_atlas.png"
+      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\textures\\sea_witch_recall_atlas.png"
     },
     {
       "role": "mine",
@@ -152,7 +152,7 @@
         "quantized_unique_colors": 118,
         "opaque_pixels": 262144
       },
-      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\textures\\sea_witch_mine_atlas.png"
+      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\textures\\sea_witch_mine_atlas.png"
     },
     {
       "role": "missile",
@@ -182,7 +182,7 @@
         "quantized_unique_colors": 199,
         "opaque_pixels": 262144
       },
-      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\textures\\sea_witch_missile_atlas.png"
+      "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\textures\\sea_witch_missile_atlas.png"
     }
   ]
 }

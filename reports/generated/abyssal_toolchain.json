@@ -4,7 +4,7 @@
     "target":  "Ocean Song Jinx skin 65",
     "scope":  "model, opaque textures, VFX, and complete skin SFX replacement; stock animations and voice-over retained",
     "target_game_build":  "16.17.8104348+branch.releases-16-17.code.public.content.release.anticheat.vanguard",
-    "generated_at_utc":  "2026-08-30T23:06:05.3905142Z",
+    "generated_at_utc":  "2026-09-01T14:46:56.2556239Z",
     "tools":  {
                   "blender":  {
                                   "version":  "4.5.13 LTS",
@@ -36,8 +36,8 @@
               },
     "packages":  [
                      {
-                         "path":  "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\dist\\abyssal-siren-jinx_3.0.0.modpkg",
-                         "sha256":  "ab8420d8b955894e33f3a532e013a79d697583d8a4ea60c4039d5560a6d1886e"
+                         "path":  "C:\\Users\\leope\\Code\\jinx-skin-project\\dist\\abyssal-siren-jinx_3.0.0.modpkg",
+                         "sha256":  "00a0cc42a2fe19b6fa3cad44fe0482d471e3c7bb98aabc274687e7de6235869a"
                      }
                  ]
 }

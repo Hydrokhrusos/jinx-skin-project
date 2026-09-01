@@ -7,7 +7,7 @@
     900
   ],
   "champion": {
-    "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\validation\\overlay\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skn",
+    "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\validation\\overlay\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skn",
     "model_sha256": "bb46a95cfa0645c843e167ade121af7fd5a16384e647dfca6d52f53e13f1843a",
     "vertices": 27552,
     "triangles": 37290,
@@ -33,8 +33,8 @@
     },
     "rest_views": {
       "front": {
-        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_rest_front.png",
-        "sha256": "cb4ca6175362b57a47d56deef95100499b7c314385937b829521fbb625ef942f",
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_rest_front.png",
+        "sha256": "e894adef9b0711ae53fec9bd30b78b953ea7758c6aa251bbe54d25be42009dbf",
         "frame": 0,
         "camera_target": [
           -0.04021713137626648,
@@ -44,8 +44,8 @@
         "ortho_scale": 2.8929061889648438
       },
       "front_three_quarter": {
-        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_rest_front_three_quarter.png",
-        "sha256": "35286ffbc862b8ee6a13a2f8a698846970b55b54a016b4c638dca9c0271d0ee1",
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_rest_front_three_quarter.png",
+        "sha256": "5aa9156925438dbec39b584acbdb31f8db96a725a3ba635225fa50db064344c8",
         "frame": 0,
         "camera_target": [
           -0.04021713137626648,
@@ -55,8 +55,8 @@
         "ortho_scale": 2.8929061889648438
       },
       "left": {
-        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_rest_left.png",
-        "sha256": "31b5267d2369ef7d01d972eb59e2a4c77dedc82fced8135a9b034218cda72218",
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_rest_left.png",
+        "sha256": "23100b7d947bf2143af2fe7a7507364976c520ab5beb81a6a3d1483d5b1f4211",
         "frame": 0,
         "camera_target": [
           -0.04021713137626648,
@@ -66,8 +66,8 @@
         "ortho_scale": 2.8929061889648438
       },
       "right": {
-        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_rest_right.png",
-        "sha256": "6b33505945e39f528d67c18fefb9bf8447dc7191cf831d757fb3390ab4adf5f8",
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_rest_right.png",
+        "sha256": "83378d26cfc79fd7d04ca6ad0bca939a1b6da789499145f7f29e01c6c1e22ae2",
         "frame": 0,
         "camera_target": [
           -0.04021713137626648,
@@ -77,8 +77,8 @@
         "ortho_scale": 2.8929061889648438
       },
       "back": {
-        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_rest_back.png",
-        "sha256": "1c31197baba6f7fa05512ee4a50a10a787a0c210f7314eba2cf5860a2860a687",
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_rest_back.png",
+        "sha256": "16c44dc9c02805db8d7307ca19cd4458ff7953faef6409c52c7ff40b8990543f",
         "frame": 0,
         "camera_target": [
           -0.04021713137626648,
@@ -89,8 +89,8 @@
       }
     },
     "face_closeup": {
-      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_face_crown_closeup.png",
-      "sha256": "2502b6051f09f862da2efc8efb0e38046ccd27de4ad038ad93e7dff036ce3115",
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_face_crown_closeup.png",
+      "sha256": "149f305b661320301485346469aeda9d735814f91b36e27b199c4c3a4682b1d2",
       "frame": 0,
       "camera_target": [
         0.0,
@@ -100,8 +100,8 @@
       "ortho_scale": 0.92
     },
     "weapon_closeup": {
-      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_coral_relic_weapons_closeup.png",
-      "sha256": "47accb276d84ac45f3a678c81e5e0166ff8ed5f6913ade7bce364704f4e28286",
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_coral_relic_weapons_closeup.png",
+      "sha256": "737e1faaf7a983da32ef3611e070e4299cad7219e93f85f920f93c48b2667c65",
       "frame": 0,
       "camera_target": [
         -0.04021713137626648,
@@ -112,8 +112,8 @@
     },
     "stock_animation_poses": {
       "stock_minigun_idle": {
-        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_stock_minigun_idle_f017.png",
-        "sha256": "ad4859632614e329d4fcef96e408b1138663f6b1c541fb922367fd01ac17a46f",
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_stock_minigun_idle_f017.png",
+        "sha256": "0551e8b676f813bc8ec7a790c936f4c12acd91784a252b3062747474517be6f2",
         "frame": 17,
         "camera_target": [
           -0.04021713137626648,
@@ -121,14 +121,14 @@
           1.205374002456665
         ],
         "ortho_scale": 2.8929061889648438,
-        "animation": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\source\\game\\assets\\characters\\jinx\\skins\\base\\animations\\jinx_minigun_idle1.anm",
+        "animation": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\source\\game\\assets\\characters\\jinx\\skins\\base\\animations\\jinx_minigun_idle1.anm",
         "animation_sha256": "5dfa4d4f7f4292ccf943bfdda584803cc223f21190b426feafcf2c32bf647764",
         "show_recall": false,
         "packaged": false
       },
       "stock_rocket_idle": {
-        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_stock_rocket_idle_f018.png",
-        "sha256": "73777bc43504f254f504c9befbf5393ccd43852209bbfa9cadb192ee3793faa4",
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_stock_rocket_idle_f018.png",
+        "sha256": "160fdc21b4db540c1cbb5fd621d120f09518650076d448557e21978ca2922acd",
         "frame": 18,
         "camera_target": [
           -0.04021713137626648,
@@ -136,14 +136,14 @@
           1.205374002456665
         ],
         "ortho_scale": 2.8929061889648438,
-        "animation": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\source\\game\\assets\\characters\\jinx\\skins\\base\\animations\\jinx_rlauncher_idle1.anm",
+        "animation": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\source\\game\\assets\\characters\\jinx\\skins\\base\\animations\\jinx_rlauncher_idle1.anm",
         "animation_sha256": "c7d18f31fb46bc1365ea27364d0425100a8613bbf9d6a4ba5adfd773d41666a3",
         "show_recall": false,
         "packaged": false
       },
       "stock_zapper_spell2": {
-        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_stock_zapper_spell2_f022.png",
-        "sha256": "1c62ba13bfa00d267ee9b507c7e4efd520f66057354ed8ca9840317a32300d57",
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_stock_zapper_spell2_f022.png",
+        "sha256": "5e576a61bed27cc40e6a789411759e32df4bed2eafff60b6de224309810422ee",
         "frame": 22,
         "camera_target": [
           -0.04021713137626648,
@@ -151,14 +151,14 @@
           1.205374002456665
         ],
         "ortho_scale": 2.8929061889648438,
-        "animation": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\source\\game\\assets\\characters\\jinx\\skins\\skin65\\animations\\spell2.anm",
+        "animation": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\source\\game\\assets\\characters\\jinx\\skins\\skin65\\animations\\spell2.anm",
         "animation_sha256": "d1c74d05d0cba10e2273a9bfd9c8034276c12a6b3692db4d58d05cc944f6cb9c",
         "show_recall": false,
         "packaged": false
       },
       "stock_recall": {
-        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_stock_recall_f162.png",
-        "sha256": "6bac8949f2b17c6642e40b2101bab53cc542650f157a37284c6c9d7935492182",
+        "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_stock_recall_f162.png",
+        "sha256": "1a745521f41ef1d767765b06186c3cfbd4b70ef09f09b0d7ec9fb279d756800c",
         "frame": 162,
         "camera_target": [
           -0.04021713137626648,
@@ -166,7 +166,7 @@
           1.205374002456665
         ],
         "ortho_scale": 2.8929061889648438,
-        "animation": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\source\\game\\assets\\characters\\jinx\\skins\\skin65\\animations\\recall.anm",
+        "animation": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\source\\game\\assets\\characters\\jinx\\skins\\skin65\\animations\\recall.anm",
         "animation_sha256": "b8dfeb8f935a4e42e84ce934d353250e7f0ca503fd1da35b4a1bb80256403036",
         "show_recall": true,
         "packaged": false
@@ -174,7 +174,7 @@
     }
   },
   "chompers": {
-    "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\validation\\overlay\\assets\\characters\\jinxmine\\skins\\skin65\\jinxmine_skin65.skn",
+    "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\validation\\overlay\\assets\\characters\\jinxmine\\skins\\skin65\\jinxmine_skin65.skn",
     "model_sha256": "c46e0157f4b767417cc0e8e0ec19b3554bc7472db771333f0cb9f7d88cf9e111",
     "vertices": 3171,
     "triangles": 4294,
@@ -183,8 +183,8 @@
     ],
     "texture_sha256": "419d88667adb26ac9b8773fc84c90eb97eda4da8e741db58af1a11323712bcd2",
     "rest": {
-      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_chompers_three_quarter.png",
-      "sha256": "de2ed3af522b608efa80db00ccc8a7b1637348f42e6b78f613c28180bac5abe4",
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_chompers_three_quarter.png",
+      "sha256": "427d81baf9c206e3de2d85f4b9abeba154531e6a47ca55493b590be3441e1af2",
       "frame": 0,
       "camera_target": [
         -0.037824809551239014,
@@ -194,8 +194,8 @@
       "ortho_scale": 1.5075767993927
     },
     "manual_deformation_test": {
-      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_chompers_manual_jaw_test.png",
-      "sha256": "5fddf2ec25e9bc2d4df69233724f11b9cc6e03bf871812dc30f32885b67f998f",
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_chompers_manual_jaw_test.png",
+      "sha256": "9f29cb520a63e2fd11774b23b6fac1dfb29c70fe791fc457238ae4af126da045",
       "frame": 0,
       "camera_target": [
         -0.037824809551239014,
@@ -207,7 +207,7 @@
     }
   },
   "ultimate_missile": {
-    "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\validation\\overlay\\assets\\characters\\jinx\\skins\\skin65\\particles\\jinx_skin65_r_mis_globefish_01_1.skn",
+    "model": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\validation\\overlay\\assets\\characters\\jinx\\skins\\skin65\\particles\\jinx_skin65_r_mis_globefish_01_1.skn",
     "model_sha256": "0e1e878a3fdd18783c21643bfee01c068169f494a932068adbae330675d8733e",
     "vertices": 680,
     "triangles": 1292,
@@ -216,8 +216,8 @@
     ],
     "texture_sha256": "37d6fef8beb00105e4fbcbf8ce3e15ce8df7e94bee23397e09dff73e8213a6b5",
     "rest": {
-      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\model_leviathan_missile_three_quarter.png",
-      "sha256": "dbb1ef7b480e486020a6e1f60c218b789d8262830cf8b5a48d4f736c6ad314cd",
+      "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\model_leviathan_missile_three_quarter.png",
+      "sha256": "5028e98041b8972db0377450a27f1eba626ca52f4696a499bb5d145dd70e8314",
       "frame": 0,
       "camera_target": [
         2.256035804748535e-05,
@@ -229,7 +229,7 @@
     "manual_deformation_test": null
   },
   "contact_sheet": {
-    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\.worktrees\\abyssal-siren-jinx-v1.0.0\\build\\abyssal\\qa\\model\\sea_witch_model_contact_sheet.png",
+    "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\model\\sea_witch_model_contact_sheet.png",
     "sha256": "c6954d88df76e9a114fbe9dcc5a60b62dd4450bdc7ee77f7f0fc42df0154bce9"
   },
   "manual_visual_review_required": true,
