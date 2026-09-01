@@ -9,6 +9,10 @@ import sys
 
 from mathutils import Matrix, Vector
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from project_version import VERSION
+from sea_witch_materials import remap_material_uvs
+
 
 BODY_SUBMESH = "WitchBody"
 ARMOR_SUBMESH = "CoralArmor"
@@ -191,9 +195,20 @@ class Part:
         row["triangles"] += triangles
 
 
-def append_mesh(rig, part, positions, faces, uvs, weights, source="authored"):
+def append_mesh(
+    rig,
+    part,
+    positions,
+    faces,
+    uvs,
+    weights,
+    source="authored",
+    material=None,
+):
     if len(positions) != len(uvs):
         raise ValueError("Position and UV counts differ")
+    if material is not None:
+        uvs = remap_material_uvs(uvs, material)
     vertex_normals = [Vector((0.0, 0.0, 0.0)) for _ in positions]
     for face in faces:
         a, b, c = (Vector(positions[index]) for index in face)
@@ -527,19 +542,75 @@ def find_pistol_triangles(donor_skn, donor_joints, donor_influences):
     return result
 
 
-def add_horn(rig, part, base, direction, length, radius, bend, bone, source="authored"):
+def add_horn(
+    rig,
+    part,
+    base,
+    direction,
+    length,
+    radius,
+    bend,
+    bone,
+    source="authored",
+    material=None,
+):
     positions, faces, uvs = horn_geometry(base, direction, length, radius, bend)
-    append_mesh(rig, part, positions, faces, uvs, {bone: 1.0}, source=source)
+    append_mesh(
+        rig,
+        part,
+        positions,
+        faces,
+        uvs,
+        {bone: 1.0},
+        source=source,
+        material=material,
+    )
 
 
-def add_ellipsoid(rig, part, center, radii, bone, source="authored"):
+def add_ellipsoid(
+    rig,
+    part,
+    center,
+    radii,
+    bone,
+    source="authored",
+    material=None,
+):
     positions, faces, uvs = ellipsoid_geometry(center, radii)
-    append_mesh(rig, part, positions, faces, uvs, {bone: 1.0}, source=source)
+    append_mesh(
+        rig,
+        part,
+        positions,
+        faces,
+        uvs,
+        {bone: 1.0},
+        source=source,
+        material=material,
+    )
 
 
-def add_torus(rig, part, center, axis, major, minor, bone, source="authored"):
+def add_torus(
+    rig,
+    part,
+    center,
+    axis,
+    major,
+    minor,
+    bone,
+    source="authored",
+    material=None,
+):
     positions, faces, uvs = torus_geometry(center, axis, major, minor)
-    append_mesh(rig, part, positions, faces, uvs, {bone: 1.0}, source=source)
+    append_mesh(
+        rig,
+        part,
+        positions,
+        faces,
+        uvs,
+        {bone: 1.0},
+        source=source,
+        material=material,
+    )
 
 
 def author_armor(rig, armor):
@@ -556,10 +627,13 @@ def author_armor(rig, armor):
             4.7 - 0.12 * abs(x_offset),
             Vector((7.5 * side, 1.0, 4.0 * (-1 if index % 2 else 1))),
             "Head",
+            material="coral",
         )
     for side, bone in ((-1.0, "L_Clavicle"), (1.0, "R_Clavicle")):
         anchor = rig.joint_position(bone) + Vector((side * 4.0, 1.5, 3.5))
-        add_ellipsoid(rig, armor, anchor, (15.5, 7.5, 11.0), bone)
+        add_ellipsoid(
+            rig, armor, anchor, (15.5, 7.5, 11.0), bone, material="bone"
+        )
         for branch in range(3):
             add_horn(
                 rig,
@@ -570,9 +644,12 @@ def author_armor(rig, armor):
                 4.1 - branch * 0.45,
                 Vector((side * 4.0, 6.0, (branch - 1) * 2.5)),
                 bone,
+                material="coral",
             )
     chest = rig.joint_position("Spine3") + Vector((0.0, -1.5, 8.0))
-    add_ellipsoid(rig, armor, chest, (15.5, 13.0, 4.8), "Spine3")
+    add_ellipsoid(
+        rig, armor, chest, (15.5, 13.0, 4.8), "Spine3", material="bone"
+    )
     # Open coral ribs frame the torso without turning the silhouette into a
     # stack of complete rings.  The earlier full tori obscured the body in the
     # exported front render even though they were technically well skinned.
@@ -587,11 +664,19 @@ def author_armor(rig, armor):
                 2.2,
                 Vector((side * 3.0, 1.5, 3.0)),
                 "Spine2" if row == 0 else "Spine3",
+                material="coral",
             )
     pelvis = rig.joint_position("Pelvis")
     for side, dress_bone in ((-1.0, "Buffbone_L_dress"), (1.0, "Buffbone_R_dress")):
         hip_anchor = pelvis + Vector((side * 18.0, 2.0, 1.5))
-        add_ellipsoid(rig, armor, hip_anchor, (12.5, 9.0, 7.0), dress_bone)
+        add_ellipsoid(
+            rig,
+            armor,
+            hip_anchor,
+            (12.5, 9.0, 7.0),
+            dress_bone,
+            material="abyssal",
+        )
         add_horn(
             rig,
             armor,
@@ -601,6 +686,7 @@ def author_armor(rig, armor):
             4.0,
             Vector((side * 5.0, -5.0, 4.0)),
             dress_bone,
+            material="coral",
         )
     for index in range(6):
         side = -1.0 if index < 3 else 1.0
@@ -615,7 +701,15 @@ def author_armor(rig, armor):
         ]
         widths = [11.0 - lane, 9.0 - lane, 6.5, 2.0]
         positions, faces, uvs = ribbon_geometry(points, widths, thickness=2.2)
-        append_mesh(rig, armor, positions, faces, uvs, {dress_bone: 1.0})
+        append_mesh(
+            rig,
+            armor,
+            positions,
+            faces,
+            uvs,
+            {dress_bone: 1.0},
+            material="abyssal",
+        )
     bead_bones = ("L_Hair3", "L_Hair5", "R_Hair3", "R_Hair5")
     for index, bone in enumerate(bead_bones):
         anchor = rig.joint_position(bone)
@@ -625,6 +719,7 @@ def author_armor(rig, armor):
             anchor + Vector((0.0, -2.0, 2.5 * (-1 if index % 2 else 1))),
             (4.2, 5.8, 4.2),
             bone,
+            material="seafoam",
         )
 
 
@@ -737,8 +832,26 @@ def author_zapper(rig, part):
 def author_recall(rig, part):
     root = rig.joint_position("Root")
     center = Vector((root.x, max(2.0, root.y + 3.0), root.z))
-    add_torus(rig, part, center, Vector((0.0, 1.0, 0.0)), 73.0, 4.8, "recall_wave1")
-    add_torus(rig, part, center + Vector((0.0, 3.0, 0.0)), Vector((0.0, 1.0, 0.0)), 48.0, 3.2, "recall_wave2")
+    add_torus(
+        rig,
+        part,
+        center,
+        Vector((0.0, 1.0, 0.0)),
+        73.0,
+        4.8,
+        "recall_wave1",
+        material="seafoam",
+    )
+    add_torus(
+        rig,
+        part,
+        center + Vector((0.0, 3.0, 0.0)),
+        Vector((0.0, 1.0, 0.0)),
+        48.0,
+        3.2,
+        "recall_wave2",
+        material="bone",
+    )
     for index in range(16):
         angle = math.tau * index / 16
         radial = Vector((math.cos(angle), 0.0, math.sin(angle)))
@@ -752,6 +865,7 @@ def author_recall(rig, part):
             3.6,
             radial * 8.0 + Vector((0.0, 2.0, 0.0)),
             bone,
+            material="coral" if index % 2 else "abyssal",
         )
 
 
@@ -1013,9 +1127,24 @@ def build_missile(helper, read_skl, args):
         center + axis * half_length,
     ]
     positions, faces, uvs = tube_geometry(points, (2.0, 8.0, 15.0, 2.0), sides=11, twist=0.23)
-    append_mesh(rig, missile, positions, faces, uvs, {root_bone: 1.0})
+    append_mesh(
+        rig,
+        missile,
+        positions,
+        faces,
+        uvs,
+        {root_bone: 1.0},
+        material="abyssal",
+    )
     skull = center + axis * half_length * 0.42
-    add_ellipsoid(rig, missile, skull, (18.0, 14.0, 16.0), root_bone)
+    add_ellipsoid(
+        rig,
+        missile,
+        skull,
+        (18.0, 14.0, 16.0),
+        root_bone,
+        material="bone",
+    )
     for sign in (-1.0, 1.0):
         add_horn(
             rig,
@@ -1026,6 +1155,7 @@ def build_missile(helper, read_skl, args):
             4.7,
             side * sign * 10.0 + up * 5.0,
             root_bone,
+            material="coral",
         )
         add_horn(
             rig,
@@ -1036,6 +1166,7 @@ def build_missile(helper, read_skl, args):
             3.7,
             side * sign * 7.0 - up * 4.0,
             root_bone,
+            material="bone",
         )
     for index in range(5):
         t = index / 4
@@ -1049,6 +1180,7 @@ def build_missile(helper, read_skl, args):
             2.8,
             -axis * 3.0 + up * 2.0,
             root_bone,
+            material="seafoam",
         )
     output_skn = combine_parts(helper, target_skn, [missile])
     output_path = os.path.join(args.out_root, args.missile_relative.replace("/", os.sep))
@@ -1082,7 +1214,7 @@ def main():
     missile = build_missile(helper, read_skl, args)
     report = {
         "status": "PASSED",
-        "version": "3.0.0",
+        "version": VERSION,
         "theme": "recognizable cute-horror dark sea witch with coral relic weapons",
         "champion": champion,
         "chompers": mine,

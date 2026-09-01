@@ -12,8 +12,7 @@ import wave
 from array import array
 from pathlib import Path
 
-
-PROJECT_VERSION = "3.0.0"
+from project_version import VERSION as PROJECT_VERSION
 BANK_VERSION = 145
 VORBIS_PLUGIN_ID = 0x00040001
 MANIFEST_SCHEMA = 1

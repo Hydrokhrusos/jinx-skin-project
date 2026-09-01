@@ -1,6 +1,6 @@
 {
   "status": "PASSED",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "theme": "black-violet sea witch, coral pink relics, seafoam bioluminescence, aged bone",
   "opaque_material_atlases": true,
   "textures": [
@@ -9,7 +9,7 @@
       "source": "assets/characters/jinx/skins/skin51/jinx_skin51_main_tx_cm.tex",
       "output": "assets/characters/jinx/skins/skin65/jinx_skin65_seawitch_body_tx_cm.tex",
       "source_sha256": "eb6609f3e5d23b9ff16ce21e856cd37872316d819d1aea163c4c51143e7750f9",
-      "output_sha256": "3ffc090e16f913cef381297ae87961731e58196c26a03d8d2d795bb4d77ef91f",
+      "output_sha256": "241f30209f4ee8de07fac7f9e9c34a731df156a402173717ac42c234d6ae5b97",
       "changed_pixels": 1048576,
       "total_pixels": 1048576,
       "mip_levels": 11,
@@ -21,16 +21,49 @@
         "bytes": 699076
       },
       "authored_metrics": {
-        "rgb_standard_deviation": 29.6189,
-        "mean_neighbor_contrast": 1.3025,
-        "quantized_unique_colors": 139,
-        "opaque_pixels": 1048576
+        "rgb_standard_deviation": 38.7552,
+        "mean_neighbor_contrast": 1.846,
+        "quantized_unique_colors": 223,
+        "opaque_pixels": 1048576,
+        "luminance_percentiles": {
+          "p05": 3.998,
+          "p50": 14.266,
+          "p95": 117.275
+        },
+        "luminance_span_p05_p95": 113.277,
+        "color_family_fractions": {
+          "coral": 0.141405,
+          "seafoam": 0.034951,
+          "bone": 4.4e-05,
+          "violet": 0.231625,
+          "neutral_light": 0.018683
+        },
+        "color_families_above_one_percent": 4
       },
       "decoded_metrics": {
-        "rgb_standard_deviation": 27.0345,
-        "mean_neighbor_contrast": 2.5661,
-        "quantized_unique_colors": 158,
-        "opaque_pixels": 1048576
+        "rgb_standard_deviation": 38.8309,
+        "mean_neighbor_contrast": 2.3929,
+        "quantized_unique_colors": 260,
+        "opaque_pixels": 1048576,
+        "luminance_percentiles": {
+          "p05": 3.355,
+          "p50": 14.073,
+          "p95": 117.147
+        },
+        "luminance_span_p05_p95": 113.792,
+        "color_family_fractions": {
+          "coral": 0.14758,
+          "seafoam": 0.035869,
+          "bone": 4e-05,
+          "violet": 0.225236,
+          "neutral_light": 0.017756
+        },
+        "color_families_above_one_percent": 4
+      },
+      "compression_metrics": {
+        "mean_absolute_rgb_error": 1.3727,
+        "p95_absolute_rgb_error": 4.0,
+        "alpha_mismatches": 0
       },
       "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\textures\\sea_witch_body_atlas.png"
     },
@@ -39,8 +72,8 @@
       "source": "assets/characters/jinx/skins/skin62/jinx_skin62_tx_cm.tex",
       "output": "assets/characters/jinx/skins/skin65/jinx_skin65_seawitch_armor_tx_cm.tex",
       "source_sha256": "e541e6b2597e13d353a937eaa787d8e7509e608c46040db203e3c07a16445e95",
-      "output_sha256": "f9bf9666915fe0b48d6c18199a3d35c8e0d9a3caac1de125a5fad1d6ba32263c",
-      "changed_pixels": 1048574,
+      "output_sha256": "561a7729f4b9472de8dbf37f21588f94d91e6bf4ac7123fe5a547ed4326ffd6a",
+      "changed_pixels": 1048576,
       "total_pixels": 1048576,
       "mip_levels": 11,
       "layout": {
@@ -51,16 +84,123 @@
         "bytes": 699076
       },
       "authored_metrics": {
-        "rgb_standard_deviation": 28.4283,
-        "mean_neighbor_contrast": 1.3923,
-        "quantized_unique_colors": 253,
-        "opaque_pixels": 1048576
+        "rgb_standard_deviation": 46.7889,
+        "mean_neighbor_contrast": 0.2526,
+        "quantized_unique_colors": 52,
+        "opaque_pixels": 1048576,
+        "luminance_percentiles": {
+          "p05": 20.65,
+          "p50": 80.857,
+          "p95": 141.479
+        },
+        "luminance_span_p05_p95": 120.829,
+        "color_family_fractions": {
+          "coral": 0.25,
+          "seafoam": 0.25,
+          "bone": 0.25,
+          "violet": 0.473128,
+          "neutral_light": 0.0
+        },
+        "color_families_above_one_percent": 4,
+        "material_separation": {
+          "regions": {
+            "coral": {
+              "mean_rgb": [
+                137.632,
+                38.268,
+                48.513
+              ],
+              "mean_luminance": 60.132
+            },
+            "bone": {
+              "mean_rgb": [
+                130.37,
+                113.171,
+                88.784
+              ],
+              "mean_luminance": 115.067
+            },
+            "abyssal": {
+              "mean_rgb": [
+                30.468,
+                20.215,
+                52.185
+              ],
+              "mean_luminance": 24.703
+            },
+            "seafoam": {
+              "mean_rgb": [
+                30.632,
+                137.575,
+                106.024
+              ],
+              "mean_luminance": 112.561
+            }
+          },
+          "minimum_mean_rgb_distance": 85.353
+        }
       },
       "decoded_metrics": {
-        "rgb_standard_deviation": 28.5115,
-        "mean_neighbor_contrast": 3.0611,
-        "quantized_unique_colors": 252,
-        "opaque_pixels": 1048576
+        "rgb_standard_deviation": 46.7954,
+        "mean_neighbor_contrast": 0.7882,
+        "quantized_unique_colors": 79,
+        "opaque_pixels": 1048576,
+        "luminance_percentiles": {
+          "p05": 20.296,
+          "p50": 81.151,
+          "p95": 141.579
+        },
+        "luminance_span_p05_p95": 121.283,
+        "color_family_fractions": {
+          "coral": 0.25,
+          "seafoam": 0.25,
+          "bone": 0.25,
+          "violet": 0.45913,
+          "neutral_light": 0.0
+        },
+        "color_families_above_one_percent": 4,
+        "material_separation": {
+          "regions": {
+            "coral": {
+              "mean_rgb": [
+                137.633,
+                38.19,
+                48.669
+              ],
+              "mean_luminance": 60.088
+            },
+            "bone": {
+              "mean_rgb": [
+                130.491,
+                112.989,
+                88.577
+              ],
+              "mean_luminance": 114.947
+            },
+            "abyssal": {
+              "mean_rgb": [
+                30.623,
+                20.016,
+                52.474
+              ],
+              "mean_luminance": 24.614
+            },
+            "seafoam": {
+              "mean_rgb": [
+                30.811,
+                137.473,
+                106.143
+              ],
+              "mean_luminance": 112.535
+            }
+          },
+          "minimum_mean_rgb_distance": 85.08
+        }
+      },
+      "compression_metrics": {
+        "mean_absolute_rgb_error": 1.0133,
+        "p95_absolute_rgb_error": 3.0,
+        "alpha_mismatches": 0
       },
       "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\textures\\sea_witch_armor_atlas.png"
     },
@@ -69,8 +209,8 @@
       "source": "assets/characters/jinx/skins/skin62/jinx_skin62_weapon_tx_cm.tex",
       "output": "assets/characters/jinx/skins/skin65/jinx_skin65_seawitch_weapon_tx_cm.tex",
       "source_sha256": "b49339423a8a6812b79070a074a2415d6a9c065dc1c8d29c3a4e35ffe6f3f71e",
-      "output_sha256": "2de1fb34c74be3671e6ce9be8b51a339bd9fe93a42120500e22b2c5b6f8bb2bf",
-      "changed_pixels": 262143,
+      "output_sha256": "690c354993bd8306472143973c519a65155a16e6518b84ceccef7881fe4f48c9",
+      "changed_pixels": 262144,
       "total_pixels": 262144,
       "mip_levels": 10,
       "layout": {
@@ -81,16 +221,49 @@
         "bytes": 349564
       },
       "authored_metrics": {
-        "rgb_standard_deviation": 33.6587,
-        "mean_neighbor_contrast": 4.1073,
-        "quantized_unique_colors": 198,
-        "opaque_pixels": 262144
+        "rgb_standard_deviation": 32.5471,
+        "mean_neighbor_contrast": 4.1671,
+        "quantized_unique_colors": 209,
+        "opaque_pixels": 262144,
+        "luminance_percentiles": {
+          "p05": 2.574,
+          "p50": 17.836,
+          "p95": 105.646
+        },
+        "luminance_span_p05_p95": 103.073,
+        "color_family_fractions": {
+          "coral": 0.158306,
+          "seafoam": 0.021564,
+          "bone": 0.056404,
+          "violet": 0.062225,
+          "neutral_light": 0.039116
+        },
+        "color_families_above_one_percent": 5
       },
       "decoded_metrics": {
-        "rgb_standard_deviation": 31.5559,
-        "mean_neighbor_contrast": 5.751,
+        "rgb_standard_deviation": 32.5711,
+        "mean_neighbor_contrast": 4.6659,
         "quantized_unique_colors": 237,
-        "opaque_pixels": 262144
+        "opaque_pixels": 262144,
+        "luminance_percentiles": {
+          "p05": 2.356,
+          "p50": 17.913,
+          "p95": 104.446
+        },
+        "luminance_span_p05_p95": 102.091,
+        "color_family_fractions": {
+          "coral": 0.165047,
+          "seafoam": 0.022209,
+          "bone": 0.056934,
+          "violet": 0.056988,
+          "neutral_light": 0.037685
+        },
+        "color_families_above_one_percent": 5
+      },
+      "compression_metrics": {
+        "mean_absolute_rgb_error": 1.7119,
+        "p95_absolute_rgb_error": 5.0,
+        "alpha_mismatches": 0
       },
       "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\textures\\sea_witch_weapon_atlas.png"
     },
@@ -99,7 +272,7 @@
       "source": "assets/characters/jinx/skins/skin62/jinx_skin62_recall_tx_cm.tex",
       "output": "assets/characters/jinx/skins/skin65/jinx_skin65_seawitch_recall_tx_cm.tex",
       "source_sha256": "40eefc23169a3bed34c1ca8714062770f7ccf95e24ded70978381808e399d018",
-      "output_sha256": "783dda64fe7e3e2161c89856aa25a1e83e28653c95bb68cb8ebfae4834108ea8",
+      "output_sha256": "54dc0353df5c638ca6f1133db4bd0670c978846c83d7f3315e27a44476a300c8",
       "changed_pixels": 262144,
       "total_pixels": 262144,
       "mip_levels": 10,
@@ -111,16 +284,123 @@
         "bytes": 174788
       },
       "authored_metrics": {
-        "rgb_standard_deviation": 40.7892,
-        "mean_neighbor_contrast": 5.1058,
-        "quantized_unique_colors": 241,
-        "opaque_pixels": 262144
+        "rgb_standard_deviation": 50.5539,
+        "mean_neighbor_contrast": 0.513,
+        "quantized_unique_colors": 52,
+        "opaque_pixels": 262144,
+        "luminance_percentiles": {
+          "p05": 20.65,
+          "p50": 85.681,
+          "p95": 156.997
+        },
+        "luminance_span_p05_p95": 136.347,
+        "color_family_fractions": {
+          "coral": 0.25,
+          "seafoam": 0.25,
+          "bone": 0.25,
+          "violet": 0.473,
+          "neutral_light": 0.0
+        },
+        "color_families_above_one_percent": 4,
+        "material_separation": {
+          "regions": {
+            "coral": {
+              "mean_rgb": [
+                137.658,
+                38.275,
+                48.521
+              ],
+              "mean_luminance": 60.144
+            },
+            "bone": {
+              "mean_rgb": [
+                130.393,
+                113.192,
+                88.792
+              ],
+              "mean_luminance": 115.087
+            },
+            "abyssal": {
+              "mean_rgb": [
+                30.486,
+                20.226,
+                52.21
+              ],
+              "mean_luminance": 24.717
+            },
+            "seafoam": {
+              "mean_rgb": [
+                36.822,
+                162.351,
+                123.156
+              ],
+              "mean_luminance": 132.834
+            }
+          },
+          "minimum_mean_rgb_distance": 85.364
+        }
       },
       "decoded_metrics": {
-        "rgb_standard_deviation": 40.2565,
-        "mean_neighbor_contrast": 8.4835,
-        "quantized_unique_colors": 242,
-        "opaque_pixels": 262144
+        "rgb_standard_deviation": 50.6069,
+        "mean_neighbor_contrast": 0.9438,
+        "quantized_unique_colors": 82,
+        "opaque_pixels": 262144,
+        "luminance_percentiles": {
+          "p05": 20.296,
+          "p50": 86.061,
+          "p95": 156.707
+        },
+        "luminance_span_p05_p95": 136.411,
+        "color_family_fractions": {
+          "coral": 0.25,
+          "seafoam": 0.25,
+          "bone": 0.25,
+          "violet": 0.459114,
+          "neutral_light": 0.0
+        },
+        "color_families_above_one_percent": 4,
+        "material_separation": {
+          "regions": {
+            "coral": {
+              "mean_rgb": [
+                137.695,
+                38.191,
+                48.788
+              ],
+              "mean_luminance": 60.11
+            },
+            "bone": {
+              "mean_rgb": [
+                130.445,
+                113.061,
+                88.632
+              ],
+              "mean_luminance": 114.993
+            },
+            "abyssal": {
+              "mean_rgb": [
+                30.602,
+                19.991,
+                52.439
+              ],
+              "mean_luminance": 24.59
+            },
+            "seafoam": {
+              "mean_rgb": [
+                36.908,
+                162.427,
+                123.398
+              ],
+              "mean_luminance": 132.924
+            }
+          },
+          "minimum_mean_rgb_distance": 85.122
+        }
+      },
+      "compression_metrics": {
+        "mean_absolute_rgb_error": 1.1134,
+        "p95_absolute_rgb_error": 3.0,
+        "alpha_mismatches": 0
       },
       "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\textures\\sea_witch_recall_atlas.png"
     },
@@ -129,7 +409,7 @@
       "source": "assets/characters/jinxmine/skins/skin62/jinxmine_skin62_tx_cm.tex",
       "output": "assets/characters/jinxmine/skins/skin65/jinxmine_skin65_tx_cm.tex",
       "source_sha256": "a57252435a8e2c7562f726c443c75c5c981654b97350dc3d89d074f45781e590",
-      "output_sha256": "419d88667adb26ac9b8773fc84c90eb97eda4da8e741db58af1a11323712bcd2",
+      "output_sha256": "00f9cfaf70e00c12dfd4b39333aa2508691d68288431d9ff1d38951f3dd471a3",
       "changed_pixels": 262144,
       "total_pixels": 262144,
       "mip_levels": 10,
@@ -141,16 +421,49 @@
         "bytes": 174788
       },
       "authored_metrics": {
-        "rgb_standard_deviation": 24.4614,
-        "mean_neighbor_contrast": 2.5521,
-        "quantized_unique_colors": 93,
-        "opaque_pixels": 262144
+        "rgb_standard_deviation": 30.5289,
+        "mean_neighbor_contrast": 3.137,
+        "quantized_unique_colors": 140,
+        "opaque_pixels": 262144,
+        "luminance_percentiles": {
+          "p05": 2.858,
+          "p50": 17.816,
+          "p95": 102.516
+        },
+        "luminance_span_p05_p95": 99.657,
+        "color_family_fractions": {
+          "coral": 0.046352,
+          "seafoam": 0.062946,
+          "bone": 0.044285,
+          "violet": 0.043552,
+          "neutral_light": 0.069267
+        },
+        "color_families_above_one_percent": 5
       },
       "decoded_metrics": {
-        "rgb_standard_deviation": 24.9104,
-        "mean_neighbor_contrast": 4.253,
-        "quantized_unique_colors": 118,
-        "opaque_pixels": 262144
+        "rgb_standard_deviation": 30.6049,
+        "mean_neighbor_contrast": 3.6559,
+        "quantized_unique_colors": 170,
+        "opaque_pixels": 262144,
+        "luminance_percentiles": {
+          "p05": 3.361,
+          "p50": 17.836,
+          "p95": 103.014
+        },
+        "luminance_span_p05_p95": 99.653,
+        "color_family_fractions": {
+          "coral": 0.050526,
+          "seafoam": 0.062675,
+          "bone": 0.044708,
+          "violet": 0.038048,
+          "neutral_light": 0.067265
+        },
+        "color_families_above_one_percent": 5
+      },
+      "compression_metrics": {
+        "mean_absolute_rgb_error": 1.5377,
+        "p95_absolute_rgb_error": 4.0,
+        "alpha_mismatches": 0
       },
       "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\textures\\sea_witch_mine_atlas.png"
     },
@@ -159,7 +472,7 @@
       "source": "assets/characters/jinx/skins/skin65/particles/jinx_skin65_r_mis_globefish.tex",
       "output": "assets/characters/jinx/skins/skin65/particles/jinx_skin65_r_mis_globefish.tex",
       "source_sha256": "8112444cdcee1d2471ea4bcf5647f2047bbdec426967e92a5c66249decf7887f",
-      "output_sha256": "37d6fef8beb00105e4fbcbf8ce3e15ce8df7e94bee23397e09dff73e8213a6b5",
+      "output_sha256": "a49a344de5db3364c4ff0193ee91c0f8825e8fcedb253cfed3164941678a6b02",
       "changed_pixels": 262144,
       "total_pixels": 262144,
       "mip_levels": 10,
@@ -171,16 +484,123 @@
         "bytes": 174788
       },
       "authored_metrics": {
-        "rgb_standard_deviation": 24.6449,
-        "mean_neighbor_contrast": 2.8513,
-        "quantized_unique_colors": 183,
-        "opaque_pixels": 262144
+        "rgb_standard_deviation": 48.293,
+        "mean_neighbor_contrast": 0.5234,
+        "quantized_unique_colors": 53,
+        "opaque_pixels": 262144,
+        "luminance_percentiles": {
+          "p05": 20.65,
+          "p50": 80.973,
+          "p95": 147.222
+        },
+        "luminance_span_p05_p95": 126.572,
+        "color_family_fractions": {
+          "coral": 0.25,
+          "seafoam": 0.25,
+          "bone": 0.25,
+          "violet": 0.473,
+          "neutral_light": 0.0
+        },
+        "color_families_above_one_percent": 4,
+        "material_separation": {
+          "regions": {
+            "coral": {
+              "mean_rgb": [
+                137.658,
+                38.275,
+                48.521
+              ],
+              "mean_luminance": 60.144
+            },
+            "bone": {
+              "mean_rgb": [
+                138.68,
+                120.511,
+                93.756
+              ],
+              "mean_luminance": 122.442
+            },
+            "abyssal": {
+              "mean_rgb": [
+                30.486,
+                20.226,
+                52.21
+              ],
+              "mean_luminance": 24.717
+            },
+            "seafoam": {
+              "mean_rgb": [
+                30.6,
+                137.452,
+                105.933
+              ],
+              "mean_luminance": 112.46
+            }
+          },
+          "minimum_mean_rgb_distance": 93.861
+        }
       },
       "decoded_metrics": {
-        "rgb_standard_deviation": 24.4082,
-        "mean_neighbor_contrast": 5.0182,
-        "quantized_unique_colors": 199,
-        "opaque_pixels": 262144
+        "rgb_standard_deviation": 48.3073,
+        "mean_neighbor_contrast": 0.9603,
+        "quantized_unique_colors": 83,
+        "opaque_pixels": 262144,
+        "luminance_percentiles": {
+          "p05": 20.296,
+          "p50": 81.151,
+          "p95": 147.363
+        },
+        "luminance_span_p05_p95": 127.067,
+        "color_family_fractions": {
+          "coral": 0.25,
+          "seafoam": 0.25,
+          "bone": 0.25,
+          "violet": 0.459114,
+          "neutral_light": 0.0
+        },
+        "color_families_above_one_percent": 4,
+        "material_separation": {
+          "regions": {
+            "coral": {
+              "mean_rgb": [
+                137.695,
+                38.191,
+                48.788
+              ],
+              "mean_luminance": 60.11
+            },
+            "bone": {
+              "mean_rgb": [
+                138.709,
+                120.453,
+                93.599
+              ],
+              "mean_luminance": 122.396
+            },
+            "abyssal": {
+              "mean_rgb": [
+                30.602,
+                19.991,
+                52.439
+              ],
+              "mean_luminance": 24.59
+            },
+            "seafoam": {
+              "mean_rgb": [
+                30.744,
+                137.389,
+                105.96
+              ],
+              "mean_luminance": 112.447
+            }
+          },
+          "minimum_mean_rgb_distance": 93.682
+        }
+      },
+      "compression_metrics": {
+        "mean_absolute_rgb_error": 1.1149,
+        "p95_absolute_rgb_error": 3.0,
+        "alpha_mismatches": 0
       },
       "preview": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\qa\\textures\\sea_witch_missile_atlas.png"
     }

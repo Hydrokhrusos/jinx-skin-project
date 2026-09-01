@@ -1,10 +1,10 @@
 {
   "status": "PASSED",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "theme": "recognizable cute-horror dark sea witch with coral relic weapons",
   "champion": {
     "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skn",
-    "sha256": "bb46a95cfa0645c843e167ade121af7fd5a16384e647dfca6d52f53e13f1843a",
+    "sha256": "c945405bff50c97e67e4f746e7b7ce1b73e6f72fd74be1297469eae9753b0d07",
     "skeleton_path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\jinx_skin65.skl",
     "skeleton_sha256": "5a370b9f548030d136b44ba79bec145a21aed2afc0c1f13c216f6adc6f6376f2",
     "target_skeleton_sha256": "5a370b9f548030d136b44ba79bec145a21aed2afc0c1f13c216f6adc6f6376f2",
@@ -150,7 +150,7 @@
   },
   "ultimate_missile": {
     "path": "C:\\Users\\leope\\Code\\jinx-skin-project\\build\\abyssal\\generated\\common\\Jinx.wad.client\\assets\\characters\\jinx\\skins\\skin65\\particles\\jinx_skin65_r_mis_globefish_01_1.skn",
-    "sha256": "0e1e878a3fdd18783c21643bfee01c068169f494a932068adbae330675d8733e",
+    "sha256": "2278c3166cc2515529c14de6eb68880f59acc90bc5474d4a8136a8d4c132f8bd",
     "vertices": 680,
     "triangles": 1292,
     "sources": {

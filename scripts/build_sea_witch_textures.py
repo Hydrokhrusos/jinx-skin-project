@@ -9,6 +9,10 @@ import tempfile
 import bpy
 import numpy as np
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from project_version import VERSION
+from sea_witch_materials import MATERIAL_TILES
+
 
 TEXTURE_SPECS = (
     (
@@ -115,150 +119,205 @@ def mix_palette(weights, colors):
     return result
 
 
+def smoothstep(edge0, edge1, value):
+    amount = np.clip((value - edge0) / max(edge1 - edge0, 1e-6), 0.0, 1.0)
+    return amount * amount * (3.0 - 2.0 * amount)
+
+
 def uv_fields(height, width):
     y, x = np.mgrid[0:height, 0:width].astype(np.float32)
     u = x / max(1, width - 1)
-    v = y / max(1, height - 1)
+    v = 1.0 - y / max(1, height - 1)
     return u, v
 
 
-def authored_pattern(height, width, role):
-    u, v = uv_fields(height, width)
-    black_violet = np.array((0.012, 0.004, 0.030), dtype=np.float32)
-    deep_plum = np.array((0.115, 0.018, 0.180), dtype=np.float32)
-    coral = np.array((0.920, 0.095, 0.250), dtype=np.float32)
-    bone = np.array((0.720, 0.665, 0.580), dtype=np.float32)
-    seafoam = np.array((0.070, 0.860, 0.620), dtype=np.float32)
-    base_noise = (
-        0.42
-        + 0.20 * np.sin(u * 17.0 + np.sin(v * 9.0) * 2.6)
-        + 0.15 * np.sin(v * 25.0 - u * 7.0)
-        + 0.08 * np.cos((u + v) * 39.0)
-    )
-    vein_distance = np.abs(
-        np.sin(u * 13.0 + np.sin(v * 8.0) * 2.4)
-        * np.cos(v * 11.0 - np.sin(u * 7.0))
-    )
-    veins = np.clip((0.105 - vein_distance) / 0.105, 0.0, 1.0) ** 1.7
-    scales = np.clip(
-        (np.cos(u * 46.0) * np.cos(v * 39.0) - 0.55) / 0.45,
-        0.0,
-        1.0,
-    )
-    rings = np.clip(
-        (np.cos(np.sqrt((u - 0.5) ** 2 + (v - 0.5) ** 2) * 110.0) - 0.40)
-        / 0.60,
-        0.0,
-        1.0,
-    )
-    rgb = black_violet + deep_plum * np.clip(base_noise[..., None] * 0.52, 0.0, 0.55)
-    if role == "armor":
-        rgb += coral * veins[..., None] * 0.72
-        rgb += seafoam * scales[..., None] * 0.48
-        rgb += bone * rings[..., None] * 0.08
-    elif role == "recall":
-        sigils = np.clip(
-            (np.cos((u - 0.5) * 86.0) * np.cos((v - 0.5) * 86.0) - 0.66)
-            / 0.34,
-            0.0,
-            1.0,
-        )
-        rgb += seafoam * (rings * 0.62 + sigils * 0.42)[..., None]
-        rgb += coral * veins[..., None] * 0.38
-    elif role == "missile":
-        rgb += bone * (0.07 + rings * 0.18)[..., None]
-        rgb += coral * veins[..., None] * 0.58
-        rgb += seafoam * scales[..., None] * 0.34
-    else:
-        raise ValueError(role)
-    alpha = np.full((height, width, 1), 255, dtype=np.uint8)
+def opaque_rgba(rgb):
+    alpha = np.full((*rgb.shape[:2], 1), 255, dtype=np.uint8)
     return np.concatenate(
         (np.clip(np.rint(rgb * 255.0), 0, 255).astype(np.uint8), alpha), axis=2
     )
 
 
+def palette_ramp(weights, shadows, highlights, luminance, low=0.025, high=0.92):
+    shadow = mix_palette(weights, shadows)
+    highlight = mix_palette(weights, highlights)
+    amount = smoothstep(low, high, luminance) ** 0.88
+    return shadow * (1.0 - amount) + highlight * amount
+
+
+def material_pattern(height, width, material, role):
+    u, v = uv_fields(height, width)
+    math_tau = np.pi * 2.0
+    grain = np.sin(u * 19.7 + v * 7.1) * np.sin(v * 16.3 - u * 5.7)
+    broad = 0.5 + 0.5 * np.cos(math_tau * (u * 2.0 + 0.10 * np.sin(v * math_tau)))
+    growth = 0.5 + 0.5 * np.cos(math_tau * (v * 3.0 + 0.08 * np.sin(u * math_tau)))
+
+    palettes = {
+        "coral": ((0.105, 0.016, 0.050), (0.880, 0.255, 0.300)),
+        "bone": ((0.105, 0.085, 0.105), (0.790, 0.690, 0.515)),
+        "abyssal": ((0.008, 0.012, 0.040), (0.245, 0.155, 0.390)),
+        "seafoam": ((0.008, 0.090, 0.105), (0.210, 0.900, 0.665)),
+    }
+    shadow, highlight = (np.asarray(color, dtype=np.float32) for color in palettes[material])
+    if material == "coral":
+        amount = 0.32 + broad * 0.32 + (1.0 - v) * 0.22 + grain * 0.055
+        amount *= 1.0 - smoothstep(0.72, 1.0, v) * 0.42
+    elif material == "bone":
+        amount = 0.40 + broad * 0.17 + growth * 0.24 + grain * 0.045
+        seam = smoothstep(0.82, 1.0, np.abs(u - 0.5) * 2.0)
+        amount *= 1.0 - seam * 0.20
+    elif material == "abyssal":
+        amount = 0.22 + broad * 0.20 + growth * 0.12 + (1.0 - v) * 0.18 + grain * 0.035
+    elif material == "seafoam":
+        center = np.sin(np.pi * u) * np.sin(np.pi * v)
+        amount = 0.30 + center * 0.47 + broad * 0.13 + grain * 0.035
+    else:
+        raise ValueError(material)
+
+    if role == "recall" and material == "seafoam":
+        amount = np.clip(amount * 1.13 + 0.05, 0.0, 1.0)
+    elif role == "missile" and material == "bone":
+        amount = np.clip(amount * 1.08, 0.0, 1.0)
+    amount = np.clip(amount, 0.0, 1.0)[..., None]
+    rgb = shadow * (1.0 - amount) + highlight * amount
+    return np.clip(rgb, 0.0, 1.0)
+
+
+def material_pixel_region(height, width, material):
+    u0, v0, u1, v1 = MATERIAL_TILES[material]
+    x0 = int(round(u0 * width))
+    x1 = int(round(u1 * width))
+    # Aventurine's TEX-to-DDS path presents DDS rows in the same vertical
+    # direction used by exported SKN UVs; flipping V here swaps material tiles.
+    y0 = int(round(v0 * height))
+    y1 = int(round(v1 * height))
+    return y0, y1, x0, x1
+
+
+def authored_atlas(height, width, role):
+    rgb = np.zeros((height, width, 3), dtype=np.float32)
+    for material in MATERIAL_TILES:
+        y0, y1, x0, x1 = material_pixel_region(height, width, material)
+        rgb[y0:y1, x0:x1] = material_pattern(
+            y1 - y0, x1 - x0, material, role
+        )
+    return opaque_rgba(rgb)
+
+
 def grade_body(rgba):
     rgb = rgba[..., :3].astype(np.float32) / 255.0
+    red = rgb[..., 0:1]
+    green = rgb[..., 1:2]
+    blue = rgb[..., 2:3]
     maximum = rgb.max(axis=2, keepdims=True)
     minimum = rgb.min(axis=2, keepdims=True)
-    luminance = (
-        rgb[..., 0:1] * 0.2126 + rgb[..., 1:2] * 0.7152 + rgb[..., 2:3] * 0.0722
-    )
+    luminance = red * 0.2126 + green * 0.7152 + blue * 0.0722
     saturation = (maximum - minimum) / np.maximum(maximum, 1e-5)
-    skin = np.clip((rgb[..., 0:1] - rgb[..., 2:3] * 0.86) * 3.2, 0.0, 1.0)
-    skin *= np.clip((luminance - 0.18) * 2.4, 0.0, 1.0)
-    blue = np.clip((rgb[..., 2:3] - rgb[..., 0:1] * 0.55) * 2.5, 0.0, 1.0)
-    warm = np.clip((rgb[..., 0:1] - rgb[..., 1:2] * 0.72) * 2.6, 0.0, 1.0)
-    neutral = np.clip(1.0 - saturation * 1.8, 0.0, 1.0)
-    dark = np.clip(1.0 - luminance * 1.75, 0.0, 1.0)
-    palette = mix_palette(
-        [skin + 0.02, blue + 0.03, warm + 0.02, neutral * 0.55 + dark + 0.05],
-        [
-            (0.72, 0.58, 0.72),
-            (0.025, 0.145, 0.265),
-            (0.90, 0.075, 0.235),
-            (0.035, 0.008, 0.075),
-        ],
-    )
-    shade = np.clip(0.24 + luminance * 0.93, 0.10, 1.05)
-    detail = (rgb - luminance) * 0.16
-    target = np.clip(palette * shade + detail, 0.0, 1.0)
-    u, v = uv_fields(rgba.shape[0], rgba.shape[1])
-    glow = np.clip(
-        (np.cos(u * 61.0 + np.sin(v * 23.0)) * np.cos(v * 49.0) - 0.76) / 0.24,
+    bright = smoothstep(0.16, 0.68, luminance)
+    dark = 1.0 - smoothstep(0.03, 0.55, luminance)
+
+    teal = np.clip((green + blue - red * 1.42 - 0.04) * 2.4, 0.0, 1.0)
+    gold = np.clip((red * 0.72 + green * 0.72 - blue * 1.30 - 0.06) * 2.5, 0.0, 1.0)
+    pale = np.clip(1.0 - saturation * 1.85, 0.0, 1.0) * bright
+    coral = np.clip((red - green * 1.18 - 0.015) * 2.7, 0.0, 1.0) * saturation
+    skin = np.clip(
+        (red * 0.78 + green * 0.30 - blue * 0.54 - 0.035) * 2.0,
         0.0,
         1.0,
-    )[..., None]
-    non_skin = 1.0 - np.clip(skin * 1.3, 0.0, 1.0)
-    target = target * (1.0 - glow * non_skin * 0.30) + np.array(
-        (0.06, 0.88, 0.64), dtype=np.float32
-    ) * glow * non_skin * 0.30
-    alpha = np.full((*rgba.shape[:2], 1), 255, dtype=np.uint8)
-    return np.concatenate(
-        (np.clip(np.rint(target * 255.0), 0, 255).astype(np.uint8), alpha), axis=2
     )
+    skin *= bright * np.clip(1.18 - saturation, 0.0, 1.0)
+    violet = np.clip((red + blue * 0.72 - green * 1.38) * 1.5, 0.0, 1.0)
+    abyssal = dark + np.clip(0.42 - saturation, 0.0, 0.42) * 0.55
+
+    weights = [
+        skin + 0.018,
+        teal + 0.012,
+        gold + 0.010,
+        pale + 0.012,
+        coral + 0.010,
+        violet + 0.018,
+        abyssal + 0.025,
+    ]
+    shadows = [
+        (0.205, 0.105, 0.205),
+        (0.005, 0.070, 0.095),
+        (0.105, 0.065, 0.045),
+        (0.105, 0.105, 0.155),
+        (0.125, 0.012, 0.055),
+        (0.040, 0.012, 0.075),
+        (0.006, 0.004, 0.024),
+    ]
+    highlights = [
+        (0.835, 0.665, 0.745),
+        (0.105, 0.785, 0.610),
+        (0.745, 0.570, 0.325),
+        (0.700, 0.665, 0.730),
+        (0.875, 0.190, 0.315),
+        (0.390, 0.145, 0.515),
+        (0.105, 0.035, 0.155),
+    ]
+    target = palette_ramp(weights, shadows, highlights, luminance)
+    source_detail = (rgb - luminance) * 0.055
+    return opaque_rgba(np.clip(target + source_detail, 0.0, 1.0))
 
 
 def grade_weapon(rgba, mine=False):
     rgb = rgba[..., :3].astype(np.float32) / 255.0
+    red = rgb[..., 0:1]
+    green = rgb[..., 1:2]
+    blue = rgb[..., 2:3]
     maximum = rgb.max(axis=2, keepdims=True)
     minimum = rgb.min(axis=2, keepdims=True)
-    luminance = (
-        rgb[..., 0:1] * 0.2126 + rgb[..., 1:2] * 0.7152 + rgb[..., 2:3] * 0.0722
-    )
+    luminance = red * 0.2126 + green * 0.7152 + blue * 0.0722
     saturation = (maximum - minimum) / np.maximum(maximum, 1e-5)
-    warm = np.clip((rgb[..., 0:1] - rgb[..., 2:3] * 0.72) * 2.1, 0.0, 1.0)
-    green = np.clip((rgb[..., 1:2] + rgb[..., 2:3] * 0.45 - rgb[..., 0:1]) * 1.9, 0.0, 1.0)
-    pale = np.clip(luminance * (1.0 - saturation * 0.72), 0.0, 1.0)
-    dark = np.clip(1.0 - luminance * 1.55, 0.0, 1.0)
-    palette = mix_palette(
-        [warm + 0.03, green + 0.03, pale + 0.06, dark + 0.08],
-        [
-            (0.92, 0.095, 0.235),
-            (0.065, 0.88, 0.62),
-            (0.70, 0.63, 0.52) if not mine else (0.24, 0.30, 0.31),
-            (0.022, 0.005, 0.060),
-        ],
-    )
-    shade = (
-        np.clip(0.13 + luminance * 0.72, 0.07, 0.78)
-        if mine
-        else np.clip(0.19 + luminance * 1.02, 0.09, 1.08)
-    )
-    u, v = uv_fields(rgba.shape[0], rgba.shape[1])
-    coral_ridges = np.clip(
-        (np.cos(u * 45.0 + np.sin(v * 19.0) * 3.0) - 0.65) / 0.35,
+    bright = smoothstep(0.15, 0.66, luminance)
+    dark = 1.0 - smoothstep(0.025, 0.52, luminance)
+
+    coral = np.clip((red - green * 1.34 - 0.01) * 3.1, 0.0, 1.0) * saturation
+    seafoam = np.clip(
+        (green * 0.58 + blue * 0.88 - red * 0.90 - 0.055) * 2.2,
         0.0,
         1.0,
-    )[..., None]
-    target = np.clip(palette * shade, 0.0, 1.0)
-    target = target * (1.0 - coral_ridges * 0.22) + np.array(
-        (0.96, 0.12, 0.30), dtype=np.float32
-    ) * coral_ridges * 0.22
-    alpha = np.full((*rgba.shape[:2], 1), 255, dtype=np.uint8)
-    return np.concatenate(
-        (np.clip(np.rint(target * 255.0), 0, 255).astype(np.uint8), alpha), axis=2
+    ) * (0.35 + saturation)
+    brass = np.clip(
+        (red * 0.66 + green * 0.70 - blue * 1.18 - 0.04) * 2.3,
+        0.0,
+        1.0,
     )
+    silver = np.clip(1.0 - saturation * 1.65, 0.0, 1.0) * bright
+    violet = np.clip((blue + red * 0.32 - green * 0.88) * 1.65, 0.0, 1.0)
+    abyssal = dark + np.clip(0.36 - saturation, 0.0, 0.36) * 0.45
+
+    weights = [
+        coral + 0.010,
+        seafoam + 0.012,
+        brass + 0.016,
+        silver + 0.012,
+        violet + 0.012,
+        abyssal + 0.028,
+    ]
+    shadows = [
+        (0.120, 0.012, 0.045),
+        (0.005, 0.070, 0.085),
+        (0.105, 0.065, 0.032),
+        (0.105, 0.105, 0.125),
+        (0.025, 0.018, 0.080),
+        (0.005, 0.004, 0.022),
+    ]
+    highlights = [
+        (0.915, 0.175, 0.285),
+        (0.105, 0.865, 0.635),
+        (0.790, 0.610, 0.330),
+        (0.730, 0.700, 0.665),
+        (0.285, 0.185, 0.475),
+        (0.095, 0.030, 0.135),
+    ]
+    high = 1.05 if mine else 0.92
+    target = palette_ramp(weights, shadows, highlights, luminance, high=high)
+    if mine:
+        target *= 0.84
+    source_detail = (rgb - luminance) * 0.045
+    return opaque_rgba(np.clip(target + source_detail, 0.0, 1.0))
 
 
 def save_preview(rgba, path):
@@ -272,17 +331,125 @@ def save_preview(rgba, path):
     bpy.data.images.remove(image)
 
 
-def image_metrics(rgba):
+def color_family_metrics(rgb):
+    red = rgb[..., 0]
+    green = rgb[..., 1]
+    blue = rgb[..., 2]
+    maximum = rgb.max(axis=2)
+    minimum = rgb.min(axis=2)
+    luminance = red * 0.2126 + green * 0.7152 + blue * 0.0722
+    saturation = (maximum - minimum) / np.maximum(maximum, 1.0)
+    masks = {
+        "coral": (red > green * 1.35) & (red > blue * 1.12) & (red > 48.0),
+        "seafoam": (green > red * 1.28) & (green > blue * 0.86) & (green > 48.0),
+        "bone": (
+            (red > green * 1.01)
+            & (green > blue * 1.10)
+            & (luminance > 62.0)
+            & (saturation < 0.72)
+        ),
+        "violet": (blue > green * 1.16) & (red > green * 0.92) & (blue > 34.0),
+        "neutral_light": (saturation < 0.16) & (luminance > 72.0),
+    }
+    return {
+        name: round(float(mask.mean()), 6)
+        for name, mask in masks.items()
+    }
+
+
+def material_region_metrics(rgba):
+    rgb = rgba[..., :3].astype(np.float32)
+    rows = {}
+    means = []
+    for material in MATERIAL_TILES:
+        y0, y1, x0, x1 = material_pixel_region(
+            rgba.shape[0], rgba.shape[1], material
+        )
+        mean = rgb[y0:y1, x0:x1].mean(axis=(0, 1))
+        means.append(mean)
+        rows[material] = {
+            "mean_rgb": [round(float(value), 3) for value in mean],
+            "mean_luminance": round(
+                float(mean[0] * 0.2126 + mean[1] * 0.7152 + mean[2] * 0.0722),
+                3,
+            ),
+        }
+    distances = [
+        float(np.linalg.norm(means[first] - means[second]))
+        for first in range(len(means))
+        for second in range(first + 1, len(means))
+    ]
+    return {
+        "regions": rows,
+        "minimum_mean_rgb_distance": round(min(distances), 3),
+    }
+
+
+def image_metrics(rgba, authored_materials=False):
     rgb = rgba[..., :3].astype(np.float32)
     horizontal = np.abs(rgb[:, 1:] - rgb[:, :-1]).mean()
     vertical = np.abs(rgb[1:] - rgb[:-1]).mean()
     quantized = (rgba[..., :3] // 16).reshape(-1, 3)
     unique = len(np.unique(quantized, axis=0))
-    return {
+    luminance = (
+        rgb[..., 0] * 0.2126 + rgb[..., 1] * 0.7152 + rgb[..., 2] * 0.0722
+    )
+    low, median, high = np.percentile(luminance, (5.0, 50.0, 95.0))
+    families = color_family_metrics(rgb)
+    result = {
         "rgb_standard_deviation": round(float(rgb.std()), 4),
         "mean_neighbor_contrast": round(float((horizontal + vertical) * 0.5), 4),
         "quantized_unique_colors": unique,
         "opaque_pixels": int((rgba[..., 3] == 255).sum()),
+        "luminance_percentiles": {
+            "p05": round(float(low), 3),
+            "p50": round(float(median), 3),
+            "p95": round(float(high), 3),
+        },
+        "luminance_span_p05_p95": round(float(high - low), 3),
+        "color_family_fractions": families,
+        "color_families_above_one_percent": sum(
+            fraction >= 0.01 for fraction in families.values()
+        ),
+    }
+    if authored_materials:
+        result["material_separation"] = material_region_metrics(rgba)
+    return result
+
+
+def validate_image_metrics(role, stage, metrics, total_pixels, authored_materials):
+    label = f"{stage} {role} atlas"
+    if metrics["opaque_pixels"] != total_pixels:
+        raise ValueError(f"{label} contains non-opaque pixels")
+    if metrics["rgb_standard_deviation"] < 18.0:
+        raise ValueError(f"{label} is too flat")
+    if metrics["mean_neighbor_contrast"] < 0.18:
+        raise ValueError(f"{label} lacks local detail")
+    if metrics["quantized_unique_colors"] < 24:
+        raise ValueError(f"{label} has too few colors")
+    if metrics["luminance_span_p05_p95"] < 48.0:
+        raise ValueError(f"{label} lacks a readable value hierarchy")
+    if metrics["color_families_above_one_percent"] < 3:
+        raise ValueError(f"{label} lacks material color separation")
+    if authored_materials and (
+        metrics["material_separation"]["minimum_mean_rgb_distance"] < 48.0
+    ):
+        raise ValueError(f"{label} material tiles are not distinct")
+
+
+def compression_metrics(authored, decoded):
+    if decoded.shape != authored.shape:
+        raise ValueError(
+            f"Decoded TEX dimensions changed: expected {authored.shape}, got {decoded.shape}"
+        )
+    rgb_error = np.abs(
+        decoded[..., :3].astype(np.float32) - authored[..., :3].astype(np.float32)
+    )
+    alpha_mismatches = int((decoded[..., 3] != authored[..., 3]).sum())
+    return {
+        "mean_absolute_rgb_error": round(float(rgb_error.mean()), 4),
+        "p95_absolute_rgb_error": round(float(np.percentile(rgb_error, 95.0)), 4),
+        "alpha_mismatches": alpha_mismatches,
     }
 
 
@@ -313,19 +480,15 @@ def main():
         elif role == "mine":
             result = grade_weapon(rgba, mine=True)
         elif role in {"armor", "recall", "missile"}:
-            result = authored_pattern(rgba.shape[0], rgba.shape[1], role)
+            result = authored_atlas(rgba.shape[0], rgba.shape[1], role)
         else:
             raise ValueError(role)
-        metrics = image_metrics(result)
+        uses_authored_materials = role in {"armor", "recall", "missile"}
+        metrics = image_metrics(result, authored_materials=uses_authored_materials)
         total_pixels = result.shape[0] * result.shape[1]
-        if metrics["opaque_pixels"] != total_pixels:
-            raise ValueError(f"Non-opaque pixels in {role} atlas")
-        if metrics["rgb_standard_deviation"] < 18.0:
-            raise ValueError(f"Atlas is too flat: {role}")
-        if metrics["mean_neighbor_contrast"] < 0.55:
-            raise ValueError(f"Atlas lacks local detail: {role}")
-        if metrics["quantized_unique_colors"] < 12:
-            raise ValueError(f"Atlas has too few colors: {role}")
+        validate_image_metrics(
+            role, "Authored", metrics, total_pixels, uses_authored_materials
+        )
         changed_pixels = int(np.any(result[..., :3] != rgba[..., :3], axis=2).sum())
         if changed_pixels < total_pixels * 0.95:
             raise ValueError(f"Too few changed pixels in {role}: {changed_pixels}/{total_pixels}")
@@ -334,9 +497,19 @@ def main():
         )
         layout = validate_tex_layout(output)
         decoded = load_tex(output, tex_to_dds_bytes)
-        decoded_metrics = image_metrics(decoded)
-        if decoded_metrics["opaque_pixels"] != total_pixels:
-            raise ValueError(f"Compression introduced alpha in {role}")
+        decoded_metrics = image_metrics(
+            decoded, authored_materials=uses_authored_materials
+        )
+        validate_image_metrics(
+            role, "Decoded", decoded_metrics, total_pixels, uses_authored_materials
+        )
+        compression = compression_metrics(result, decoded)
+        if compression["alpha_mismatches"]:
+            raise ValueError(f"Compression changed alpha in {role}")
+        if compression["mean_absolute_rgb_error"] > 16.0:
+            raise ValueError(f"Compression corrupted the top mip in {role}")
+        if compression["p95_absolute_rgb_error"] > 48.0:
+            raise ValueError(f"Compression lost excessive color detail in {role}")
         preview = os.path.join(preview_root, f"sea_witch_{role}_atlas.png")
         save_preview(decoded, preview)
         rows.append(
@@ -352,13 +525,14 @@ def main():
                 "layout": layout,
                 "authored_metrics": metrics,
                 "decoded_metrics": decoded_metrics,
+                "compression_metrics": compression,
                 "preview": preview,
             }
         )
 
     payload = {
         "status": "PASSED",
-        "version": "3.0.0",
+        "version": VERSION,
         "theme": "black-violet sea witch, coral pink relics, seafoam bioluminescence, aged bone",
         "opaque_material_atlases": True,
         "textures": rows,

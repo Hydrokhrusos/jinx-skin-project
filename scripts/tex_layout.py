@@ -9,15 +9,38 @@ def tex_block_size(format_code):
     raise ValueError(f"Unsupported TEX format code 0x{format_code:02x}")
 
 
-def expected_tex_payload_size(width, height, format_code):
+def tex_mip_level_sizes(width, height, format_code):
     block_size = tex_block_size(format_code)
-    total = 0
+    sizes = []
     while True:
-        total += max(1, (width + 3) // 4) * max(1, (height + 3) // 4) * block_size
+        sizes.append(
+            max(1, (width + 3) // 4)
+            * max(1, (height + 3) // 4)
+            * block_size
+        )
         if width == 1 and height == 1:
-            return total
+            return sizes
         width = max(1, width // 2)
         height = max(1, height // 2)
+
+
+def expected_tex_payload_size(width, height, format_code):
+    return sum(tex_mip_level_sizes(width, height, format_code))
+
+
+def dds_payload_to_tex_payload(payload, width, height, format_code):
+    """Convert standard largest-first DDS mips to Riot's smallest-first order."""
+    sizes = tex_mip_level_sizes(width, height, format_code)
+    if len(payload) != sum(sizes):
+        raise ValueError(
+            f"DDS mip payload mismatch: expected {sum(sizes)}, got {len(payload)}"
+        )
+    levels = []
+    offset = 0
+    for size in sizes:
+        levels.append(payload[offset : offset + size])
+        offset += size
+    return b"".join(reversed(levels))
 
 
 def validate_tex_layout(path):
